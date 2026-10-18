@@ -1,0 +1,31 @@
+9. Sometimes Queries Return SQLITE_BUSY In WAL Mode
+
+The second advantage of WAL-mode is that
+writers do not block readers and readers do not block writers.
+This is mostly true.
+But there are some obscure cases where a query against a WAL-mode
+database can return SQLITE_BUSY, so applications should be prepared
+for that happenstance.
+
+Cases where a query against a WAL-mode database can return SQLITE_BUSY
+include the following:
+
+If another database connection has the database mode open
+in exclusive locking mode then all queries against the
+database will return SQLITE_BUSY. Both Chrome and Firefox open their
+database files in exclusive locking mode, so attempts to read Chrome or
+Firefox databases while the applications are running will run into this
+problem, for example.
+
+When the last connection to a particular database is closing,
+that connection will acquire an exclusive lock for a short time while
+it cleans up the WAL and shared-memory files. If a separate attempt
+is made to open and query the database while the first connection is
+still in the middle of its cleanup process, the second connection
+might get an SQLITE_BUSY error.
+
+If the last connection to a database crashed, then the first new
+connection to open the database will start a recovery process. An
+exclusive lock is held during recovery. So if a third database connection
+tries to jump in and query while the second connection is running recovery,
+the third connection will get an SQLITE_BUSY error.

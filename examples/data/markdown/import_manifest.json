@@ -1,0 +1,1 @@
+{"schema_version":"0.1","dataset_id":"markdown-demo","collection":"notes","embedding_dim":2,"embedding_model":"synthetic-demo-2d-v1","distance_metric":"cosine","documents":"documents.jsonl","chunks":"chunks.jsonl","embeddings":"embeddings.jsonl"}

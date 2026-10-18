@@ -1,0 +1,2841 @@
+{
+  "schema_version": "cofferdb-isolated-fusion-experiment-1",
+  "protocol_sha256": "4c1880744d0fcb3d5bab00e3c589c1250a8939844cde67c621686914876989b3",
+  "source_commit": "48063f48f29ea6a5799975e5ff6e2ac2c4f1b4cf",
+  "control_reproduced_all_queries_and_cold_warm_groups": true,
+  "control_score_tolerance": 0,
+  "limitations": [
+    "Offline reranking only; no production algorithm was changed.",
+    "Frozen incomplete machine judgments; not independently labeled release acceptance.",
+    "Two predefined candidates on one corpus; no held-out generalization or latency/resource claim.",
+    "Component CLI handles reopen; cold/warm references validate ranking, not experiment timing."
+  ],
+  "results": [
+    {
+      "profile": "quality-first",
+      "strategy": "weighted_sum_control",
+      "independent_queries": 24,
+      "metrics": {
+        "recall_at_5": 0.8333333333333334,
+        "recall_at_10": 0.8333333333333334,
+        "mrr": 0.732638888888889
+      },
+      "per_query": [
+        {
+          "query_id": "code-crc-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#12",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#11",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#5"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.25
+          }
+        },
+        {
+          "query_id": "code-crc-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/checkpoint_writer.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/sort/lookup.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#270",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#58",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/sort/lookup.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#313",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#60",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#422",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#304"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "code-lock-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#14",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "code-registry-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#95",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/sort.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#62",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#486",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#487"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/vector.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/index_source.rs#29",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#458",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#35"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#196",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/import.rs#39",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db/import.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#91",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/metadata.rs#66",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#116",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#390",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#153"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-profile-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-poison-mixed",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#88",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#89",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/main.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#309",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#274",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#275"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-stop-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#37"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-runtime-crc",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#28",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#29",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#26",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#17",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#37"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-snapshot",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#305",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/index_source.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#308",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#244",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#298"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-corruption",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#102",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#67",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#55",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#534",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#58",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#561",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/import.rs#160",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#105"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "technical-bm25",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#54",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#22",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#2"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "technical-profile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-repair",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-prefix",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#255",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/codec.rs#38",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#254",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#78",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#75",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/catalog.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#27"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-disk",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#594",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#229",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#27",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/budget.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#276",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#240",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-percentile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-scan",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#30",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#107",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#46",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#14",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#30",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#47",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#33",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#32"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-model",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/vector.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#181",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#187",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#171",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db/import.rs#17",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#141",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#188",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#143"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "notes-scores",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-import",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#434",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#327",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#418",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#127",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#393",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#328",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#128",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#151"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-version",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#34",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#128",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#301",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#425",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#51",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#384",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#426"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        }
+      ]
+    },
+    {
+      "profile": "quality-first",
+      "strategy": "weighted_rrf_10",
+      "independent_queries": 24,
+      "metrics": {
+        "recall_at_5": 0.875,
+        "recall_at_10": 0.8958333333333334,
+        "mrr": 0.7222222222222222
+      },
+      "per_query": [
+        {
+          "query_id": "code-crc-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#12",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#11",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "code-crc-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#306",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#422",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/checkpoint_writer.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#311",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#296",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/sort/lookup.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#470",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/json/build.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/index_source.rs#9"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "code-lock-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#42"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0.5,
+            "mrr": 0.16666666666666666
+          }
+        },
+        {
+          "query_id": "code-registry-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#62",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#95",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#3"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#601",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#198",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/vector.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#499",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#365"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#196",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#122",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/metadata.rs#66",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#546",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/import.rs#39",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#91",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/import.rs#30",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db/import.rs#20"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-profile-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-poison-mixed",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#88",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#89",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#309",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#274",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "code-stop-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#54",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#6"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "code-runtime-crc",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#28",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#29",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#26",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#17",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#37"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-snapshot",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#244",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#245",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#19",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#240"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-corruption",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#67",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#76",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#120",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#102",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#55",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#119",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#101",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#51"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "technical-bm25",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#22",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#134",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#54"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "technical-profile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-repair",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-prefix",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#255",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#254",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#78",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/codec.rs#38",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#368",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-disk",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#335",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#594",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#229",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/budget.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#27",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#455",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#34"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-percentile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-scan",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#30",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#46",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#33",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#107",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#41",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#84"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-model",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/codec.rs#41",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#51",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#92",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#584",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#54",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#3"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "notes-scores",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-import",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#418",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#127",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#128",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#434",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#327",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#419",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#409",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#393"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-version",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#34",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#184",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#135",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#296",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#293",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#27"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        }
+      ]
+    },
+    {
+      "profile": "quality-first",
+      "strategy": "weighted_rrf_60",
+      "independent_queries": 24,
+      "metrics": {
+        "recall_at_5": 0.8333333333333334,
+        "recall_at_10": 0.8541666666666666,
+        "mrr": 0.7013888888888888
+      },
+      "per_query": [
+        {
+          "query_id": "code-crc-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#12",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#11",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "code-crc-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#422",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#306",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#58",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#60",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#179",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/index_source.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/checkpoint_writer.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#61",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#311",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#296"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "code-lock-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#309"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0.5,
+            "mrr": 0.16666666666666666
+          }
+        },
+        {
+          "query_id": "code-registry-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#62",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#95",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#487",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/output.rs#1"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#35",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/vector.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#499",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#601",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#603"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#196",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/metadata.rs#66",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#122",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#31",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#102",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#116",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db/import.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#91"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-profile-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-poison-mixed",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#88",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#89",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#309",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#274",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "code-stop-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#167",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#327"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "code-runtime-crc",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#29",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#28",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#26",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#17",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#37"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-snapshot",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#244",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#240",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#245"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-corruption",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#67",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#76",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#55",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#58",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#80",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#105",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#121"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "technical-bm25",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#22",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#134",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#16"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "technical-profile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-repair",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-prefix",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#255",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#254",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#78",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#384",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-disk",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#594",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#229",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/budget.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#455",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#335",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#240",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#41"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-percentile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-scan",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#30",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#46",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#33",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#107",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#41",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#84"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-model",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#169",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#549",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#171",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#53",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#165",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#51",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#584",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#369"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "notes-scores",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-import",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#418",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#127",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#128",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#434",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#327",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#409",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#419",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#393"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-version",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#34",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#27",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#129",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#426",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#425",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#135",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#226"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        }
+      ]
+    },
+    {
+      "profile": "resource-first",
+      "strategy": "weighted_sum_control",
+      "independent_queries": 24,
+      "metrics": {
+        "recall_at_5": 0.875,
+        "recall_at_10": 0.8958333333333334,
+        "mrr": 0.7476851851851851
+      },
+      "per_query": [
+        {
+          "query_id": "code-crc-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#12",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#11",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#5"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.25
+          }
+        },
+        {
+          "query_id": "code-crc-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#58",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#60",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#422",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#306",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/import.rs#94",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#61",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/checkpoint_writer.rs#7",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#311",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#296"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "code-lock-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#272",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0.5,
+            "mrr": 0.1111111111111111
+          }
+        },
+        {
+          "query_id": "code-registry-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#95",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#62",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#487",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/output.rs#1"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#35",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#601",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#198",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#365",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#499",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#357",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#356",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#603"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#196",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db/import.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/metadata.rs#66",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#116",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#390",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/import.rs#40",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#122",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#31"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-profile-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-poison-mixed",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#88",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#89",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/main.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#309",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#274",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-stop-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#198",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#167"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-runtime-crc",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#17",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#15"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-snapshot",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#244",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#240",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#388"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-corruption",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#67",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#105",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#121",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#76",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#73",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#80",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#120",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#119"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "technical-bm25",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#54",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#22",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#2"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "technical-profile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-repair",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-prefix",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#255",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#254",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#78",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#384",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#368",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-disk",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#594",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#229",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/budget.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#455",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#41",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#496",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#335"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-percentile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-scan",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#30",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#107",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#46",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#33",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#84",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#119"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-model",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#169",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#165",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/codec.rs#41",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#51",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#584",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#54",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#455"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.25
+          }
+        },
+        {
+          "query_id": "notes-scores",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-import",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#434",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#327",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#418",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#127",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#393",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#128",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#409",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#175"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-version",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#34",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#425",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#426",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#129",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#164",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#184",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#135"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        }
+      ]
+    },
+    {
+      "profile": "resource-first",
+      "strategy": "weighted_rrf_10",
+      "independent_queries": 24,
+      "metrics": {
+        "recall_at_5": 0.875,
+        "recall_at_10": 0.8958333333333334,
+        "mrr": 0.7222222222222222
+      },
+      "per_query": [
+        {
+          "query_id": "code-crc-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#12",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#11",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "code-crc-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#306",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#422",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#311",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/checkpoint_writer.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#296",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/sort/lookup.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/json/build.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#470",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#58"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "code-lock-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0.5,
+            "mrr": 0.16666666666666666
+          }
+        },
+        {
+          "query_id": "code-registry-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#62",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#95",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#42"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#601",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#198",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#365",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#499",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/import.rs#105"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#196",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#122",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/metadata.rs#66",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#546",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db/import.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#31",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#102",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#116"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-profile-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-poison-mixed",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#88",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#89",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#309",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#274",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "code-stop-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#54",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#1"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "code-runtime-crc",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#17",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#15"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-snapshot",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#244",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#245",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#19",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#240"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-corruption",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#67",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#76",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#120",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#102",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#119",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#51",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#55"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "technical-bm25",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#22",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#134",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#54"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "technical-profile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-repair",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-prefix",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#255",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#254",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#78",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#368",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/codec.rs#38",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#594"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-disk",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#594",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#229",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#335",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/budget.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#455",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#34",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#27"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-percentile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-scan",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#30",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#46",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#33",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#107",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#41",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#84"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-model",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/codec.rs#41",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#92",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#51",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#584",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#54"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "notes-scores",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-import",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#418",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#127",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#128",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#434",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#327",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#419",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#409",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#393"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-version",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#34",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#184",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#135",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#296",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#12",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#293"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        }
+      ]
+    },
+    {
+      "profile": "resource-first",
+      "strategy": "weighted_rrf_60",
+      "independent_queries": 24,
+      "metrics": {
+        "recall_at_5": 0.875,
+        "recall_at_10": 0.8958333333333334,
+        "mrr": 0.7118055555555555
+      },
+      "per_query": [
+        {
+          "query_id": "code-crc-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#12",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#11",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#13",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "code-crc-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#422",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#306",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#58",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#60",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#61",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/import.rs#94",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#311",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/checkpoint_writer.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#296",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "code-lock-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#309"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0.5,
+            "mrr": 0.16666666666666666
+          }
+        },
+        {
+          "query_id": "code-registry-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/prepared.rs#62",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#95",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#487",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/output.rs#1"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-semantic",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#35",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#601",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#198",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#365",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#499"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-token-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#196",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/metadata.rs#66",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#122",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#31",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#102",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#116",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db/import.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#390"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-profile-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#6",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/profile.rs#4"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "code-poison-mixed",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#88",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#89",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#309",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/lock.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#274",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#273"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "code-stop-exact",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#3",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#5",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/tokenizer.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#32",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/memory.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#167",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#327"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "code-runtime-crc",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#17",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#9",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#18",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#8",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/hash.rs#15"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-snapshot",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#21",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#244",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#20",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#240",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#245"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-corruption",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.5
+          }
+        },
+        {
+          "query_id": "technical-filter",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#67",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#76",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#80",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#105",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#121",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#73",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#120",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#102"
+          ],
+          "metrics": {
+            "recall_at_5": 0,
+            "recall_at_10": 0,
+            "mrr": 0
+          }
+        },
+        {
+          "query_id": "technical-bm25",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#43",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#2",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#19",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#22",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#134",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/index/text.rs#16"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.3333333333333333
+          }
+        },
+        {
+          "query_id": "technical-profile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "technical-repair",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-prefix",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#255",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#254",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#42",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#78",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#118",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#384",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#368",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/codec.rs#38"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-disk",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#228",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/architecture.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#594",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#229",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/temporary/budget.rs#4",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#455",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#41",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#496",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#335"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-percentile",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-scan",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#30",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#46",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#15",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#33",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#107",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#37",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#16",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#41",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/query.rs#84"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-model",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#169",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark.rs#165",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage/codec.rs#41",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/result.rs#92",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/model.rs#51",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#584",
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/cli.rs#7",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/troubleshooting.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 0.25
+          }
+        },
+        {
+          "query_id": "notes-scores",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-7a1ed96f742f6335411c18189baa5815a2dc94536b5191390438b47bdc30caed/notes/ranking.md#0",
+            "cofferdb-corpus://fixture-125cff82cbacd3e56608bcc71ada43f8ff0886d6e47c5811c49812cea7a9bd93/notes/measurement.md#0",
+            "cofferdb-corpus://fixture-fe0b890f9ecbf94639fb502c054b64de12c196fcd1f07d13fcb18c4490a84300/notes/recovery.md#0",
+            "cofferdb-corpus://fixture-e53685056dc2b24783bbc613fe8c35341a302d387c922bc11518221ba87fd98f/notes/profile.md#0",
+            "cofferdb-corpus://fixture-85308f1cfbe3d7426dfcd13ba0097df7e6891a70f252ce17c134ae9afad4ccff/notes/embedding.md#0",
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://fixture-dfa63cf4cd5d4473e62d67e6c4ce6973fd7741faa9f88b565da9d1bfdec31b39/notes/reader.md#0",
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-import",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-ccd4ef2d05ed0b7b5ff583c5c5a3b48284bb85abb308982e2aed866f1c05b817/notes/import.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#418",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#127",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/docs/profiles.md#1",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#128",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#434",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#327",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#409",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#419",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#393"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        },
+        {
+          "query_id": "notes-version",
+          "ranked_chunk_ids": [
+            "cofferdb-corpus://fixture-5e826d0f2ee42d13f5e5e2d63cafc4b05860d0503f057b6e737f077219119d9a/notes/provenance.md#0",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#10",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner.rs#34",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/benchmark/runner/tests.rs#48",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#129",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#426",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#425",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/storage.rs#164",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#184",
+            "cofferdb-corpus://83017ae344f0a3ae4b6c29d08b5ee3874b7919b5/cofferdb/src/db.rs#135"
+          ],
+          "metrics": {
+            "recall_at_5": 1,
+            "recall_at_10": 1,
+            "mrr": 1
+          }
+        }
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "strategy": "weighted_sum_control",
+      "quality_first_minus_resource_first": {
+        "recall_at_5": -0.04166666666666663,
+        "recall_at_10": -0.0625,
+        "mrr": -0.015046296296296169
+      },
+      "strict_primary_improvement": false
+    },
+    {
+      "strategy": "weighted_rrf_10",
+      "quality_first_minus_resource_first": {
+        "recall_at_5": 0,
+        "recall_at_10": 0,
+        "mrr": 0
+      },
+      "strict_primary_improvement": false
+    },
+    {
+      "strategy": "weighted_rrf_60",
+      "quality_first_minus_resource_first": {
+        "recall_at_5": -0.04166666666666663,
+        "recall_at_10": -0.04166666666666674,
+        "mrr": -0.01041666666666663
+      },
+      "strict_primary_improvement": false
+    }
+  ],
+  "component_queries": 96
+}

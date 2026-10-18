@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "cofferdb-public-quality-48-v1-e5-small",
+  "version": "1",
+  "documents": "documents.jsonl",
+  "chunks": "chunks.jsonl",
+  "embeddings": "embeddings.jsonl",
+  "queries": "queries.jsonl",
+  "qrels": "qrels.jsonl",
+  "query_embedding_source": "sidecar",
+  "query_embeddings": "query_embeddings.jsonl",
+  "embedding_model": "intfloat/multilingual-e5-small",
+  "query_embedding_model": "intfloat/multilingual-e5-small",
+  "query_embedding_dim": 384,
+  "chunking": {
+    "method": "contiguous_projected_source_sections",
+    "unit": "model_tokens",
+    "chunk_size": 384,
+    "chunk_overlap": 0,
+    "maximum_tokens": 512,
+    "description": "Non-overlapping exact projected UTF-8 source sections; at most 384 tokens including passage prefix and special tokens; no truncation. Spans address dataset-relative plaintext, not upstream HTML."
+  },
+  "tokenizer": {
+    "name": "default_en",
+    "version": "0.1",
+    "profile": "latin_code_default",
+    "language_hint": "en",
+    "config": {
+      "case_fold": "lower",
+      "split": "unicode_punctuation",
+      "stop_words": "default_en"
+    }
+  },
+  "hashes": {
+    "documents_sha256": "49950cc17b0a1516c1c22219825431bdb8ab88a4b34e71c4e02a400e4f5a524d",
+    "chunks_sha256": "41555fbe5b85d36b74de79f795b1716216c09f69a2c1e073d20c5063d8f2857d",
+    "embeddings_sha256": "740e8283b33ece4781c5499f2cf318a34bdc657d92463d252445ca6e954f3341",
+    "queries_sha256": "e52992bc905a4f96c3e640be156c5824cdf9209a45ae9e8b8e592a4d3210b6eb",
+    "query_embeddings_sha256": "e26f14af82f67734e1064994482cdb582582ad5423e5ea6cca2a3f40d111f82c",
+    "qrels_sha256": "cd3a02380eb2d595cf1a9f2b03988c9e08106271adc97a6390168f5cac507bef"
+  }
+}

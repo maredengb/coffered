@@ -1,0 +1,59 @@
+{
+  "scope": "Current-source logical lifecycle replay of portable input/guide only; not original Linux cost rerun, formal performance protocol, new quality matrix or2GiB recovery",
+  "recorded_utc": "2026-10-15T03:18:05.165570+00:00",
+  "status": "passed",
+  "completed_stages": 19,
+  "verified_queries": 60,
+  "source_fingerprint": "9244290fcb9d5205a004a19d4aabef1ddf0c9836c67514fad2f1ecdd8a3e53f6",
+  "source_binary_sha256": "061f25acf65fc8fc181dce8fff0f9843f16728e7b6b37ffa1f0adf089eb08905",
+  "helper_source_sha256": "01fdedebac02f5c7e38f5a1a410110fcb70695d4c108a28f4e56ff63af5927c0",
+  "helper_binary_sha256": "8f6a533f04843817e74c7ac5a6988d12734e224874ae032403153c2ef95ecef7",
+  "main_bytes": 616960403,
+  "copy_sha256_before_reopen": "3c60a4f7cd3f54766963eea76c64ce24bf74bdfd3097727cb6dedf2ea62e33f4",
+  "copy_sha256_after_reopen": "3c60a4f7cd3f54766963eea76c64ce24bf74bdfd3097727cb6dedf2ea62e33f4",
+  "new_import_warning_count": 0,
+  "postflight_correction": {
+    "original_summary_sha256": "d92f44cc97ffbe353773db3571b04ef3ed268a336212294a2c4d0640886b32d3",
+    "original_summary_count": 32,
+    "reason": "The initial private driver counted a nonexistent target_query label instead of affected_query. Original event streams and initial summary retained; actual started/completed identities independently match all60historical planned query identities. No product/helper/input changes or query rerun.",
+    "completed_untouched": 32,
+    "completed_affected": 28
+  },
+  "per_stage_query_audit": {
+    "initial": {
+      "query_started": 6,
+      "query_completed": 6,
+      "terminal_complete": true
+    },
+    "replace": {
+      "query_started": 16,
+      "query_completed": 16,
+      "terminal_complete": true
+    },
+    "delete": {
+      "query_started": 17,
+      "query_completed": 17,
+      "terminal_complete": true
+    },
+    "compact": {
+      "query_started": 14,
+      "query_completed": 14,
+      "terminal_complete": true
+    },
+    "check": {
+      "query_started": 0,
+      "query_completed": 0,
+      "terminal_complete": true
+    },
+    "export": {
+      "query_started": 0,
+      "query_completed": 0,
+      "terminal_complete": true
+    },
+    "reopen": {
+      "query_started": 7,
+      "query_completed": 7,
+      "terminal_complete": true
+    }
+  }
+}

@@ -1,0 +1,2283 @@
+{
+  "status": "candidate_not_frozen_no_rankings",
+  "tasks": [
+    {
+      "query_id": "C01-E",
+      "source_id": "C01",
+      "type": "exact_term",
+      "query": "How does `std::fs::read` handle `io::ErrorKind::Interrupted`?",
+      "language": "en",
+      "type_rationale": "Looks up an exact API name and error-kind identifier.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C01",
+          "source_relative_path": "plaintext/C01.txt",
+          "source_sha256": "d3b5cd2b16ce52452fc1129e8fa351eafc0733e1b392819a9b410fe61814b099",
+          "lines_1_based_inclusive": [
+            8,
+            14
+          ],
+          "utf8_bytes_0_based_half_open": [
+            252,
+            576
+          ],
+          "passage_sha256": "587dd2abf9a2ef29ccca7b5a97ba9f0bbb07228a92e0413abb8cb87ef7923a8d",
+          "location_label": "Read errors and automatic retries",
+          "why_relevant": "The documentation explicitly states that interrupted reads are handled with automatic retries.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L232-L269",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              239,
+              245
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              8563,
+              8887
+            ],
+            "raw_answer_passage_sha256": "587dd2abf9a2ef29ccca7b5a97ba9f0bbb07228a92e0413abb8cb87ef7923a8d"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C01-S",
+      "source_id": "C01",
+      "type": "semantic",
+      "query": "Which whole-file reader reserves capacity from an optional size hint before accumulating bytes?",
+      "language": "en",
+      "type_rationale": "Describes the allocation strategy and output without naming the filesystem helper.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C01",
+          "source_relative_path": "plaintext/C01.txt",
+          "source_sha256": "d3b5cd2b16ce52452fc1129e8fa351eafc0733e1b392819a9b410fe61814b099",
+          "lines_1_based_inclusive": [
+            28,
+            37
+          ],
+          "utf8_bytes_0_based_half_open": [
+            896,
+            1319
+          ],
+          "passage_sha256": "68b9501e064158ba45a25981da0e014de606c9516d9cc70ebdfa498df3d64d62",
+          "location_label": "Whole-file reader implementation",
+          "why_relevant": "The implementation opens the file, optionally obtains its size from metadata, reserves capacity, and then reads into the byte vector.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L232-L269",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              259,
+              268
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              9207,
+              9630
+            ],
+            "raw_answer_passage_sha256": "68b9501e064158ba45a25981da0e014de606c9516d9cc70ebdfa498df3d64d62"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C02-F",
+      "source_id": "C02",
+      "type": "metadata_filter",
+      "query": "Which helper creates or replaces a file by calling `File::create(...).write_all(...)`?",
+      "language": "en",
+      "type_rationale": "Limits the search to the rust_code kind without selecting a particular source.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C02",
+          "source_relative_path": "plaintext/C02.txt",
+          "source_sha256": "2256ceb4a276f39ca55db428afe2c2d7facdc2de0f19086af3da25f8ff142efb",
+          "lines_1_based_inclusive": [
+            25,
+            30
+          ],
+          "utf8_bytes_0_based_half_open": [
+            640,
+            949
+          ],
+          "passage_sha256": "1e6fd461130281721da3db85aaa10f4270c5afde200321619da9befd0feaa37b",
+          "location_label": "Convenience writer implementation",
+          "why_relevant": "The function signature identifies write and its inner implementation invokes File::create followed by write_all.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L314-L344",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              338,
+              343
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              11708,
+              12017
+            ],
+            "raw_answer_passage_sha256": "1e6fd461130281721da3db85aaa10f4270c5afde200321619da9befd0feaa37b"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "rust_code",
+        "expression": "doc.kind eq rust_code",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "rust_code",
+      "filter": {
+        "doc.kind": {
+          "$eq": "rust_code"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "C02-M",
+      "source_id": "C02",
+      "type": "mixed",
+      "query": "Does `fs::write` append to existing contents, and why might a missing parent directory make it fail?",
+      "language": "en",
+      "type_rationale": "Combines the API identifier with the practical consequences for existing files and parent directories.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C02",
+          "source_relative_path": "plaintext/C02.txt",
+          "source_sha256": "2256ceb4a276f39ca55db428afe2c2d7facdc2de0f19086af3da25f8ff142efb",
+          "lines_1_based_inclusive": [
+            1,
+            10
+          ],
+          "utf8_bytes_0_based_half_open": [
+            0,
+            383
+          ],
+          "passage_sha256": "529b9dbf93c8ad240e3d8e8b3c7b09d34a043d0ef5d310b9b519073437b10abb",
+          "location_label": "Create-or-replace semantics and missing directories",
+          "why_relevant": "The documentation says it creates or entirely replaces a file and may fail when the full directory path does not exist.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L314-L344",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              314,
+              323
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              11068,
+              11451
+            ],
+            "raw_answer_passage_sha256": "529b9dbf93c8ad240e3d8e8b3c7b09d34a043d0ef5d310b9b519073437b10abb"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C03-E",
+      "source_id": "C03",
+      "type": "exact_term",
+      "query": "Which operating-system functions and Windows flag does `std::fs::rename` use in this source?",
+      "language": "en",
+      "type_rationale": "Uses the exact std::fs::rename identifier to find its platform mapping.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C03",
+          "source_relative_path": "plaintext/C03.txt",
+          "source_sha256": "e322d124ed6051889b36d3ac5648e5793a5b6d79aa975a977a3ae15bf028fa1f",
+          "lines_1_based_inclusive": [
+            6,
+            18
+          ],
+          "utf8_bytes_0_based_half_open": [
+            180,
+            804
+          ],
+          "passage_sha256": "1a52f99862560fa7c2a8999d5e41754df719a4ef41e38a752ada282592115410",
+          "location_label": "Platform-specific rename behavior",
+          "why_relevant": "The documentation names rename on Unix and MoveFileEx with MOVEFILE_REPLACE_EXISTING on Windows and qualifies this as changeable platform behavior.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2082-L2124",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2087,
+              2099
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              70031,
+              70655
+            ],
+            "raw_answer_passage_sha256": "1a52f99862560fa7c2a8999d5e41754df719a4ef41e38a752ada282592115410"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C03-M",
+      "source_id": "C03",
+      "type": "mixed",
+      "query": "Why could `fs::rename` fail if the destination is on a different mounted filesystem?",
+      "language": "en",
+      "type_rationale": "Combines the API identifier with a concrete failure scenario instead of asking only for its definition.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C03",
+          "source_relative_path": "plaintext/C03.txt",
+          "source_sha256": "e322d124ed6051889b36d3ac5648e5793a5b6d79aa975a977a3ae15bf028fa1f",
+          "lines_1_based_inclusive": [
+            1,
+            4
+          ],
+          "utf8_bytes_0_based_half_open": [
+            0,
+            176
+          ],
+          "passage_sha256": "8b26870261ab1e04f2a3f07c2489bccbf7fc717a22ca70d54144e7c5e5b6177a",
+          "location_label": "Rename semantics and mount-point restriction",
+          "why_relevant": "The opening contract states that renaming to a different mount point does not work.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2082-L2124",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2082,
+              2085
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              69851,
+              70027
+            ],
+            "raw_answer_passage_sha256": "8b26870261ab1e04f2a3f07c2489bccbf7fc717a22ca70d54144e7c5e5b6177a"
+          }
+        },
+        {
+          "source_id": "C03",
+          "source_relative_path": "plaintext/C03.txt",
+          "source_sha256": "e322d124ed6051889b36d3ac5648e5793a5b6d79aa975a977a3ae15bf028fa1f",
+          "lines_1_based_inclusive": [
+            20,
+            27
+          ],
+          "utf8_bytes_0_based_half_open": [
+            808,
+            1072
+          ],
+          "passage_sha256": "b9a8185dafad58138be0b180c378b674d698dd0e572103cacb07700f35117786",
+          "location_label": "Rename error conditions",
+          "why_relevant": "The error list independently includes from and to being on separate filesystems.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2082-L2124",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2101,
+              2108
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              70659,
+              70923
+            ],
+            "raw_answer_passage_sha256": "b9a8185dafad58138be0b180c378b674d698dd0e572103cacb07700f35117786"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C04-F",
+      "source_id": "C04",
+      "type": "metadata_filter",
+      "query": "For the Windows file-copy implementation, are alternate NTFS streams copied and included in the reported byte total?",
+      "language": "en",
+      "type_rationale": "Limits the search to the rust_code kind without selecting a particular source.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C04",
+          "source_relative_path": "plaintext/C04.txt",
+          "source_sha256": "9b0bb3911eaa584514408c51641d625d8b2975997cd1cc5de6de4263fea6b570",
+          "lines_1_based_inclusive": [
+            24,
+            26
+          ],
+          "utf8_bytes_0_based_half_open": [
+            1039,
+            1217
+          ],
+          "passage_sha256": "eaa722b3a1bb927e130832f6253731a00ad6cc3daccd10eeda29ef13c2e71fee",
+          "location_label": "Windows alternate streams and byte count",
+          "why_relevant": "The passage says alternate streams are copied but only the main stream size is returned.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2126-L2185",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2149,
+              2151
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              72393,
+              72571
+            ],
+            "raw_answer_passage_sha256": "eaa722b3a1bb927e130832f6253731a00ad6cc3daccd10eeda29ef13c2e71fee"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "rust_code",
+        "expression": "doc.kind eq rust_code",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "rust_code",
+      "filter": {
+        "doc.kind": {
+          "$eq": "rust_code"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "C04-S",
+      "source_id": "C04",
+      "type": "semantic",
+      "query": "What is the risk of duplicating a file onto another path that resolves to the very same file?",
+      "language": "en",
+      "type_rationale": "Describes the unsafe usage pattern without naming the copy helper.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C04",
+          "source_relative_path": "plaintext/C04.txt",
+          "source_sha256": "9b0bb3911eaa584514408c51641d625d8b2975997cd1cc5de6de4263fea6b570",
+          "lines_1_based_inclusive": [
+            1,
+            10
+          ],
+          "utf8_bytes_0_based_half_open": [
+            0,
+            482
+          ],
+          "passage_sha256": "9cec47c0ce8d4224a84be36a77f1898d773f991d23dfd1d3181d6bd9b7666915",
+          "location_label": "Copy semantics and same-file truncation risk",
+          "why_relevant": "The documentation warns that copying when both paths point to the same file will likely truncate it.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2126-L2185",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2126,
+              2135
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              71354,
+              71836
+            ],
+            "raw_answer_passage_sha256": "9cec47c0ce8d4224a84be36a77f1898d773f991d23dfd1d3181d6bd9b7666915"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C05-E",
+      "source_id": "C05",
+      "type": "exact_term",
+      "query": "What does `std::fs::hard_link` do when `original` names a symbolic link?",
+      "language": "en",
+      "type_rationale": "Uses the precise hard_link API name and its original parameter.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C05",
+          "source_relative_path": "plaintext/C05.txt",
+          "source_sha256": "21d75f507d88f9a83e1fe1a3b795fcd667f55fa1397457b376cfbecad49b0574",
+          "lines_1_based_inclusive": [
+            7,
+            10
+          ],
+          "utf8_bytes_0_based_half_open": [
+            222,
+            471
+          ],
+          "passage_sha256": "a6b2804906bcdd87faa44ede30102b339a572980cfddb3590041eeeb863484bd",
+          "location_label": "Hard-link behavior with a symbolic-link original",
+          "why_relevant": "The documentation explains that following the symbolic link is platform-specific and that it is not followed where that option is possible.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2187-L2230",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2193,
+              2196
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              73831,
+              74080
+            ],
+            "raw_answer_passage_sha256": "a6b2804906bcdd87faa44ede30102b339a572980cfddb3590041eeeb863484bd"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C05-F",
+      "source_id": "C05",
+      "type": "metadata_filter",
+      "query": "Which file-link operation usually requires the original path and the new path to be on the same filesystem?",
+      "language": "en",
+      "type_rationale": "Limits the search to the rust_code kind without selecting a particular source.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C05",
+          "source_relative_path": "plaintext/C05.txt",
+          "source_sha256": "21d75f507d88f9a83e1fe1a3b795fcd667f55fa1397457b376cfbecad49b0574",
+          "lines_1_based_inclusive": [
+            1,
+            10
+          ],
+          "utf8_bytes_0_based_half_open": [
+            0,
+            471
+          ],
+          "passage_sha256": "45c9c8172f5c8d2835fd106502ff9baec16c9b361b569b3f352e2973edfb5423",
+          "location_label": "Hard-link purpose and filesystem restriction",
+          "why_relevant": "The opening documentation identifies hard-link creation and says systems often require the two paths on the same filesystem.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2187-L2230",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2187,
+              2196
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              73609,
+              74080
+            ],
+            "raw_answer_passage_sha256": "45c9c8172f5c8d2835fd106502ff9baec16c9b361b569b3f352e2973edfb5423"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "rust_code",
+        "expression": "doc.kind eq rust_code",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "rust_code",
+      "filter": {
+        "doc.kind": {
+          "$eq": "rust_code"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "C06-M",
+      "source_id": "C06",
+      "type": "mixed",
+      "query": "Why can concurrent `create_dir_all` calls succeed when another thread creates the same directories first?",
+      "language": "en",
+      "type_rationale": "Combines the function identifier with the meaning of a concurrency exception.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C06",
+          "source_relative_path": "plaintext/C06.txt",
+          "source_sha256": "fdba4b4d4ccc80308eccf720392b70632c93369345a9af08d17cb2451d9f140d",
+          "lines_1_based_inclusive": [
+            21,
+            30
+          ],
+          "utf8_bytes_0_based_half_open": [
+            633,
+            1270
+          ],
+          "passage_sha256": "d8a550a569895627a2d60e7b40bd41b95f6cc1021969802027206366012d7696",
+          "location_label": "Directory-creation errors and the concurrency exception",
+          "why_relevant": "The passage explains the exception for directories created concurrently and guarantees no failure due to a race with another create_dir_all invocation.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2383-L2429",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2403,
+              2412
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              80862,
+              81499
+            ],
+            "raw_answer_passage_sha256": "d8a550a569895627a2d60e7b40bd41b95f6cc1021969802027206366012d7696"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C06-S",
+      "source_id": "C06",
+      "type": "semantic",
+      "query": "Can recursively creating missing parent directories leave some of them behind if the operation eventually fails?",
+      "language": "en",
+      "type_rationale": "Asks about partial-progress semantics without quoting the function name.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C06",
+          "source_relative_path": "plaintext/C06.txt",
+          "source_sha256": "fdba4b4d4ccc80308eccf720392b70632c93369345a9af08d17cb2451d9f140d",
+          "lines_1_based_inclusive": [
+            1,
+            5
+          ],
+          "utf8_bytes_0_based_half_open": [
+            0,
+            203
+          ],
+          "passage_sha256": "eeb29812c078606d909a38b53ee861fe345584b62187287f95cd4ed767a3256f",
+          "location_label": "Recursive creation and partial progress on error",
+          "why_relevant": "The documentation states that some parent components might already have been created when the function returns an error.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2383-L2429",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2383,
+              2387
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              80229,
+              80432
+            ],
+            "raw_answer_passage_sha256": "eeb29812c078606d909a38b53ee861fe345584b62187287f95cd4ed767a3256f"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C07-E",
+      "source_id": "C07",
+      "type": "exact_term",
+      "query": "On which platforms did the `remove_dir_all` documentation warn that TOCTOU protection was absent?",
+      "language": "en",
+      "type_rationale": "Uses the exact remove_dir_all and TOCTOU terms to locate the platform caveat in the fixed historical source.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C07",
+          "source_relative_path": "plaintext/C07.txt",
+          "source_sha256": "267683fcaea2098a4eff6738bd1309440ef8b5f1a4a10508f6ca5d569f541f07",
+          "lines_1_based_inclusive": [
+            16,
+            19
+          ],
+          "utf8_bytes_0_based_half_open": [
+            645,
+            949
+          ],
+          "passage_sha256": "0e63c71f98972ea7b098afe2cb4d32d9e145e92ec74f7f8392df674c93700227",
+          "location_label": "Platform exceptions to TOCTOU protection",
+          "why_relevant": "The documentation names macOS before 10.10, REDOX and Miri, and warns against security-sensitive use in those contexts.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2467-L2512",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2482,
+              2485
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              83500,
+              83804
+            ],
+            "raw_answer_passage_sha256": "0e63c71f98972ea7b098afe2cb4d32d9e145e92ec74f7f8392df674c93700227"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C07-S",
+      "source_id": "C07",
+      "type": "semantic",
+      "query": "Why is recursively deleting a directory not an operation that can simply be repeated without checking errors?",
+      "language": "en",
+      "type_rationale": "Expresses the repeated-operation concern without using the API name or the word idempotent.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C07",
+          "source_relative_path": "plaintext/C07.txt",
+          "source_sha256": "267683fcaea2098a4eff6738bd1309440ef8b5f1a4a10508f6ca5d569f541f07",
+          "lines_1_based_inclusive": [
+            21,
+            28
+          ],
+          "utf8_bytes_0_based_half_open": [
+            953,
+            1349
+          ],
+          "passage_sha256": "73326d3346abf02734d9cf1a8627136bba5905932e6320ae3cc3ae40d42613ba",
+          "location_label": "Deletion errors and non-idempotence",
+          "why_relevant": "The error section says deletion fails when any component operation fails, including the root, so the directory must exist and the operation is not idempotent.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2467-L2512",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2487,
+              2494
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              83808,
+              84204
+            ],
+            "raw_answer_passage_sha256": "73326d3346abf02734d9cf1a8627136bba5905932e6320ae3cc3ae40d42613ba"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C08-F",
+      "source_id": "C08",
+      "type": "metadata_filter",
+      "query": "How does the directory-listing example make the order of returned paths reproducible?",
+      "language": "en",
+      "type_rationale": "Limits the search to the rust_code kind without selecting a particular source.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C08",
+          "source_relative_path": "plaintext/C08.txt",
+          "source_sha256": "49ce4681b30a896fae8369c7c72344ae806545ecc71b9360b1d81aa1df8d31bb",
+          "lines_1_based_inclusive": [
+            53,
+            69
+          ],
+          "utf8_bytes_0_based_half_open": [
+            1695,
+            2205
+          ],
+          "passage_sha256": "f70de48c4bf75dd897ef741d88099f8b8bed642fd7d26e1e15bf9f357ae51a95",
+          "location_label": "Explicit sorting in the directory-listing example",
+          "why_relevant": "The example collects entry paths, explains that the native order is not guaranteed, and explicitly sorts them.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2514-L2588",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2566,
+              2582
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              86301,
+              86811
+            ],
+            "raw_answer_passage_sha256": "f70de48c4bf75dd897ef741d88099f8b8bed642fd7d26e1e15bf9f357ae51a95"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "rust_code",
+        "expression": "doc.kind eq rust_code",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "rust_code",
+      "filter": {
+        "doc.kind": {
+          "$eq": "rust_code"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "C08-M",
+      "source_id": "C08",
+      "type": "mixed",
+      "query": "Why does successfully constructing a `read_dir` iterator not guarantee that collecting all entries will succeed?",
+      "language": "en",
+      "type_rationale": "Combines the read_dir identifier with the distinction between construction success and subsequent iteration errors.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "C08",
+          "source_relative_path": "plaintext/C08.txt",
+          "source_sha256": "49ce4681b30a896fae8369c7c72344ae806545ecc71b9360b1d81aa1df8d31bb",
+          "lines_1_based_inclusive": [
+            1,
+            6
+          ],
+          "utf8_bytes_0_based_half_open": [
+            0,
+            316
+          ],
+          "passage_sha256": "01b6e4a0c15fe1a394679443c31f44be2ee8b99fa98ee6db89d63a8b2a4e136d",
+          "location_label": "Directory-iterator results and later errors",
+          "why_relevant": "The documentation says each entry is an io::Result and new errors can arise after initial iterator construction.",
+          "upstream_locator": {
+            "raw_path": "raw/rust-1.80-fs.rs",
+            "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+            "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2514-L2588",
+            "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+            "raw_lines_1_based_inclusive": [
+              2514,
+              2519
+            ],
+            "raw_utf8_bytes_0_based_half_open": [
+              84606,
+              84922
+            ],
+            "raw_answer_passage_sha256": "01b6e4a0c15fe1a394679443c31f44be2ee8b99fa98ee6db89d63a8b2a4e136d"
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "rust_code",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N01-E",
+      "source_id": "N01",
+      "type": "exact_term",
+      "query": "Find the proposed `impl<T> !DerefMut for &T` restriction and the alternative `PinDerefMut` fix.",
+      "language": "en",
+      "type_rationale": "Uses the exact negative-impl syntax and trait identifier as lookup terms.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N01",
+          "source_relative_path": "design-meeting-minutes/2020-01-06-Pin-unsoundness.md",
+          "source_sha256": "a360c3176e419a290abdb09404e3ba5e68a172e632fa27efddefc846978ffa47",
+          "lines_1_based_inclusive": [
+            58,
+            64
+          ],
+          "utf8_bytes_0_based_half_open": [
+            2798,
+            3204
+          ],
+          "passage_sha256": "b8674f6acb739926fbc9cd54db526f0dc83b23410c0fd83e20fd98b269246abb",
+          "location_label": "Two proposed routes to repair pinning soundness",
+          "why_relevant": "The passage names both the negative implementation restriction and the additional unsafe trait, and explains which pointer types would implement the latter."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N01-S",
+      "source_id": "N01",
+      "type": "semantic",
+      "query": "Find the discussion of why an API cannot safely assume that an operation will never be implemented for every pointer type.",
+      "language": "en",
+      "type_rationale": "Paraphrases the soundness concern without naming Pin, DerefMut, negative impls or coherence.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N01",
+          "source_relative_path": "design-meeting-minutes/2020-01-06-Pin-unsoundness.md",
+          "source_sha256": "a360c3176e419a290abdb09404e3ba5e68a172e632fa27efddefc846978ffa47",
+          "lines_1_based_inclusive": [
+            115,
+            120
+          ],
+          "utf8_bytes_0_based_half_open": [
+            5654,
+            6073
+          ],
+          "passage_sha256": "8b1d755eb6377ae2a8a28cc7a76b3a37f1c343bb42bc17f12d050ebe37bdf5da",
+          "location_label": "Argument for a coherence-based solution",
+          "why_relevant": "The discussion contrasts informal reasoning from absent trait implementations with the exception for fundamental pointer types."
+        },
+        {
+          "source_id": "N01",
+          "source_relative_path": "design-meeting-minutes/2020-01-06-Pin-unsoundness.md",
+          "source_sha256": "a360c3176e419a290abdb09404e3ba5e68a172e632fa27efddefc846978ffa47",
+          "lines_1_based_inclusive": [
+            134,
+            154
+          ],
+          "utf8_bytes_0_based_half_open": [
+            6997,
+            8543
+          ],
+          "passage_sha256": "36a1ce21f121665bbfb401252ce6810291d13f06c678bc4bc6ef7d55b920346d",
+          "location_label": "Explicit negative implementations and proof obligations",
+          "why_relevant": "The passage explains the proposed positive statement that an implementation cannot exist and identifies affected pointer types."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N02-F",
+      "source_id": "N02",
+      "type": "metadata_filter",
+      "query": "Why does `Any::type_id` need virtual dispatch rather than identify `dyn Any` itself?",
+      "language": "en",
+      "type_rationale": "The information need is evaluated only within documents whose kind is markdown_notes.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N02",
+          "source_relative_path": "design-meeting-minutes/2020-01-13-dyn-trait-and-coherence.md",
+          "source_sha256": "2ab99d4a07a9eaf40f2ebd887e79736becf72d8355b0823eb72e9961a928ff09",
+          "lines_1_based_inclusive": [
+            45,
+            75
+          ],
+          "utf8_bytes_0_based_half_open": [
+            2633,
+            4461
+          ],
+          "passage_sha256": "3f4d2573e241323924bdb0cc8df59acaf285fe20d7161253daadf9a0a97ef881",
+          "location_label": "Any type identity and compiler-generated implementation choice",
+          "why_relevant": "The passage distinguishes the underlying dynamic type from the dyn Any type and explains why the compiler-generated implementation is selected."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "markdown_notes",
+        "expression": "doc.kind eq markdown_notes",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "markdown_notes",
+      "filter": {
+        "doc.kind": {
+          "$eq": "markdown_notes"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "N02-M",
+      "source_id": "N02",
+      "type": "mixed",
+      "query": "Why could inferred dyn safety create a hidden semver promise, and how would an explicit `dyn trait` declaration address it?",
+      "language": "en",
+      "type_rationale": "Combines concrete dyn/semver terminology with a causal question about API evolution and explicit opt-in.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N02",
+          "source_relative_path": "design-meeting-minutes/2020-01-13-dyn-trait-and-coherence.md",
+          "source_sha256": "2ab99d4a07a9eaf40f2ebd887e79736becf72d8355b0823eb72e9961a928ff09",
+          "lines_1_based_inclusive": [
+            255,
+            285
+          ],
+          "utf8_bytes_0_based_half_open": [
+            12060,
+            13894
+          ],
+          "passage_sha256": "1e763da1c1ccc947366ec4c1e4c7ad0efbd1585995da578c346d80afab21d72b",
+          "location_label": "Inferring dyn safety considered harmful",
+          "why_relevant": "The passage explains accidental semver commitments, implicit restrictions and trait-solver dependency cycles."
+        },
+        {
+          "source_id": "N02",
+          "source_relative_path": "design-meeting-minutes/2020-01-13-dyn-trait-and-coherence.md",
+          "source_sha256": "2ab99d4a07a9eaf40f2ebd887e79736becf72d8355b0823eb72e9961a928ff09",
+          "lines_1_based_inclusive": [
+            287,
+            309
+          ],
+          "utf8_bytes_0_based_half_open": [
+            13895,
+            14802
+          ],
+          "passage_sha256": "7ca7939d1c1b8089ba3e1cf23477b9ddb493f5fa36a6f1f055d9511679cd7ab7",
+          "location_label": "Alternative: explicit declaration",
+          "why_relevant": "The proposal makes dyn safety explicit and explains which implementation restrictions become opt-in."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N03-E",
+      "source_id": "N03",
+      "type": "exact_term",
+      "query": "Locate the proposed `specialize(T: Trait)` mode and its relationship to `Implements(T: Trait)`.",
+      "language": "en",
+      "type_rationale": "Uses the precise notation of the proposal to locate its definition and implication.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N03",
+          "source_relative_path": "design-meeting-minutes/2020-02-03-specialization-review.md",
+          "source_sha256": "080e0f19b83e45422650658169a33772c427e6254ed592827a3496925bb75df7",
+          "lines_1_based_inclusive": [
+            159,
+            188
+          ],
+          "utf8_bytes_0_based_half_open": [
+            5860,
+            7516
+          ],
+          "passage_sha256": "9b82250673e4c4613fa455c67777472d5bc4d08252da912d9a4b94af657a6f5f",
+          "location_label": "Always-applicable impls and specialize mode",
+          "why_relevant": "The passage defines an always-applicable implementation and states that Specialize implies Implements but not the converse."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N03-M",
+      "source_id": "N03",
+      "type": "mixed",
+      "query": "How could lifetime-dependent specialization make an associated type ambiguous between `u8` and `u16`?",
+      "language": "en",
+      "type_rationale": "Combines the concrete u8/u16 example with the semantic reason lifetime-dependent dispatch is unsound.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N03",
+          "source_relative_path": "design-meeting-minutes/2020-02-03-specialization-review.md",
+          "source_sha256": "080e0f19b83e45422650658169a33772c427e6254ed592827a3496925bb75df7",
+          "lines_1_based_inclusive": [
+            95,
+            109
+          ],
+          "utf8_bytes_0_based_half_open": [
+            3796,
+            4474
+          ],
+          "passage_sha256": "2ea1cb70a0aa62db735071d19ec2bba5cb4855a1e6077666ab50f640190add80",
+          "location_label": "Lifetime-based dispatch challenge",
+          "why_relevant": "This supplies the missing lifetime information and the dependence on static or equal lifetimes."
+        },
+        {
+          "source_id": "N03",
+          "source_relative_path": "design-meeting-minutes/2020-02-03-specialization-review.md",
+          "source_sha256": "080e0f19b83e45422650658169a33772c427e6254ed592827a3496925bb75df7",
+          "lines_1_based_inclusive": [
+            126,
+            155
+          ],
+          "utf8_bytes_0_based_half_open": [
+            4875,
+            5600
+          ],
+          "passage_sha256": "88e74013b5420060ab45f5f34dd9a54c645102bb906a3d304221c7099c29cdea",
+          "location_label": "Associated-type soundness example",
+          "why_relevant": "The example gives a default u8 associated type and a static-reference specialization selecting u16, explaining the type-checking ambiguity."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N04-F",
+      "source_id": "N04",
+      "type": "metadata_filter",
+      "query": "Why did the notes say ordinary references were unsuitable for MMIO register blocks, and what address-based alternatives were discussed?",
+      "language": "en",
+      "type_rationale": "The information need is evaluated only within documents whose kind is markdown_notes.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N04",
+          "source_relative_path": "design-meeting-minutes/2020-02-10-References-and-dereferenceable.md",
+          "source_sha256": "77d3f8265103486693c1fd6b4262a8929b12f0d9b52e7b99cfff36036b91f212",
+          "lines_1_based_inclusive": [
+            48,
+            75
+          ],
+          "utf8_bytes_0_based_half_open": [
+            4028,
+            5485
+          ],
+          "passage_sha256": "7786dcb2a857a67c09910c1ea9b97e30a0b48f5d228dc0bdad7931dd404177aa",
+          "location_label": "MMIO references and alternative representations",
+          "why_relevant": "The passage describes unwanted spurious accesses and then discusses zero-sized register types, VolAddress, and more ergonomic raw pointers."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "markdown_notes",
+        "expression": "doc.kind eq markdown_notes",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "markdown_notes",
+      "filter": {
+        "doc.kind": {
+          "$eq": "markdown_notes"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "N04-S",
+      "source_id": "N04",
+      "type": "semantic",
+      "query": "What trade-off was discussed between weakening reference-validity guarantees only for interior-mutable data and weakening them uniformly on function entry?",
+      "language": "en",
+      "type_rationale": "Paraphrases the design alternatives rather than quoting the dereferenceable attribute spellings.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N04",
+          "source_relative_path": "design-meeting-minutes/2020-02-10-References-and-dereferenceable.md",
+          "source_sha256": "77d3f8265103486693c1fd6b4262a8929b12f0d9b52e7b99cfff36036b91f212",
+          "lines_1_based_inclusive": [
+            172,
+            195
+          ],
+          "utf8_bytes_0_based_half_open": [
+            11451,
+            13306
+          ],
+          "passage_sha256": "678b596d7bb3059ea1ea7305e86adb06b58e1bf58ddd795cd1c5ae345cff8557",
+          "location_label": "Options for existing reference-taking APIs",
+          "why_relevant": "The comparison lists a type-dependent UnsafeCell change versus a uniform entry-only guarantee, including remaining cases and optimization costs."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N05-E",
+      "source_id": "N05",
+      "type": "exact_term",
+      "query": "In the ffi-unwind proposals, when is `nounwind` used and when do shims turn foreign exceptions or Rust panics into aborts?",
+      "language": "en",
+      "type_rationale": "Uses the exact nounwind and ffi-unwind terms to locate the code-generation rules in the historical proposals.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N05",
+          "source_relative_path": "design-meeting-minutes/2020-03-16-ffi-unwind.md",
+          "source_sha256": "c064dae397fe7a110ded783c372e39c59b19390e0aa8b13e652eb90204274a42",
+          "lines_1_based_inclusive": [
+            94,
+            111
+          ],
+          "utf8_bytes_0_based_half_open": [
+            5956,
+            7102
+          ],
+          "passage_sha256": "73c352e781485e3c269dc292900c63b10a47c4726e25dcd2b014a27c7473048f",
+          "location_label": "Shims and nounwind under the competing proposals",
+          "why_relevant": "The passage describes nounwind calls, handling non-forced exceptions with panic=abort, Rust-panic abort shims, and the unified-ABI alternative."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N05-F",
+      "source_id": "N05",
+      "type": "metadata_filter",
+      "query": "How did the proposals handle a Rust panic propagating through an intervening C call and back into Rust?",
+      "language": "en",
+      "type_rationale": "The information need is evaluated only within documents whose kind is markdown_notes.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N05",
+          "source_relative_path": "design-meeting-minutes/2020-03-16-ffi-unwind.md",
+          "source_sha256": "c064dae397fe7a110ded783c372e39c59b19390e0aa8b13e652eb90204274a42",
+          "lines_1_based_inclusive": [
+            81,
+            90
+          ],
+          "utf8_bytes_0_based_half_open": [
+            4974,
+            5707
+          ],
+          "passage_sha256": "96b212568df3c7390400c9ee124bbf9de8c10290bdcaca7ada559749caeae66d",
+          "location_label": "Rust-to-C-to-Rust propagation scenario",
+          "why_relevant": "The scenario directly contrasts the C unwind annotations in Proposals 1/2 with the unified C ABI in Proposal 3 and notes the function-pointer requirement."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "markdown_notes",
+        "expression": "doc.kind eq markdown_notes",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "markdown_notes",
+      "filter": {
+        "doc.kind": {
+          "$eq": "markdown_notes"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "N06-M",
+      "source_id": "N06",
+      "type": "mixed",
+      "query": "Why was Sealed Rust described as a very slow channel, and what specification and validation would admitting a feature require?",
+      "language": "en",
+      "type_rationale": "Combines the project name and slow-channel phrase with the reason and qualification work needed for feature admission.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N06",
+          "source_relative_path": "design-meeting-minutes/2020-03-23-sealed-rust.md",
+          "source_sha256": "de9057c9fdbac9df86adb940d485a7f53e1c794356342c1c7af5a1b917b3f858",
+          "lines_1_based_inclusive": [
+            37,
+            49
+          ],
+          "utf8_bytes_0_based_half_open": [
+            2265,
+            3567
+          ],
+          "passage_sha256": "c4b85adea78179c17921830ccbb460ea2415131df6687f4116960cfef902bb43",
+          "location_label": "Language subsetting and the slow channel",
+          "why_relevant": "The passage discusses restricting the language and requiring specification plus validation before admitting a feature to the slow channel."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N06-S",
+      "source_id": "N06",
+      "type": "semantic",
+      "query": "Find the argument for specifying accepted programs without tying the specification to a particular borrow-checking algorithm.",
+      "language": "en",
+      "type_rationale": "Paraphrases the specification-versus-implementation question without naming the two algorithms or Sealed Rust.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N06",
+          "source_relative_path": "design-meeting-minutes/2020-03-23-sealed-rust.md",
+          "source_sha256": "de9057c9fdbac9df86adb940d485a7f53e1c794356342c1c7af5a1b917b3f858",
+          "lines_1_based_inclusive": [
+            51,
+            57
+          ],
+          "utf8_bytes_0_based_half_open": [
+            3614,
+            4602
+          ],
+          "passage_sha256": "0ececf5cdebbb90369de8c3a84d70c8d5a442db5db978dfb2b7bbd123d7875ae",
+          "location_label": "Implementation details and qualification",
+          "why_relevant": "The notes discuss NLL versus Polonius as an implementation detail and validation against a test suite."
+        },
+        {
+          "source_id": "N06",
+          "source_relative_path": "design-meeting-minutes/2020-03-23-sealed-rust.md",
+          "source_sha256": "de9057c9fdbac9df86adb940d485a7f53e1c794356342c1c7af5a1b917b3f858",
+          "lines_1_based_inclusive": [
+            70,
+            74
+          ],
+          "utf8_bytes_0_based_half_open": [
+            5417,
+            6141
+          ],
+          "passage_sha256": "87342e8a3e1dbd1efae71209f15ca15ee43c87a9705b1bb9b44da64d13c0b678",
+          "location_label": "Specifying what rather than how",
+          "why_relevant": "The discussion addresses newly accepted programs and explains the desire to specify behavior without overconstraining implementation."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N07-E",
+      "source_id": "N07",
+      "type": "exact_term",
+      "query": "In the edition-planning notes, what restrictions were described for the proposed `min_specialization` subset?",
+      "language": "en",
+      "type_rationale": "Uses the precise min_specialization identifier as the primary lookup term.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N07",
+          "source_relative_path": "design-meeting-minutes/2020-04-20-2021-edition-design.md",
+          "source_sha256": "71b2224cf1e401c5a8ceb0ec045fc9f9167e50d95ebd6d31c992e4e24c8bb324",
+          "lines_1_based_inclusive": [
+            18,
+            28
+          ],
+          "utf8_bytes_0_based_half_open": [
+            619,
+            1097
+          ],
+          "passage_sha256": "bc063a1dec454eb7edc7d654e66261460406ee4338aa7d37d782fcf8ee4af4b3",
+          "location_label": "Specialization and the min_specialization subset",
+          "why_relevant": "The notes discuss marking specializable impls default and tentatively describe a subset limited to concrete types rather than trait-bound specialization."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N07-S",
+      "source_id": "N07",
+      "type": "semantic",
+      "query": "Why did the discussion favor warnings for undeclared source modules over discovering every module automatically?",
+      "language": "en",
+      "type_rationale": "Paraphrases the missing-mod-statement problem and its workflow/technical constraints.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N07",
+          "source_relative_path": "design-meeting-minutes/2020-04-20-2021-edition-design.md",
+          "source_sha256": "71b2224cf1e401c5a8ceb0ec045fc9f9167e50d95ebd6d31c992e4e24c8bb324",
+          "lines_1_based_inclusive": [
+            72,
+            85
+          ],
+          "utf8_bytes_0_based_half_open": [
+            2424,
+            3255
+          ],
+          "passage_sha256": "8cd27cfe8177fa67fcd6d22db0d13665a1bd53eeabaa7977ff92d9cd845ef120",
+          "location_label": "Implicit modules",
+          "why_relevant": "The passage explains workflow and network-file-system obstacles to automatic discovery and the proposed warning or diagnostic alternative."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N08-F",
+      "source_id": "N08",
+      "type": "metadata_filter",
+      "query": "What alternatives did the notes list for handling undefined behavior during compile-time evaluation, and what costs accompanied reliable detection?",
+      "language": "en",
+      "type_rationale": "The information need is evaluated only within documents whose kind is markdown_notes.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N08",
+          "source_relative_path": "design-meeting-minutes/2020-06-24-const-eval-unsafe-and-skill-tree.md",
+          "source_sha256": "b0560e6ba7941c1432363ad7d7eb94e0bccb284ff79e0f2f0f034a3e692bdcb6",
+          "lines_1_based_inclusive": [
+            106,
+            111
+          ],
+          "utf8_bytes_0_based_half_open": [
+            6592,
+            7374
+          ],
+          "passage_sha256": "277e5453a1f09785c8bb1914d2a82178a22f82ec022a85e5f65008201142a7d5",
+          "location_label": "Solution space for undefined behavior during const evaluation",
+          "why_relevant": "The passage contrasts reliable detection, safe compilation with arbitrary resulting values, and no guarantees; it lists the cost of detecting all undefined behavior."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "markdown_notes",
+        "expression": "doc.kind eq markdown_notes",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "markdown_notes",
+      "filter": {
+        "doc.kind": {
+          "$eq": "markdown_notes"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "N08-M",
+      "source_id": "N08",
+      "type": "mixed",
+      "query": "Why could pointer subtraction pass one const evaluation but be hard to validate for every `const fn` input?",
+      "language": "en",
+      "type_rationale": "Combines the const fn term with the semantic distinction between a particular invocation and validating all inputs.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "N08",
+          "source_relative_path": "design-meeting-minutes/2020-06-24-const-eval-unsafe-and-skill-tree.md",
+          "source_sha256": "b0560e6ba7941c1432363ad7d7eb94e0bccb284ff79e0f2f0f034a3e692bdcb6",
+          "lines_1_based_inclusive": [
+            54,
+            73
+          ],
+          "utf8_bytes_0_based_half_open": [
+            2741,
+            4801
+          ],
+          "passage_sha256": "9fb4c211df433a72b1966eefbcf3b472713d69b78bef1bcdc123c6b7d8d3a9ae",
+          "location_label": "Unsafe const fn and pointer-dependent behavior",
+          "why_relevant": "The passage distinguishes same-allocation pointer differences from different-allocation errors and explains why the condition cannot generally be checked at function definition time."
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "markdown_notes",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T01-E",
+      "source_id": "T01",
+      "type": "exact_term",
+      "query": "How is `*` placed to mark the final token in an FTS5 expression as a prefix?",
+      "language": "en",
+      "type_rationale": "Uses the exact FTS5 prefix operator and asks for its syntax.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T01",
+          "source_relative_path": "plaintext/T01.txt",
+          "source_sha256": "3eaf1f23bacc364d78dc5de7a10d61544b56133cf13ccb33e144d2b89816461c",
+          "lines_1_based_inclusive": [
+            3,
+            12
+          ],
+          "utf8_bytes_0_based_half_open": [
+            26,
+            562
+          ],
+          "passage_sha256": "1d4ac8f2bc37c5807968a56a581a47fcaa6054074a1a0e73d13ff1647a5558a5",
+          "location_label": "Prefix token rule and examples",
+          "why_relevant": "The passage says a star following a string marks its final token as a prefix and shows working placements.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#fts5_prefix_queries",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              24242,
+              25351
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              24242,
+              25351
+            ],
+            "section_html_sha256": "937da5a86f126daf6fff1af589effc27c219bce9cec4934856a153d66403dc5c",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T01-S",
+      "source_id": "T01",
+      "type": "semantic",
+      "query": "Why can a wildcard at the end of a quoted search phrase be treated as ordinary tokenizer input instead of a prefix operator?",
+      "language": "en",
+      "type_rationale": "Describes the parsing pitfall in everyday terms without naming the FTS5 feature or quoting its example.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T01",
+          "source_relative_path": "plaintext/T01.txt",
+          "source_sha256": "3eaf1f23bacc364d78dc5de7a10d61544b56133cf13ccb33e144d2b89816461c",
+          "lines_1_based_inclusive": [
+            14,
+            18
+          ],
+          "utf8_bytes_0_based_half_open": [
+            563,
+            894
+          ],
+          "passage_sha256": "5daace9f0a36a0c7bbba26c7ff5262f649ae10c1a5c7f9d158e1ade0e62797b2",
+          "location_label": "Quoted-star tokenization pitfall",
+          "why_relevant": "The text explains that a star inside double quotes is passed to the tokenizer, which may discard it or include it in a token instead of interpreting an FTS operator.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#fts5_prefix_queries",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              24242,
+              25351
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              24242,
+              25351
+            ],
+            "section_html_sha256": "937da5a86f126daf6fff1af589effc27c219bce9cec4934856a153d66403dc5c",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T02-F",
+      "source_id": "T02",
+      "type": "metadata_filter",
+      "query": "For `A B C D x x x E F x`, why does `NEAR(e d, 3)` match while `NEAR(e d, 2)` does not?",
+      "language": "en",
+      "type_rationale": "Limits the search to the english_technical kind without selecting a particular source.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T02",
+          "source_relative_path": "plaintext/T02.txt",
+          "source_sha256": "4ca2185299d669f71dde3fc18c9150a791ac031d6d2c3b5b5377e5361bc35e7d",
+          "lines_1_based_inclusive": [
+            11,
+            17
+          ],
+          "utf8_bytes_0_based_half_open": [
+            431,
+            771
+          ],
+          "passage_sha256": "72e2fc85eb4855297d2ff950ea0bbd3806f587177db5595076478b13424ebc09",
+          "location_label": "Distance rule",
+          "why_relevant": "The definition explains how the intervening-token count is compared with N.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#fts5_near_queries",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              26405,
+              28193
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              26405,
+              28193
+            ],
+            "section_html_sha256": "a88453079658752eb234ebd70818dfcc01b5ccc48d016045ce565fbccf21ad70",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        },
+        {
+          "source_id": "T02",
+          "source_relative_path": "plaintext/T02.txt",
+          "source_sha256": "4ca2185299d669f71dde3fc18c9150a791ac031d6d2c3b5b5377e5361bc35e7d",
+          "lines_1_based_inclusive": [
+            19,
+            26
+          ],
+          "utf8_bytes_0_based_half_open": [
+            772,
+            1006
+          ],
+          "passage_sha256": "6af2046186e899096aa1314b38b7539b3788b89814ca977ed8cc1f3d181ddd87",
+          "location_label": "Concrete distance-boundary example",
+          "why_relevant": "The example supplies the text and explicitly records the outcomes for distances 3 and 2.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#fts5_near_queries",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              26405,
+              28193
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              26405,
+              28193
+            ],
+            "section_html_sha256": "a88453079658752eb234ebd70818dfcc01b5ccc48d016045ce565fbccf21ad70",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "english_technical",
+        "expression": "doc.kind eq english_technical",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "english_technical",
+      "filter": {
+        "doc.kind": {
+          "$eq": "english_technical"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "T02-M",
+      "source_id": "T02",
+      "type": "mixed",
+      "query": "How does FTS5 count the distance in a `NEAR` group, and what value is used when N is omitted?",
+      "language": "en",
+      "type_rationale": "Combines the NEAR identifier with a question about the matching rule and omitted parameter.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T02",
+          "source_relative_path": "plaintext/T02.txt",
+          "source_sha256": "4ca2185299d669f71dde3fc18c9150a791ac031d6d2c3b5b5377e5361bc35e7d",
+          "lines_1_based_inclusive": [
+            3,
+            17
+          ],
+          "utf8_bytes_0_based_half_open": [
+            24,
+            771
+          ],
+          "passage_sha256": "54030189e63f0a39611b44f768b9894d0d820c0cca9392bac8915c0b46d7b2b2",
+          "location_label": "NEAR syntax, default distance and token clump rule",
+          "why_relevant": "The passage defines the optional N argument, its default of 10, and the token count between the first phrase end and last phrase start.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#fts5_near_queries",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              26405,
+              28193
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              26405,
+              28193
+            ],
+            "section_html_sha256": "a88453079658752eb234ebd70818dfcc01b5ccc48d016045ce565fbccf21ad70",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T03-E",
+      "source_id": "T03",
+      "type": "exact_term",
+      "query": "What is the precedence of explicit `NOT`, `AND`, and `OR` in FTS5?",
+      "language": "en",
+      "type_rationale": "Looks up the exact FTS5 operator names and their precedence.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T03",
+          "source_relative_path": "plaintext/T03.txt",
+          "source_sha256": "67e4dbfee2da4d8e19cae5f8cbc7de96db081ed18b8201119fba64c10b13e99b",
+          "lines_1_based_inclusive": [
+            3,
+            16
+          ],
+          "utf8_bytes_0_based_half_open": [
+            29,
+            440
+          ],
+          "passage_sha256": "8ca9187fb4094be14ee10caff6e5d06387aa4d5cf9f501baf33b5efc9031bbb7",
+          "location_label": "Explicit boolean-operator precedence",
+          "why_relevant": "The operator list is introduced as highest to lowest precedence and orders NOT, AND and OR.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#fts5_boolean_operators",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              30781,
+              33519
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              30781,
+              33519
+            ],
+            "section_html_sha256": "cb21da6d9189c921b980ec92fe89dccca4b3ab9fa94b081d5d0038c28adb3c0c",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T03-M",
+      "source_id": "T03",
+      "type": "mixed",
+      "query": "How are `one NOT two three` and `(one OR two) three` treated by FTS5 implicit-AND rules?",
+      "language": "en",
+      "type_rationale": "Combines two exact expressions with the semantic reason their grouping or syntax differs.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T03",
+          "source_relative_path": "plaintext/T03.txt",
+          "source_sha256": "67e4dbfee2da4d8e19cae5f8cbc7de96db081ed18b8201119fba64c10b13e99b",
+          "lines_1_based_inclusive": [
+            31,
+            47
+          ],
+          "utf8_bytes_0_based_half_open": [
+            983,
+            1924
+          ],
+          "passage_sha256": "76735eba9fc3325505edafd4e866e884787a1b94b72d7ec1a485a5b4e918aa92",
+          "location_label": "Implicit AND binding and parenthesis restrictions",
+          "why_relevant": "The passage says implicit AND binds most tightly, is not inserted next to parentheses, and gives both requested examples and their outcomes.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#fts5_boolean_operators",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              30781,
+              33519
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              30781,
+              33519
+            ],
+            "section_html_sha256": "cb21da6d9189c921b980ec92fe89dccca4b3ab9fa94b081d5d0038c28adb3c0c",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T04-F",
+      "source_id": "T04",
+      "type": "metadata_filter",
+      "query": "Why do triggers added after populating an external-content table fail to index its existing rows, and what repair does the text describe?",
+      "language": "en",
+      "type_rationale": "Limits the search to the english_technical kind without selecting a particular source.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T04",
+          "source_relative_path": "plaintext/T04.txt",
+          "source_sha256": "5a9445e0f38d100b266703d7f439f22ad2b5512accda1f0e0553ecf8584e2edb",
+          "lines_1_based_inclusive": [
+            74,
+            102
+          ],
+          "utf8_bytes_0_based_half_open": [
+            3190,
+            4537
+          ],
+          "passage_sha256": "628d63c8502acd4261bd0e7e6120e7ea9581f331b80f3bacdccbaabe90b17498",
+          "location_label": "Triggers do not backfill and rebuild repairs consistency",
+          "why_relevant": "The text explains that triggers only reflect later changes, and that rebuild discards the index and recreates it from current content.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#external_content_table_pitfalls",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              57231,
+              63872
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              57232,
+              63873
+            ],
+            "section_html_sha256": "dc6d4ff1d5bd229e75d8b1d86462a1673a6b71b5a27dad83e4bb565e7df3d86a",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "english_technical",
+        "expression": "doc.kind eq english_technical",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "english_technical",
+      "filter": {
+        "doc.kind": {
+          "$eq": "english_technical"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "T04-S",
+      "source_id": "T04",
+      "type": "semantic",
+      "query": "Why can a plain scan return rows while a text search returns none, even though both name the same search table?",
+      "language": "en",
+      "type_rationale": "Describes a confusing result pattern without naming FTS5, external content or MATCH.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T04",
+          "source_relative_path": "plaintext/T04.txt",
+          "source_sha256": "5a9445e0f38d100b266703d7f439f22ad2b5512accda1f0e0553ecf8584e2edb",
+          "lines_1_based_inclusive": [
+            3,
+            16
+          ],
+          "utf8_bytes_0_based_half_open": [
+            40,
+            837
+          ],
+          "passage_sha256": "1a3851a5d6b1126e827c9f6bfc6a59dd16cc1b412c6ce1f5aeb2ec70928987e0",
+          "location_label": "Content-table consistency and non-index queries",
+          "why_relevant": "The text states the consistency obligation and explains that non-index queries pass through to the content table.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#external_content_table_pitfalls",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              57231,
+              63872
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              57232,
+              63873
+            ],
+            "section_html_sha256": "dc6d4ff1d5bd229e75d8b1d86462a1673a6b71b5a27dad83e4bb565e7df3d86a",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        },
+        {
+          "source_id": "T04",
+          "source_relative_path": "plaintext/T04.txt",
+          "source_sha256": "5a9445e0f38d100b266703d7f439f22ad2b5512accda1f0e0553ecf8584e2edb",
+          "lines_1_based_inclusive": [
+            27,
+            48
+          ],
+          "utf8_bytes_0_based_half_open": [
+            1317,
+            2173
+          ],
+          "passage_sha256": "fe767f62e11027d96f8496f53b5b91091ebf2883c70eb2a52cb88a61422b6b6b",
+          "location_label": "Content rows present but index empty",
+          "why_relevant": "The concrete example has two content rows and an empty index, producing two rows for a plain scan and none for a full-text lookup.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#external_content_table_pitfalls",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              57231,
+              63872
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              57232,
+              63873
+            ],
+            "section_html_sha256": "dc6d4ff1d5bd229e75d8b1d86462a1673a6b71b5a27dad83e4bb565e7df3d86a",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T05-E",
+      "source_id": "T05",
+      "type": "exact_term",
+      "query": "Why does FTS5 `bm25()` return smaller numeric scores for better matches?",
+      "language": "en",
+      "type_rationale": "Uses the precise bm25() function name to find its score-direction convention.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T05",
+          "source_relative_path": "plaintext/T05.txt",
+          "source_sha256": "022a806e52d64194708aba52b139eac8a2c8d807ed550da4764f8610485ce382",
+          "lines_1_based_inclusive": [
+            3,
+            8
+          ],
+          "utf8_bytes_0_based_half_open": [
+            28,
+            367
+          ],
+          "passage_sha256": "0258d2cc840633d9c21b639144d903507cb10802007c9686bb79aebb3d3005be",
+          "location_label": "BM25 ordering direction",
+          "why_relevant": "The introduction states that smaller numeric values mean better matches.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#the_bm25_function",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              78884,
+              82663
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              78885,
+              82664
+            ],
+            "section_html_sha256": "ebb45cd829e775e08b589f45c0a419e783729b55882a32cddf2982b930d70518",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        },
+        {
+          "source_id": "T05",
+          "source_relative_path": "plaintext/T05.txt",
+          "source_sha256": "022a806e52d64194708aba52b139eac8a2c8d807ed550da4764f8610485ce382",
+          "lines_1_based_inclusive": [
+            20,
+            28
+          ],
+          "utf8_bytes_0_based_half_open": [
+            811,
+            1415
+          ],
+          "passage_sha256": "3b6e0a804a2e009c8fbba5f14ad4e501ba2f03e36c5fd651e758a1741e79afe4",
+          "location_label": "Negative sign and ascending-order rationale",
+          "why_relevant": "The prose explains multiplication by -1 so ascending sorting returns best matches first; no formula image is required.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#the_bm25_function",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              78884,
+              82663
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              78885,
+              82664
+            ],
+            "section_html_sha256": "ebb45cd829e775e08b589f45c0a419e783729b55882a32cddf2982b930d70518",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T05-F",
+      "source_id": "T05",
+      "type": "metadata_filter",
+      "query": "How are column weights assigned in `bm25(email, 10.0, 5.0)`, and what happens when weight arguments are missing or extra?",
+      "language": "en",
+      "type_rationale": "Limits the search to the english_technical kind; the answer is completely supported by visible text rather than omitted formula images.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T05",
+          "source_relative_path": "plaintext/T05.txt",
+          "source_sha256": "022a806e52d64194708aba52b139eac8a2c8d807ed550da4764f8610485ce382",
+          "lines_1_based_inclusive": [
+            35,
+            57
+          ],
+          "utf8_bytes_0_based_half_open": [
+            1647,
+            2890
+          ],
+          "passage_sha256": "a19f4bbdbe20cdf268f0465518b254bc0050ebdf23a8b655419d6b4e6be6ee19",
+          "location_label": "Column-weight arguments, defaults and email example",
+          "why_relevant": "The prose assigns arguments left to right, defaults missing weights to 1.0, ignores extras, and explains sender/title/body weights in the example.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-fts5.html",
+            "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+            "url": "https://www.sqlite.org/fts5.html#the_bm25_function",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              78884,
+              82663
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              78885,
+              82664
+            ],
+            "section_html_sha256": "ebb45cd829e775e08b589f45c0a419e783729b55882a32cddf2982b930d70518",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "english_technical",
+        "expression": "doc.kind eq english_technical",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "english_technical",
+      "filter": {
+        "doc.kind": {
+          "$eq": "english_technical"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "T06-M",
+      "source_id": "T06",
+      "type": "mixed",
+      "query": "Why can a long-running reader stall WAL checkpointing, and when can the writer rewind the WAL?",
+      "language": "en",
+      "type_rationale": "Combines the WAL term with causal questions about long readers and safe log reuse.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T06",
+          "source_relative_path": "plaintext/T06.txt",
+          "source_sha256": "92cf9fab7951581c5d1c85a556f1fbd3b33bf2f08ebe2ff80de058c812d28603",
+          "lines_1_based_inclusive": [
+            33,
+            52
+          ],
+          "utf8_bytes_0_based_half_open": [
+            1734,
+            2912
+          ],
+          "passage_sha256": "228a514443f2930c14d35e1cacc188986b89b85483994c6fa039553358a91391",
+          "location_label": "Reader end marks, checkpoint progress and WAL reuse",
+          "why_relevant": "The passage explains that checkpointing must stop before overtaking any reader and that the writer rewinds only after transfer, synchronization and release by all readers.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-wal.html",
+            "raw_sha256": "f3467b530b883d4a00574fe1a898b3d121ed72764ae28cf66941080ac0badb9e",
+            "url": "https://www.sqlite.org/wal.html#concurrency",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              11774,
+              14799
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              11774,
+              14799
+            ],
+            "section_html_sha256": "d8eba58ed0b7a25f64a30131e7ab5f35242339095a00c3700c34a94b87f73856",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T06-S",
+      "source_id": "T06",
+      "type": "semantic",
+      "query": "How can a reader keep seeing a stable database snapshot while other transactions keep appending committed changes?",
+      "language": "en",
+      "type_rationale": "Paraphrases snapshot isolation without naming WAL, wal-index or the end-mark mechanism.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T06",
+          "source_relative_path": "plaintext/T06.txt",
+          "source_sha256": "92cf9fab7951581c5d1c85a556f1fbd3b33bf2f08ebe2ff80de058c812d28603",
+          "lines_1_based_inclusive": [
+            3,
+            16
+          ],
+          "utf8_bytes_0_based_half_open": [
+            18,
+            891
+          ],
+          "passage_sha256": "237feab2317aca6ab5e2ebbd215d485858723ffa578cd551de71a8d6d3247495",
+          "location_label": "Per-reader end mark and page lookup",
+          "why_relevant": "The text describes an end mark fixed for the read transaction and selecting the last page version before that mark, with fallback to the database file.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-wal.html",
+            "raw_sha256": "f3467b530b883d4a00574fe1a898b3d121ed72764ae28cf66941080ac0badb9e",
+            "url": "https://www.sqlite.org/wal.html#concurrency",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              11774,
+              14799
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              11774,
+              14799
+            ],
+            "section_html_sha256": "d8eba58ed0b7a25f64a30131e7ab5f35242339095a00c3700c34a94b87f73856",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T07-E",
+      "source_id": "T07",
+      "type": "exact_term",
+      "query": "Which exclusive-locking situations can produce `SQLITE_BUSY` for queries in WAL mode?",
+      "language": "en",
+      "type_rationale": "Uses the exact result code and journal-mode name to locate documented exceptions.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T07",
+          "source_relative_path": "plaintext/T07.txt",
+          "source_sha256": "390306f36607a97f5dee769fdc1b161a6201979eade60f35ebd6bc63e1d87951",
+          "lines_1_based_inclusive": [
+            10,
+            31
+          ],
+          "utf8_bytes_0_based_half_open": [
+            336,
+            1481
+          ],
+          "passage_sha256": "559150595142b153b048b8f68fa0d9c98fcf2a055c6acb157a2f11ad688ab5b4",
+          "location_label": "WAL-mode busy cases",
+          "why_relevant": "The text lists an exclusive-mode connection, closing-connection cleanup, and recovery after a crash as situations requiring an exclusive lock that can produce SQLITE_BUSY.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-wal.html",
+            "raw_sha256": "f3467b530b883d4a00574fe1a898b3d121ed72764ae28cf66941080ac0badb9e",
+            "url": "https://www.sqlite.org/wal.html#sometimes_queries_return_sqlite_busy_in_wal_mode",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              34633,
+              36540
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              34633,
+              36540
+            ],
+            "section_html_sha256": "967ff065d4f67abb09cbd36639208f2a5580fc2acfc0288d19045a3f4e8307dd",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T07-S",
+      "source_id": "T07",
+      "type": "semantic",
+      "query": "Why might a query briefly fail while the last database connection is closing and cleaning up its side files?",
+      "language": "en",
+      "type_rationale": "Describes the lifecycle and observable failure without naming SQLITE_BUSY, WAL or locking mode.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T07",
+          "source_relative_path": "plaintext/T07.txt",
+          "source_sha256": "390306f36607a97f5dee769fdc1b161a6201979eade60f35ebd6bc63e1d87951",
+          "lines_1_based_inclusive": [
+            20,
+            25
+          ],
+          "utf8_bytes_0_based_half_open": [
+            780,
+            1147
+          ],
+          "passage_sha256": "d8eb5f42abd780a63534298a4c2389d9c2b5f72f9374c25d814d81b024fda728",
+          "location_label": "Exclusive lock during final-connection cleanup",
+          "why_relevant": "The passage states that the final connection briefly takes an exclusive lock while cleaning WAL/shared-memory files, so another connection may receive SQLITE_BUSY.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-wal.html",
+            "raw_sha256": "f3467b530b883d4a00574fe1a898b3d121ed72764ae28cf66941080ac0badb9e",
+            "url": "https://www.sqlite.org/wal.html#sometimes_queries_return_sqlite_busy_in_wal_mode",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              34633,
+              36540
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              34633,
+              36540
+            ],
+            "section_html_sha256": "967ff065d4f67abb09cbd36639208f2a5580fc2acfc0288d19045a3f4e8307dd",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T08-F",
+      "source_id": "T08",
+      "type": "metadata_filter",
+      "query": "After a crash, what condition involving the super-journal filename makes a rollback journal hot?",
+      "language": "en",
+      "type_rationale": "Limits the search to the english_technical kind without selecting a particular source.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T08",
+          "source_relative_path": "plaintext/T08.txt",
+          "source_sha256": "1967e14b5b812196fc445d8ded5d49fb0ef61bfbc255cc567588a3611285c77d",
+          "lines_1_based_inclusive": [
+            9,
+            17
+          ],
+          "utf8_bytes_0_based_half_open": [
+            257,
+            754
+          ],
+          "passage_sha256": "272bb8be2e1b1ad2974d4c7163052103bddf04bc1f9f6e2e07ec8c32359a15f9",
+          "location_label": "Hot-journal test after restart",
+          "why_relevant": "The passage states the two cases: no super-journal filename in the header, or a named super-journal that still exists on disk.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-atomiccommit.html",
+            "raw_sha256": "5a5be7b660217c9408c8a81eaf2faa2d08832ed3790f895a0a713916ad856ea1",
+            "url": "https://www.sqlite.org/atomiccommit.html#_delete_the_super_journal_file",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              45358,
+              46318
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              45358,
+              46318
+            ],
+            "section_html_sha256": "d1eadd94c5bb140762b050233bd5865f81f6fe5804035ffd42924a1de177e195",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "filter_intent": {
+        "field": "doc.kind",
+        "operator": "eq",
+        "value": "english_technical",
+        "expression": "doc.kind eq english_technical",
+        "scope_note": "All documents with this kind are eligible; this is not a source_id filter or an executable query-schema declaration."
+      },
+      "material": "english_technical",
+      "filter": {
+        "doc.kind": {
+          "$eq": "english_technical"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "T08-M",
+      "source_id": "T08",
+      "type": "mixed",
+      "query": "Why does deleting the super-journal mark a multi-file commit even when individual rollback journals remain?",
+      "language": "en",
+      "type_rationale": "Combines the super-journal term with the crash-recovery meaning of its deletion.",
+      "expected_relevant_passages": [
+        {
+          "source_id": "T08",
+          "source_relative_path": "plaintext/T08.txt",
+          "source_sha256": "1967e14b5b812196fc445d8ded5d49fb0ef61bfbc255cc567588a3611285c77d",
+          "lines_1_based_inclusive": [
+            3,
+            17
+          ],
+          "utf8_bytes_0_based_half_open": [
+            36,
+            754
+          ],
+          "passage_sha256": "b8500f341c6ecea1ae0a06386494a90cff07d774986993ae457edcc4738cc251",
+          "location_label": "Super-journal deletion and commit recognition",
+          "why_relevant": "The text identifies deletion as the commit point and explains why leftover rollback journals are not replayed when their named super-journal is absent.",
+          "upstream_locator": {
+            "raw_path": "raw/sqlite-atomiccommit.html",
+            "raw_sha256": "5a5be7b660217c9408c8a81eaf2faa2d08832ed3790f895a0a713916ad856ea1",
+            "url": "https://www.sqlite.org/atomiccommit.html#_delete_the_super_journal_file",
+            "source_revision": "Captured public HTML identified by raw SHA256",
+            "section_html_code_point_range_0_based_half_open": [
+              45358,
+              46318
+            ],
+            "section_utf8_bytes_0_based_half_open": [
+              45358,
+              46318
+            ],
+            "section_html_sha256": "d1eadd94c5bb140762b050233bd5865f81f6fe5804035ffd42924a1de177e195",
+            "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+            "locator_note": "The plaintext answer lines below locate the visible answer text within this fixed HTML section; HTML tags and entities differ from plaintext."
+          }
+        }
+      ],
+      "anchor_status": "provisional_answer_support_not_complete_qrels",
+      "material": "english_technical",
+      "filter": {},
+      "top_k": 10
+    }
+  ]
+}

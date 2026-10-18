@@ -1,0 +1,3 @@
+{"document_external_id":"storage.rs","chunk_external_id":"storage#cache","ordinal":0,"text":"struct PageCache { page_cache: Vec<u8> } // WalRecovery reads committed pages","metadata":{"path":"src/storage.rs","line_start":1,"line_end":1}}
+{"document_external_id":"storage.rs","chunk_external_id":"storage#recovery","ordinal":1,"text":"fn recover(committed: &[u8]) -> Vec<u8> { committed.to_vec() } // Restore durable state after a crash","metadata":{"path":"src/storage.rs","line_start":2,"line_end":2}}
+{"document_external_id":"storage.py","chunk_external_id":"python#cache","ordinal":0,"text":"page_cache = []  # page cache for storage recovery","metadata":{"path":"src/storage.py","line_start":1,"line_end":1}}

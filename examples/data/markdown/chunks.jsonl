@@ -1,0 +1,2 @@
+{"document_external_id":"wal.md","chunk_external_id":"wal#commit","ordinal":0,"text":"Write ahead logging appends records before a commit. Recovery exposes only complete committed batches.","metadata":{"section":"Commit protocol","path":"docs/wal.md"}}
+{"document_external_id":"wal.md","chunk_external_id":"wal#checkpoint","ordinal":1,"text":"A checkpoint rebuilds derived indexes from committed records. A missing checkpoint does not remove durable source data.","metadata":{"section":"Index checkpoint","path":"docs/wal.md"}}

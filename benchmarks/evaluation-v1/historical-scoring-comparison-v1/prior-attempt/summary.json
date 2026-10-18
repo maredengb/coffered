@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "status": "FAILED_PRESERVED",
+  "original_report_sha256": "d8e794343305796b21cfbf92216facf5e8360b2cfae4666f8493f1adfe0f35c1",
+  "preparation_completed": 5,
+  "preparation_stopped": 1,
+  "query_workers_started": 0,
+  "query_samples_not_run": 7488,
+  "quality_or_latency_comparison": null,
+  "scope": "A capture/resource monitor encountered a disappearing temporary file and stopped the owned process. This is not proof of an engine import defect, resource exhaustion or completed partial-database recovery. The later run used new databases and retained this failure.",
+  "error_type": "FileNotFoundError",
+  "available_streams": "All six preparation process stdout/stderr files, including empty failed-step streams, are retained."
+}

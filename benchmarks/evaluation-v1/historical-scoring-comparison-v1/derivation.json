@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "origin_runner_sha256": "1cc2f0a69ca1ec3a6882df165503e39945944ae4d35740e2d6c93d160b5b7386",
+  "replay_runner_sha256": "2dcf0cd69e7337266d3d47d6e87fa7c4d246d49d14f64bedde81842cc0913c08",
+  "unchanged_function_ast": [
+    "need",
+    "sha",
+    "save",
+    "summary",
+    "owned_logical_bytes",
+    "storage_safe",
+    "run_process",
+    "parse_rows",
+    "rss",
+    "SampleValidationError",
+    "validate_quality",
+    "validate_reads",
+    "actual_layers",
+    "validate_scale_result",
+    "validate_scale",
+    "plan",
+    "sample_plan",
+    "not_run_sample",
+    "project_samples",
+    "read_events",
+    "comparisons",
+    "clock_domain"
+  ],
+  "execute_import_trial_exception_finally_ast_unchanged": true,
+  "changes": [
+    "English technical docstrings",
+    "Portable preparation with path-bound build metadata",
+    "Standalone protocol validation and explicit CLI entry",
+    "Build identity recorded for each new execution"
+  ],
+  "assets": [
+    {
+      "path": "assets/quality_helper.rs",
+      "bytes": 2625,
+      "sha256": "53da14e9ff27d6548211e8ce4d68844edfc359b5534e99638a24a31c8b1ae860",
+      "original_sha256": "53da14e9ff27d6548211e8ce4d68844edfc359b5534e99638a24a31c8b1ae860",
+      "transformation": "exact bytes"
+    },
+    {
+      "path": "assets/scale_helper.rs",
+      "bytes": 6061,
+      "sha256": "68e3b2b9c6adf38ee000e5cd707d9a52de6077fa2e25050a6cb0e42f83585dbb",
+      "original_sha256": "68e3b2b9c6adf38ee000e5cd707d9a52de6077fa2e25050a6cb0e42f83585dbb",
+      "transformation": "exact bytes"
+    },
+    {
+      "path": "assets/read_probe_bindings.rs",
+      "bytes": 865,
+      "sha256": "91b4ef81756224b997fdd39aacce0f49714195bc6860379ca92bcd416b16e1f3",
+      "original_sha256": "91b4ef81756224b997fdd39aacce0f49714195bc6860379ca92bcd416b16e1f3",
+      "transformation": "exact bytes"
+    },
+    {
+      "path": "assets/sample_events_control.rs",
+      "bytes": 1265,
+      "sha256": "a05c2b91c6451275947272e8424b1c4fa081e2fa536dabd9a9c8c29eba28813c",
+      "original_sha256": "a05c2b91c6451275947272e8424b1c4fa081e2fa536dabd9a9c8c29eba28813c",
+      "transformation": "exact bytes"
+    },
+    {
+      "path": "assets/read_probe_control.c",
+      "bytes": 1165,
+      "sha256": "d1459b6f3f2a2a7078f428ae24c9980fa33b7522bc52014753d09c2e92ab93a5",
+      "original_sha256": "d1459b6f3f2a2a7078f428ae24c9980fa33b7522bc52014753d09c2e92ab93a5",
+      "transformation": "exact bytes"
+    },
+    {
+      "path": "assets/read_probe_rust_control.rs",
+      "bytes": 853,
+      "sha256": "87820a0a2237cc8f8a2d85bde4ae90a1d30d2432e50c40cdceccc5a25ff7c193",
+      "original_sha256": "87820a0a2237cc8f8a2d85bde4ae90a1d30d2432e50c40cdceccc5a25ff7c193",
+      "transformation": "exact bytes"
+    },
+    {
+      "path": "assets/read_probe.c",
+      "bytes": 2108,
+      "sha256": "7e99bf9a0c97b185e04c7b61e887eb63dc7936302acf78609be70b16a9e65a61",
+      "original_sha256": "94d3400540c6a8e9270f55db357e3b03aa5936c2c10657cfd15fdcb752546309",
+      "transformation": "English technical comment only"
+    },
+    {
+      "path": "assets/sample_events.rs",
+      "bytes": 4597,
+      "sha256": "695cefe4514fab029c50dfa102ed9db13d46d68c1cecb269316c01b0533085c5",
+      "original_sha256": "8981b42a0dd8854a67972505bf84e2ebce57a097598eba1428bd9baab62df7dc",
+      "transformation": "English technical comment only"
+    }
+  ],
+  "ast_comparison_note": "Function/class AST comparison ignores leading docstrings; comments and source locations are not represented. The execute try/except/finally subtree is compared without other normalization.",
+  "source_manifest_origin_sha256": "72422e401c377d8bc17efbbb3bc63d62efba68b81659b73af30cf86baab8dc33",
+  "source_manifest_sha256": "71e7d8a5d9b3a94b73b627dc8579578928155ec43af4536de3162aafb5767266",
+  "source_manifest_transformation": "Only status and scope metadata rephrased; all original file paths, commits, tree/blob identities, sizes and hashes are unchanged."
+}

@@ -1,0 +1,1281 @@
+{
+  "scope": "48 actual API queries using supported explicit weights .05/.95 andtop10; seen exploration only, not default quality or independent acceptance",
+  "actual_queries": 48,
+  "quality": {
+    "overall": {
+      "recall_at_10": {
+        "numerator": "2723",
+        "denominator": "2880",
+        "value": 0.9454861111111111
+      },
+      "mrr_at_10": {
+        "numerator": "55",
+        "denominator": "64",
+        "value": 0.859375
+      }
+    },
+    "cells": [
+      {
+        "cell": [
+          "english_technical",
+          "exact_term"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      },
+      {
+        "cell": [
+          "english_technical",
+          "metadata_filter"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "15",
+          "denominator": "16",
+          "value": 0.9375
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      },
+      {
+        "cell": [
+          "english_technical",
+          "mixed"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      },
+      {
+        "cell": [
+          "english_technical",
+          "semantic"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "11",
+          "denominator": "12",
+          "value": 0.9166666666666666
+        },
+        "mrr_at_10": {
+          "numerator": "7",
+          "denominator": "12",
+          "value": 0.5833333333333334
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "2",
+            "value": 0.5
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "2",
+            "value": 0.5
+          }
+        }
+      },
+      {
+        "cell": [
+          "markdown_notes",
+          "exact_term"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      },
+      {
+        "cell": [
+          "markdown_notes",
+          "metadata_filter"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "5",
+          "denominator": "8",
+          "value": 0.625
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "4",
+            "value": 0.25
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      },
+      {
+        "cell": [
+          "markdown_notes",
+          "mixed"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "7",
+          "denominator": "8",
+          "value": 0.875
+        },
+        "mrr_at_10": {
+          "numerator": "17",
+          "denominator": "24",
+          "value": 0.7083333333333334
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "2",
+            "value": 0.5
+          },
+          "hit_at_2": {
+            "numerator": "3",
+            "denominator": "4",
+            "value": 0.75
+          }
+        }
+      },
+      {
+        "cell": [
+          "markdown_notes",
+          "semantic"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "33",
+          "denominator": "40",
+          "value": 0.825
+        },
+        "mrr_at_10": {
+          "numerator": "31",
+          "denominator": "48",
+          "value": 0.6458333333333334
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "2",
+            "value": 0.5
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "2",
+            "value": 0.5
+          }
+        }
+      },
+      {
+        "cell": [
+          "rust_code",
+          "exact_term"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      },
+      {
+        "cell": [
+          "rust_code",
+          "metadata_filter"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      },
+      {
+        "cell": [
+          "rust_code",
+          "mixed"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "7",
+          "denominator": "8",
+          "value": 0.875
+        },
+        "mrr_at_10": {
+          "numerator": "7",
+          "denominator": "8",
+          "value": 0.875
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "3",
+            "denominator": "4",
+            "value": 0.75
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      },
+      {
+        "cell": [
+          "rust_code",
+          "semantic"
+        ],
+        "tasks": 4,
+        "recall_at_10": {
+          "numerator": "11",
+          "denominator": "12",
+          "value": 0.9166666666666666
+        },
+        "mrr_at_10": {
+          "numerator": "7",
+          "denominator": "8",
+          "value": 0.875
+        },
+        "hit_diagnostics": {
+          "hit_at_1": {
+            "numerator": "3",
+            "denominator": "4",
+            "value": 0.75
+          },
+          "hit_at_2": {
+            "numerator": "1",
+            "denominator": "1",
+            "value": 1.0
+          }
+        }
+      }
+    ],
+    "per_query": [
+      {
+        "query_id": "code-exact_term-01",
+        "cell": [
+          "rust_code",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-exact_term-02",
+        "cell": [
+          "rust_code",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-exact_term-03",
+        "cell": [
+          "rust_code",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-exact_term-04",
+        "cell": [
+          "rust_code",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-semantic-01",
+        "cell": [
+          "rust_code",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "2",
+          "denominator": "3",
+          "value": 0.6666666666666666
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-semantic-02",
+        "cell": [
+          "rust_code",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-semantic-03",
+        "cell": [
+          "rust_code",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "first_relevant_rank": 2
+      },
+      {
+        "query_id": "code-semantic-04",
+        "cell": [
+          "rust_code",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-mixed-01",
+        "cell": [
+          "rust_code",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-mixed-02",
+        "cell": [
+          "rust_code",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-mixed-03",
+        "cell": [
+          "rust_code",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-mixed-04",
+        "cell": [
+          "rust_code",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "first_relevant_rank": 2
+      },
+      {
+        "query_id": "code-metadata_filter-01",
+        "cell": [
+          "rust_code",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-metadata_filter-02",
+        "cell": [
+          "rust_code",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-metadata_filter-03",
+        "cell": [
+          "rust_code",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "code-metadata_filter-04",
+        "cell": [
+          "rust_code",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-exact_term-01",
+        "cell": [
+          "english_technical",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-exact_term-02",
+        "cell": [
+          "english_technical",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-exact_term-03",
+        "cell": [
+          "english_technical",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-exact_term-04",
+        "cell": [
+          "english_technical",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-semantic-01",
+        "cell": [
+          "english_technical",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-semantic-02",
+        "cell": [
+          "english_technical",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "2",
+          "denominator": "3",
+          "value": 0.6666666666666666
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "6",
+          "value": 0.16666666666666666
+        },
+        "first_relevant_rank": 6
+      },
+      {
+        "query_id": "technical-semantic-03",
+        "cell": [
+          "english_technical",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "6",
+          "value": 0.16666666666666666
+        },
+        "first_relevant_rank": 6
+      },
+      {
+        "query_id": "technical-semantic-04",
+        "cell": [
+          "english_technical",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-mixed-01",
+        "cell": [
+          "english_technical",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-mixed-02",
+        "cell": [
+          "english_technical",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-mixed-03",
+        "cell": [
+          "english_technical",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-mixed-04",
+        "cell": [
+          "english_technical",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-metadata_filter-01",
+        "cell": [
+          "english_technical",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-metadata_filter-02",
+        "cell": [
+          "english_technical",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "3",
+          "denominator": "4",
+          "value": 0.75
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-metadata_filter-03",
+        "cell": [
+          "english_technical",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "technical-metadata_filter-04",
+        "cell": [
+          "english_technical",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-exact_term-01",
+        "cell": [
+          "markdown_notes",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-exact_term-02",
+        "cell": [
+          "markdown_notes",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-exact_term-03",
+        "cell": [
+          "markdown_notes",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-exact_term-04",
+        "cell": [
+          "markdown_notes",
+          "exact_term"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-semantic-01",
+        "cell": [
+          "markdown_notes",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-semantic-02",
+        "cell": [
+          "markdown_notes",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "4",
+          "value": 0.25
+        },
+        "first_relevant_rank": 4
+      },
+      {
+        "query_id": "notes-semantic-03",
+        "cell": [
+          "markdown_notes",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "4",
+          "denominator": "5",
+          "value": 0.8
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-semantic-04",
+        "cell": [
+          "markdown_notes",
+          "semantic"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "3",
+          "value": 0.3333333333333333
+        },
+        "first_relevant_rank": 3
+      },
+      {
+        "query_id": "notes-mixed-01",
+        "cell": [
+          "markdown_notes",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-mixed-02",
+        "cell": [
+          "markdown_notes",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-mixed-03",
+        "cell": [
+          "markdown_notes",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "first_relevant_rank": 2
+      },
+      {
+        "query_id": "notes-mixed-04",
+        "cell": [
+          "markdown_notes",
+          "mixed"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "3",
+          "value": 0.3333333333333333
+        },
+        "first_relevant_rank": 3
+      },
+      {
+        "query_id": "notes-metadata_filter-01",
+        "cell": [
+          "markdown_notes",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "first_relevant_rank": 2
+      },
+      {
+        "query_id": "notes-metadata_filter-02",
+        "cell": [
+          "markdown_notes",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "first_relevant_rank": 2
+      },
+      {
+        "query_id": "notes-metadata_filter-03",
+        "cell": [
+          "markdown_notes",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "first_relevant_rank": 1
+      },
+      {
+        "query_id": "notes-metadata_filter-04",
+        "cell": [
+          "markdown_notes",
+          "metadata_filter"
+        ],
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "1",
+          "value": 1.0
+        },
+        "mrr_at_10": {
+          "numerator": "1",
+          "denominator": "2",
+          "value": 0.5
+        },
+        "first_relevant_rank": 2
+      }
+    ],
+    "hit_diagnostics": {
+      "hit_at_1": {
+        "numerator": "37",
+        "denominator": "48",
+        "value": 0.7708333333333334
+      },
+      "hit_at_2": {
+        "numerator": "43",
+        "denominator": "48",
+        "value": 0.8958333333333334
+      }
+    }
+  },
+  "minimum_gate_observation": true,
+  "comparisons": {
+    "text_bm25": {
+      "delta": {
+        "recall_at_10": {
+          "numerator": "77",
+          "denominator": "240",
+          "value": 0.32083333333333336
+        },
+        "mrr_at_10": {
+          "numerator": "9407",
+          "denominator": "40320",
+          "value": 0.23330853174603175
+        }
+      },
+      "passed": true
+    },
+    "vector_exact": {
+      "delta": {
+        "recall_at_10": {
+          "numerator": "1",
+          "denominator": "192",
+          "value": 0.005208333333333333
+        },
+        "mrr_at_10": {
+          "numerator": "15",
+          "denominator": "224",
+          "value": 0.06696428571428571
+        }
+      },
+      "passed": true
+    }
+  },
+  "formal_acceptance_verdict": "not_evaluated",
+  "default_quality_verdict": "failed_preserved"
+}
