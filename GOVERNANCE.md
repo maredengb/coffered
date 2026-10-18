@@ -28,3 +28,14 @@ as an official CofferDB release or implying unestablished endorsement.
 
 Security-sensitive reports follow [SECURITY.md](SECURITY.md). The
 [contribution guide](CONTRIBUTING.md) lists the information for a reproducible issue.
+
+## Contribution decisions
+
+The repository owner, [maredengb](https://github.com/maredengb), makes the final
+acceptance decision and manually merges accepted changes into official branches.
+Contributors may propose changes through pull requests and participate in review.
+Automated tools prepare and check changes; they do not perform merges.
+
+Merge authority does not confer ownership of contributors' copyrights or rights
+beyond applicable licenses. Contributions follow the [contribution guide](CONTRIBUTING.md)
+and the applicable [Apache-2.0 license](LICENSE).

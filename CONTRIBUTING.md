@@ -50,3 +50,16 @@ need reproducible inputs, settings, raw results, baselines and limitations.
 
 See [governance and naming](GOVERNANCE.md) and the [license](LICENSE) for the
 project's public contribution and naming principles.
+
+## Contribution license
+
+Contributions intentionally submitted for inclusion are handled under section 5
+of the [Apache-2.0 license](LICENSE). If different terms apply, state them clearly
+before review; submission does not guarantee acceptance. Identify third-party
+sources and preserve their license and attribution notices. Submit only material
+you have authority to contribute.
+
+No separate CLA, DCO sign-off or identity-verification form is required. Do not
+include identity documents, private contact details or signatures in a pull request.
+Contributors retain their copyright; merging does not transfer copyright to the
+repository owner.
