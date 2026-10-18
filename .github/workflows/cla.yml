@@ -1,0 +1,45 @@
+name: CLA confirmation check
+
+on:
+  push:
+    branches: [main]
+  pull_request_target:
+    branches: [main]
+    types: [opened, reopened, synchronize, ready_for_review, edited, closed]
+  issue_comment:
+    types: [created, edited, deleted]
+  workflow_dispatch:
+
+permissions: {}
+
+# Every run rechecks all open main-targeted PRs. A superseded pending event is safe
+# to coalesce; a running scan is not cancelled halfway through invalidation.
+concurrency:
+  group: cofferdb-cla-${{ github.repository_id }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  confirmations:
+    if: github.repository == 'maredengb/coffered' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+      statuses: write
+    steps:
+      - name: Read trusted workflow revision
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          ref: ${{ github.workflow_sha }}
+          persist-credentials: false
+          fetch-depth: 1
+          submodules: false
+          lfs: false
+      - name: Check trusted checker controls
+        run: python3 -B -m unittest discover -s .github/cla -p 'test_*.py'
+      - name: Recheck explicit confirmations on PR heads
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 -B .github/cla/check.py

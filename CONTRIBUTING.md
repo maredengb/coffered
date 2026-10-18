@@ -51,15 +51,50 @@ need reproducible inputs, settings, raw results, baselines and limitations.
 See [governance and naming](GOVERNANCE.md) and the [license](LICENSE) for the
 project's public contribution and naming principles.
 
-## Contribution license
+## Contribution license and prepared online CLA
 
-Contributions intentionally submitted for inclusion are handled under section 5
-of the [Apache-2.0 license](LICENSE). If different terms apply, state them clearly
-before review; submission does not guarantee acceptance. Identify third-party
-sources and preserve their license and attribution notices. Submit only material
-you have authority to contribute.
+The current public distribution remains [Apache-2.0](LICENSE). Contributors retain
+their copyright. The prepared [Contributor License Agreement](CLA.md), once activated, would also
+grant the Recipient commercial and other-license sublicensing rights, including
+closed-source distribution. These additional rights come from the agreement, not
+from ownership of the repository or the act of merging a pull request. Existing
+Apache-2.0 permissions and third-party license obligations remain in force.
 
-No separate CLA, DCO sign-off or identity-verification form is required. Do not
-include identity documents, private contact details or signatures in a pull request.
-Contributors retain their copyright; merging does not transfer copyright to the
-repository owner.
+**The CLA is PREPARED_NOT_ACTIVE and the signing process is not enabled. Do not
+post a confirmation yet.** Activation requires a published final version, an immutable
+text link and SHA256, the fixed Recipient reference and a designated confirmation
+thread. Until activation, intentionally submitted contributions remain subject to
+section 5 of Apache-2.0 and any expressly agreed terms; the prepared text does not grant
+additional rights in existing contributions.
+
+The prepared process is:
+
+1. Read the exact activated agreement and [confirmation-data notice](CLA-PRIVACY.md).
+   Review the highlighted commercial licensing, patent, future-contribution and
+   succession terms, and ask any questions before agreeing.
+2. For your first covered submission, personally post the published confirmation
+   text using your GitHub account in the designated thread. It identifies the
+   agreement version and hash, notice hash, and your initial PR and commit. No
+   separate legal-name, contact-information or identity-document form is required.
+3. For subsequent contributions, the checker reuses your existing confirmation
+   for that agreement version. It does not sign for you. A new agreement needs
+   new consent. Missing, edited or unverifiable records cannot clear the check.
+
+Each relevant contributor must be covered. Identify third-party sources, preserve
+license and attribution notices, and submit only material you have authority to
+license. An employer-owned contribution needs appropriate rights-holder
+permission; a GitHub confirmation alone cannot supply it. Unknown authorship or
+rights questions require review even if an automated check succeeds.
+
+The confirmation comment and GitHub attribution would be public. Do not include
+identity documents, private contact details or handwritten signatures. If a
+public confirmation is unsuitable, request a confidential contact route without
+posting private material; the affected submission waits for an agreed process.
+The prepared process adds no DCO sign-off requirement.
+
+The owner makes the final acceptance decision and manually merges accepted
+changes. Automated tools only prepare and check them; a CLA check neither merges
+code nor guarantees acceptance or copyright ownership.
+
+See the [checker and activation guide](.github/cla/README.md) for technical controls,
+conservative scope checks and the steps required before online signing is enabled.

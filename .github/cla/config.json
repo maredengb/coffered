@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "enabled": false,
+  "repository": "maredengb/coffered",
+  "repository_id": 1422246026,
+  "recipient_id": 167590852,
+  "default_branch": "main",
+  "recipient_reference_time": null,
+  "effective_at": null,
+  "issue_number": null,
+  "issue_id": null,
+  "privacy_ready": false,
+  "owner_records_ready": false,
+  "agreement": {
+    "version": "1.0",
+    "sha256": "6c1df4e365d068d4811fad71164469b973312f2d8891dfc65c1d036409a3a0a1",
+    "url": null
+  },
+  "notice": {
+    "version": "1.0",
+    "sha256": "ef33188ebfc70e5d1e2cad74e55b6194dc2955eab5f80368618f69449ecab402",
+    "url": null
+  }
+}

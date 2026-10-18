@@ -37,5 +37,19 @@ Contributors may propose changes through pull requests and participate in review
 Automated tools prepare and check changes; they do not perform merges.
 
 Merge authority does not confer ownership of contributors' copyrights or rights
-beyond applicable licenses. Contributions follow the [contribution guide](CONTRIBUTING.md)
-and the applicable [Apache-2.0 license](LICENSE).
+beyond applicable licenses. The public distribution remains [Apache-2.0](LICENSE).
+The prepared [CLA](CLA.md), once activated, would grant additional commercial and other-license
+sublicensing rights while contributors retain copyright. It is PREPARED_NOT_ACTIVE, and no
+online confirmation process is represented as enabled. See the
+[contribution guide](CONTRIBUTING.md) for the prepared process and its activation boundary.
+
+Existing Apache-2.0 grants cannot be withdrawn merely by changing a future
+release's license. A different future distribution also requires appropriate
+rights in all included material, including earlier and third-party contributions.
+An automated CLA result is evidence of an account confirmation; it is not a
+legal finding of authorship, authority or complete rights clearance.
+
+Only the owner manually merges into official branches. Repository protections
+must be verified separately before being described as enforced. A written policy
+alone, a code-owner file, or a passing check does not restrict platform permissions.
+Automation does not receive authority to merge or bypass branch protections.
