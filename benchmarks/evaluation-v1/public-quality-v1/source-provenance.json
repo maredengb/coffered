@@ -1,0 +1,1194 @@
+{
+  "status": "candidate_public_sources_not_frozen_no_qrels_vectors_or_product_execution",
+  "source_selection": "Eight filesystem Rust APIs in the pinned Rust 1.80 std source; eight specified sections in captured SQLite official documents; first eight pinned public Rust language-team 2020 meeting notes satisfying the recorded source-size selection rule. Chosen before task authoring and any product rankings.",
+  "documents": 24,
+  "chunks": 99,
+  "material_counts": {
+    "rust_code": 8,
+    "english_technical": 8,
+    "markdown_notes": 8
+  },
+  "chunking": {
+    "prefixed_tokens_maximum": 384,
+    "tokenizer_sha256": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+    "truncation": "forbidden",
+    "overlap": 0,
+    "complete_source_projection_coverage": true
+  },
+  "sources": [
+    {
+      "source_id": "C01",
+      "kind": "rust_code",
+      "title": "Rust 1.80 std::fs::read",
+      "project": "rust_std",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L232-L269",
+      "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+      "raw_path": "raw/rust-1.80-fs.rs",
+      "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+      "source_line_start": 232,
+      "source_line_end": 269,
+      "projection": "Exact contiguous original source lines including API documentation and function implementation",
+      "plaintext_path": "plaintext/C01.txt",
+      "plaintext_sha256": "d3b5cd2b16ce52452fc1129e8fa351eafc0733e1b392819a9b410fe61814b099",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://C01#chunk-000",
+          "char_start": 0,
+          "char_end": 958,
+          "text_sha256": "da100978dcf210594e47193a7a87a20f6d38b2e03553efbc3ed48bf2b6d58483",
+          "prefixed_tokens": 369
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C01#chunk-001",
+          "char_start": 958,
+          "char_end": 1321,
+          "text_sha256": "b72e8dcd8487b832e950876d40ff434be5217b3c5973f7f19509c39fa13b5a20",
+          "prefixed_tokens": 143
+        }
+      ]
+    },
+    {
+      "source_id": "C02",
+      "kind": "rust_code",
+      "title": "Rust 1.80 std::fs::write",
+      "project": "rust_std",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L314-L344",
+      "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+      "raw_path": "raw/rust-1.80-fs.rs",
+      "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+      "source_line_start": 314,
+      "source_line_end": 344,
+      "projection": "Exact contiguous original source lines including API documentation and function implementation",
+      "plaintext_path": "plaintext/C02.txt",
+      "plaintext_sha256": "2256ceb4a276f39ca55db428afe2c2d7facdc2de0f19086af3da25f8ff142efb",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://C02#chunk-000",
+          "char_start": 0,
+          "char_end": 949,
+          "text_sha256": "f2e984fb64894772176c5ea8033b6e5371e1a9a8a9ed8f1ae63dcd2d5885dd63",
+          "prefixed_tokens": 384
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C02#chunk-001",
+          "char_start": 949,
+          "char_end": 951,
+          "text_sha256": "412ca345ccf75bf9c0806bce695be8de808b79984251a7a54d202cf6101dd451",
+          "prefixed_tokens": 6
+        }
+      ]
+    },
+    {
+      "source_id": "C03",
+      "kind": "rust_code",
+      "title": "Rust 1.80 std::fs::rename",
+      "project": "rust_std",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2082-L2124",
+      "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+      "raw_path": "raw/rust-1.80-fs.rs",
+      "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+      "source_line_start": 2082,
+      "source_line_end": 2124,
+      "projection": "Exact contiguous original source lines including API documentation and function implementation",
+      "plaintext_path": "plaintext/C03.txt",
+      "plaintext_sha256": "e322d124ed6051889b36d3ac5648e5793a5b6d79aa975a977a3ae15bf028fa1f",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://C03#chunk-000",
+          "char_start": 0,
+          "char_end": 1169,
+          "text_sha256": "c88be89f5210d78475cbd9b0fea774622b0d30e8014361ba7d64d703ada8f68b",
+          "prefixed_tokens": 380
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C03#chunk-001",
+          "char_start": 1169,
+          "char_end": 1502,
+          "text_sha256": "cc3cd4a491d79871df4de736ab3785d68699d6d172ee7de02a31af9d974452ab",
+          "prefixed_tokens": 166
+        }
+      ]
+    },
+    {
+      "source_id": "C04",
+      "kind": "rust_code",
+      "title": "Rust 1.80 std::fs::copy",
+      "project": "rust_std",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2126-L2185",
+      "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+      "raw_path": "raw/rust-1.80-fs.rs",
+      "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+      "source_line_start": 2126,
+      "source_line_end": 2185,
+      "projection": "Exact contiguous original source lines including API documentation and function implementation",
+      "plaintext_path": "plaintext/C04.txt",
+      "plaintext_sha256": "9b0bb3911eaa584514408c51641d625d8b2975997cd1cc5de6de4263fea6b570",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://C04#chunk-000",
+          "char_start": 0,
+          "char_end": 1219,
+          "text_sha256": "b70d994230945d77b8e23dbd63e381653d04a7131a94a4b094e53520561ca769",
+          "prefixed_tokens": 363
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C04#chunk-001",
+          "char_start": 1219,
+          "char_end": 2205,
+          "text_sha256": "d0048f80d095cbfde81f4d10e042b8840b1b9e70f936317b3665ca01fdc00efa",
+          "prefixed_tokens": 371
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C04#chunk-002",
+          "char_start": 2205,
+          "char_end": 2252,
+          "text_sha256": "921b9443e770231de3851a12c33cb80e5f6cfc46989884b1365b8ed421dd6a00",
+          "prefixed_tokens": 29
+        }
+      ]
+    },
+    {
+      "source_id": "C05",
+      "kind": "rust_code",
+      "title": "Rust 1.80 std::fs::hard_link",
+      "project": "rust_std",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2187-L2230",
+      "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+      "raw_path": "raw/rust-1.80-fs.rs",
+      "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+      "source_line_start": 2187,
+      "source_line_end": 2230,
+      "projection": "Exact contiguous original source lines including API documentation and function implementation",
+      "plaintext_path": "plaintext/C05.txt",
+      "plaintext_sha256": "21d75f507d88f9a83e1fe1a3b795fcd667f55fa1397457b376cfbecad49b0574",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://C05#chunk-000",
+          "char_start": 0,
+          "char_end": 1281,
+          "text_sha256": "4e3d945d841dc007ed5f6ce306406829ec538f91d98fe44d035298036fde04f8",
+          "prefixed_tokens": 366
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C05#chunk-001",
+          "char_start": 1281,
+          "char_end": 1660,
+          "text_sha256": "5f4c33ef9afe80c47db53eb82140da0b6d548a3e6d636968f9859f267bbaffac",
+          "prefixed_tokens": 184
+        }
+      ]
+    },
+    {
+      "source_id": "C06",
+      "kind": "rust_code",
+      "title": "Rust 1.80 std::fs::create_dir_all",
+      "project": "rust_std",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2383-L2429",
+      "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+      "raw_path": "raw/rust-1.80-fs.rs",
+      "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+      "source_line_start": 2383,
+      "source_line_end": 2429,
+      "projection": "Exact contiguous original source lines including API documentation and function implementation",
+      "plaintext_path": "plaintext/C06.txt",
+      "plaintext_sha256": "fdba4b4d4ccc80308eccf720392b70632c93369345a9af08d17cb2451d9f140d",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://C06#chunk-000",
+          "char_start": 0,
+          "char_end": 1367,
+          "text_sha256": "aee66e382c94343a8a4eff3c5f28f5156ddb667fba97efaaa8b59213870d7a5d",
+          "prefixed_tokens": 381
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C06#chunk-001",
+          "char_start": 1367,
+          "char_end": 1652,
+          "text_sha256": "3cbe054cb7d1be918fa18b93218c01ffcd552fdd496d1d99b76ae8ddb5de6b81",
+          "prefixed_tokens": 144
+        }
+      ]
+    },
+    {
+      "source_id": "C07",
+      "kind": "rust_code",
+      "title": "Rust 1.80 std::fs::remove_dir_all",
+      "project": "rust_std",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2467-L2512",
+      "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+      "raw_path": "raw/rust-1.80-fs.rs",
+      "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+      "source_line_start": 2467,
+      "source_line_end": 2512,
+      "projection": "Exact contiguous original source lines including API documentation and function implementation",
+      "plaintext_path": "plaintext/C07.txt",
+      "plaintext_sha256": "267683fcaea2098a4eff6738bd1309440ef8b5f1a4a10508f6ca5d569f541f07",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://C07#chunk-000",
+          "char_start": 0,
+          "char_end": 1256,
+          "text_sha256": "ba43acc5fb222f798a72da0e0d5b35e54acbab804725629f284d849870f5b52d",
+          "prefixed_tokens": 382
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C07#chunk-001",
+          "char_start": 1256,
+          "char_end": 1750,
+          "text_sha256": "2cbfb9cffda7c1ffd1eb8eaa115f136a0883edf88c1ba90373a2d56b4560c243",
+          "prefixed_tokens": 223
+        }
+      ]
+    },
+    {
+      "source_id": "C08",
+      "kind": "rust_code",
+      "title": "Rust 1.80 std::fs::read_dir",
+      "project": "rust_std",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/rust/blob/051478957371ee0084a7c0913941d2a8c4757bb9/library/std/src/fs.rs#L2514-L2588",
+      "source_revision": "051478957371ee0084a7c0913941d2a8c4757bb9",
+      "raw_path": "raw/rust-1.80-fs.rs",
+      "raw_sha256": "fdbc57ac779bad67a883623e4a9899e672216c3e439133d5b8489f22ba0e0a77",
+      "source_line_start": 2514,
+      "source_line_end": 2588,
+      "projection": "Exact contiguous original source lines including API documentation and function implementation",
+      "plaintext_path": "plaintext/C08.txt",
+      "plaintext_sha256": "49ce4681b30a896fae8369c7c72344ae806545ecc71b9360b1d81aa1df8d31bb",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://C08#chunk-000",
+          "char_start": 0,
+          "char_end": 1183,
+          "text_sha256": "99cb16228620ca83fb7dedc9faa55f1c87b95fdaab305354e28e6e205b60e081",
+          "prefixed_tokens": 371
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C08#chunk-001",
+          "char_start": 1183,
+          "char_end": 2213,
+          "text_sha256": "2435387c328649dbba2390c25a12b7e5b47ba1bbf6d1a5cd119ccebb999f4990",
+          "prefixed_tokens": 368
+        },
+        {
+          "chunk_external_id": "public-quality-v1://C08#chunk-002",
+          "char_start": 2213,
+          "char_end": 2464,
+          "text_sha256": "1e6f96b1bf429c48791af38433ba6bfadbc37b4153c1c9cbd14004aca52aac7e",
+          "prefixed_tokens": 113
+        }
+      ]
+    },
+    {
+      "source_id": "T01",
+      "kind": "english_technical",
+      "title": "3.3. FTS5 Prefix Queries",
+      "project": "sqlite",
+      "language": "en",
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "url": "https://www.sqlite.org/fts5.html#fts5_prefix_queries",
+      "source_revision": "Captured public HTML identified by raw SHA256",
+      "raw_path": "raw/sqlite-fts5.html",
+      "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+      "html_char_start": 24242,
+      "html_char_end": 25351,
+      "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+      "omitted_nontext_images": [],
+      "plaintext_path": "plaintext/T01.txt",
+      "plaintext_sha256": "3eaf1f23bacc364d78dc5de7a10d61544b56133cf13ccb33e144d2b89816461c",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://T01#chunk-000",
+          "char_start": 0,
+          "char_end": 894,
+          "text_sha256": "3eaf1f23bacc364d78dc5de7a10d61544b56133cf13ccb33e144d2b89816461c",
+          "prefixed_tokens": 242
+        }
+      ]
+    },
+    {
+      "source_id": "T02",
+      "kind": "english_technical",
+      "title": "3.5. FTS5 NEAR Queries",
+      "project": "sqlite",
+      "language": "en",
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "url": "https://www.sqlite.org/fts5.html#fts5_near_queries",
+      "source_revision": "Captured public HTML identified by raw SHA256",
+      "raw_path": "raw/sqlite-fts5.html",
+      "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+      "html_char_start": 26405,
+      "html_char_end": 28193,
+      "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+      "omitted_nontext_images": [],
+      "plaintext_path": "plaintext/T02.txt",
+      "plaintext_sha256": "4ca2185299d669f71dde3fc18c9150a791ac031d6d2c3b5b5377e5361bc35e7d",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://T02#chunk-000",
+          "char_start": 0,
+          "char_end": 1145,
+          "text_sha256": "5e220398dad898602ff8c27f572744b452b8932e0ff5c5068cae5fc4d4fd32d7",
+          "prefixed_tokens": 374
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T02#chunk-001",
+          "char_start": 1145,
+          "char_end": 1312,
+          "text_sha256": "ddd27abae758471592d8dc9cf9750c452ff9c2cb8a67023bad8c8291864f2c6d",
+          "prefixed_tokens": 81
+        }
+      ]
+    },
+    {
+      "source_id": "T03",
+      "kind": "english_technical",
+      "title": "3.7. FTS5 Boolean Operators",
+      "project": "sqlite",
+      "language": "en",
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "url": "https://www.sqlite.org/fts5.html#fts5_boolean_operators",
+      "source_revision": "Captured public HTML identified by raw SHA256",
+      "raw_path": "raw/sqlite-fts5.html",
+      "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+      "html_char_start": 30781,
+      "html_char_end": 33519,
+      "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+      "omitted_nontext_images": [],
+      "plaintext_path": "plaintext/T03.txt",
+      "plaintext_sha256": "67e4dbfee2da4d8e19cae5f8cbc7de96db081ed18b8201119fba64c10b13e99b",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://T03#chunk-000",
+          "char_start": 0,
+          "char_end": 1366,
+          "text_sha256": "518831e2877291fc9ffbc798e1d58c512062cf71aa4ff2de0dea281fcaad94e3",
+          "prefixed_tokens": 374
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T03#chunk-001",
+          "char_start": 1366,
+          "char_end": 1924,
+          "text_sha256": "153972cd919afd918a6cbd8830311063dfbb95f9d8f84f48429e2eb144e44ba8",
+          "prefixed_tokens": 176
+        }
+      ]
+    },
+    {
+      "source_id": "T04",
+      "kind": "english_technical",
+      "title": "4.4.4. External Content Table Pitfalls",
+      "project": "sqlite",
+      "language": "en",
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "url": "https://www.sqlite.org/fts5.html#external_content_table_pitfalls",
+      "source_revision": "Captured public HTML identified by raw SHA256",
+      "raw_path": "raw/sqlite-fts5.html",
+      "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+      "html_char_start": 57231,
+      "html_char_end": 63872,
+      "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+      "omitted_nontext_images": [],
+      "plaintext_path": "plaintext/T04.txt",
+      "plaintext_sha256": "5a9445e0f38d100b266703d7f439f22ad2b5512accda1f0e0553ecf8584e2edb",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://T04#chunk-000",
+          "char_start": 0,
+          "char_end": 1465,
+          "text_sha256": "1d30480c66de78f12057c4596dee7ceed22c7ce944e88953da8db79cecacf444",
+          "prefixed_tokens": 368
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T04#chunk-001",
+          "char_start": 1465,
+          "char_end": 2622,
+          "text_sha256": "4cb356016bac6bb1a4df3cf869783e4f6a25b0d6de590de72b242309dbebd457",
+          "prefixed_tokens": 375
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T04#chunk-002",
+          "char_start": 2622,
+          "char_end": 3889,
+          "text_sha256": "0c8dd8302238fa9b18cd85c49c088f140fe5d0d5e131b621ad4eb088fd7ba53f",
+          "prefixed_tokens": 383
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T04#chunk-003",
+          "char_start": 3889,
+          "char_end": 5338,
+          "text_sha256": "26cef467d5deb586dd595fdf1e176beac9e4f9d434c39a25825217f2ac901ed0",
+          "prefixed_tokens": 375
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T04#chunk-004",
+          "char_start": 5338,
+          "char_end": 5756,
+          "text_sha256": "f4edf88baa37d689c7b63fa6e57c515e448bbd3bb5264cbe9d112969af766091",
+          "prefixed_tokens": 109
+        }
+      ]
+    },
+    {
+      "source_id": "T05",
+      "kind": "english_technical",
+      "title": "5.1.1. The bm25() function",
+      "project": "sqlite",
+      "language": "en",
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "url": "https://www.sqlite.org/fts5.html#the_bm25_function",
+      "source_revision": "Captured public HTML identified by raw SHA256",
+      "raw_path": "raw/sqlite-fts5.html",
+      "raw_sha256": "92b7e721147d5119781a80273b43708f2f146314d150abb4d3e6eff1503d6fe6",
+      "html_char_start": 78884,
+      "html_char_end": 82663,
+      "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+      "omitted_nontext_images": [
+        {
+          "source": "images/fts5_formula1.png",
+          "reason": "Non-text image not included in the plaintext projection"
+        },
+        {
+          "source": "images/fts5_formula2.png",
+          "reason": "Non-text image not included in the plaintext projection"
+        },
+        {
+          "source": "images/fts5_formula3.png",
+          "reason": "Non-text image not included in the plaintext projection"
+        }
+      ],
+      "plaintext_path": "plaintext/T05.txt",
+      "plaintext_sha256": "022a806e52d64194708aba52b139eac8a2c8d807ed550da4764f8610485ce382",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://T05#chunk-000",
+          "char_start": 0,
+          "char_end": 1416,
+          "text_sha256": "ecd6ff23f2e1cedcc36ae4a16382a9e27d125767f6448b02fc20d1bcc23684d1",
+          "prefixed_tokens": 376
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T05#chunk-001",
+          "char_start": 1416,
+          "char_end": 2725,
+          "text_sha256": "a4dfb5b3abf6e5689d745dabafe1e261721ece707d2eeb91c619e9424de54c3f",
+          "prefixed_tokens": 366
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T05#chunk-002",
+          "char_start": 2725,
+          "char_end": 2964,
+          "text_sha256": "071973aa3c25172d76667765e0cd8b42f932c3fb2b03deaf1e417f7e9aafafd7",
+          "prefixed_tokens": 75
+        }
+      ]
+    },
+    {
+      "source_id": "T06",
+      "kind": "english_technical",
+      "title": "2.2. Concurrency",
+      "project": "sqlite",
+      "language": "en",
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "url": "https://www.sqlite.org/wal.html#concurrency",
+      "source_revision": "Captured public HTML identified by raw SHA256",
+      "raw_path": "raw/sqlite-wal.html",
+      "raw_sha256": "f3467b530b883d4a00574fe1a898b3d121ed72764ae28cf66941080ac0badb9e",
+      "html_char_start": 11774,
+      "html_char_end": 14799,
+      "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+      "omitted_nontext_images": [],
+      "plaintext_path": "plaintext/T06.txt",
+      "plaintext_sha256": "92cf9fab7951581c5d1c85a556f1fbd3b33bf2f08ebe2ff80de058c812d28603",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://T06#chunk-000",
+          "char_start": 0,
+          "char_end": 1595,
+          "text_sha256": "06e0e393a5877650d9352012c05dae9d153398de31804b78ab456e35b6c15f8d",
+          "prefixed_tokens": 381
+        },
+        {
+          "chunk_external_id": "public-quality-v1://T06#chunk-001",
+          "char_start": 1595,
+          "char_end": 2912,
+          "text_sha256": "4bd4f1b89ed3aee0f9bb9feb1524e757a50d78e60668124ff06a594934ca92ba",
+          "prefixed_tokens": 302
+        }
+      ]
+    },
+    {
+      "source_id": "T07",
+      "kind": "english_technical",
+      "title": "9. Sometimes Queries Return SQLITE_BUSY In WAL Mode",
+      "project": "sqlite",
+      "language": "en",
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "url": "https://www.sqlite.org/wal.html#sometimes_queries_return_sqlite_busy_in_wal_mode",
+      "source_revision": "Captured public HTML identified by raw SHA256",
+      "raw_path": "raw/sqlite-wal.html",
+      "raw_sha256": "f3467b530b883d4a00574fe1a898b3d121ed72764ae28cf66941080ac0badb9e",
+      "html_char_start": 34633,
+      "html_char_end": 36540,
+      "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+      "omitted_nontext_images": [],
+      "plaintext_path": "plaintext/T07.txt",
+      "plaintext_sha256": "390306f36607a97f5dee769fdc1b161a6201979eade60f35ebd6bc63e1d87951",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://T07#chunk-000",
+          "char_start": 0,
+          "char_end": 1481,
+          "text_sha256": "390306f36607a97f5dee769fdc1b161a6201979eade60f35ebd6bc63e1d87951",
+          "prefixed_tokens": 324
+        }
+      ]
+    },
+    {
+      "source_id": "T08",
+      "kind": "english_technical",
+      "title": "5.5. Delete The Super-Journal File",
+      "project": "sqlite",
+      "language": "en",
+      "license": "LicenseRef-SQLite-Public-Domain",
+      "url": "https://www.sqlite.org/atomiccommit.html#_delete_the_super_journal_file",
+      "source_revision": "Captured public HTML identified by raw SHA256",
+      "raw_path": "raw/sqlite-atomiccommit.html",
+      "raw_sha256": "5a5be7b660217c9408c8a81eaf2faa2d08832ed3790f895a0a713916ad856ea1",
+      "html_char_start": 45358,
+      "html_char_end": 46318,
+      "projection": "Specified HTML heading through next peer/ancestor heading, visible-text extraction without script/style content",
+      "omitted_nontext_images": [
+        {
+          "source": "images/ac/multi-4.gif",
+          "reason": "Non-text image not included in the plaintext projection"
+        }
+      ],
+      "plaintext_path": "plaintext/T08.txt",
+      "plaintext_sha256": "1967e14b5b812196fc445d8ded5d49fb0ef61bfbc255cc567588a3611285c77d",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://T08#chunk-000",
+          "char_start": 0,
+          "char_end": 754,
+          "text_sha256": "1967e14b5b812196fc445d8ded5d49fb0ef61bfbc255cc567588a3611285c77d",
+          "prefixed_tokens": 181
+        }
+      ]
+    },
+    {
+      "source_id": "N01",
+      "kind": "markdown_notes",
+      "title": "2020-01-06-Pin-unsoundness",
+      "project": "rust_lang_team",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/design-meeting-minutes/2020-01-06-Pin-unsoundness.md",
+      "source_revision": "c45345e32e81e273aab6c805b0d3cd7b1a666045",
+      "raw_path": "raw/rust-lang-team/2020-01-06-Pin-unsoundness.md",
+      "raw_sha256": "a360c3176e419a290abdb09404e3ba5e68a172e632fa27efddefc846978ffa47",
+      "projection": "Complete original public Markdown meeting minutes, no rewriting",
+      "plaintext_path": "plaintext/N01.txt",
+      "plaintext_sha256": "a360c3176e419a290abdb09404e3ba5e68a172e632fa27efddefc846978ffa47",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://N01#chunk-000",
+          "char_start": 0,
+          "char_end": 1216,
+          "text_sha256": "814c17ee7d94c2faa8448928a218988fa50ee91a56cd3e0e91f7d554f0eb06c7",
+          "prefixed_tokens": 362
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N01#chunk-001",
+          "char_start": 1216,
+          "char_end": 2206,
+          "text_sha256": "7f2e2dedbf018d185276faf02cfa4bcf188236a2ee35514e57dd95dce22f291b",
+          "prefixed_tokens": 365
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N01#chunk-002",
+          "char_start": 2206,
+          "char_end": 3449,
+          "text_sha256": "bcfee4fe34005ba63abf682542f9e86b4eb843ee4df1e91670e5d79719813bc3",
+          "prefixed_tokens": 381
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N01#chunk-003",
+          "char_start": 3449,
+          "char_end": 4689,
+          "text_sha256": "3fcdaeaa2f0d1104529fc833ca591861c3ddbbbb647ca96ab9690b344a882cb3",
+          "prefixed_tokens": 347
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N01#chunk-004",
+          "char_start": 4689,
+          "char_end": 6081,
+          "text_sha256": "5f97823fbb39ef0ce5c9f0ec7c799199fcec90707724b383d1416c511397386f",
+          "prefixed_tokens": 375
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N01#chunk-005",
+          "char_start": 6081,
+          "char_end": 7384,
+          "text_sha256": "958ff07d4abf7e2da0eee708b10f68709a2fb537e92ad2d744ecaa92af55856c",
+          "prefixed_tokens": 376
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N01#chunk-006",
+          "char_start": 7384,
+          "char_end": 8757,
+          "text_sha256": "123968af2392465d4a379145b2fccae615bdb72031b3d1b2c4a6c0c2af5a5b6c",
+          "prefixed_tokens": 383
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N01#chunk-007",
+          "char_start": 8757,
+          "char_end": 9624,
+          "text_sha256": "582dda75dc06584aa350b77959192a9312fed7eb83dd61855b856004525996da",
+          "prefixed_tokens": 234
+        }
+      ]
+    },
+    {
+      "source_id": "N02",
+      "kind": "markdown_notes",
+      "title": "2020-01-13-dyn-trait-and-coherence",
+      "project": "rust_lang_team",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/design-meeting-minutes/2020-01-13-dyn-trait-and-coherence.md",
+      "source_revision": "c45345e32e81e273aab6c805b0d3cd7b1a666045",
+      "raw_path": "raw/rust-lang-team/2020-01-13-dyn-trait-and-coherence.md",
+      "raw_sha256": "2ab99d4a07a9eaf40f2ebd887e79736becf72d8355b0823eb72e9961a928ff09",
+      "projection": "Complete original public Markdown meeting minutes, no rewriting",
+      "plaintext_path": "plaintext/N02.txt",
+      "plaintext_sha256": "2ab99d4a07a9eaf40f2ebd887e79736becf72d8355b0823eb72e9961a928ff09",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-000",
+          "char_start": 0,
+          "char_end": 1168,
+          "text_sha256": "d0a91cfaa0f8fda5020582c0d547010722e5e762c0f02586990dcbfa5f903f40",
+          "prefixed_tokens": 357
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-001",
+          "char_start": 1168,
+          "char_end": 2313,
+          "text_sha256": "9936517f96ef5385767f12a14b93c87e0e58958425480f06dd870cb2e4289a5e",
+          "prefixed_tokens": 363
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-002",
+          "char_start": 2313,
+          "char_end": 3341,
+          "text_sha256": "d27e696796dd6b0c954706a11669e4344334f07c373fc8acb017230656e77c22",
+          "prefixed_tokens": 339
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-003",
+          "char_start": 3341,
+          "char_end": 4718,
+          "text_sha256": "bffbfb277c627879a4c5ec49740b6fe7291aecd9d2a9c01440a108524c7e2fba",
+          "prefixed_tokens": 375
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-004",
+          "char_start": 4718,
+          "char_end": 6024,
+          "text_sha256": "cf7328f67029b9658f159f2e0035ad96f2b53297ac142b1ab62df0528b996eaa",
+          "prefixed_tokens": 383
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-005",
+          "char_start": 6024,
+          "char_end": 7174,
+          "text_sha256": "7e9d562c960b78f81b4598acad8949a52c5e0d4f822cf3f90353f90559379880",
+          "prefixed_tokens": 380
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-006",
+          "char_start": 7174,
+          "char_end": 8439,
+          "text_sha256": "d78d549dd97e6c37c2f82093bbeee4e2793436c0e231aeea1d9d9114b1ff984d",
+          "prefixed_tokens": 380
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-007",
+          "char_start": 8439,
+          "char_end": 9799,
+          "text_sha256": "7dc4c7da9aa60b790b28d5ad91e1f0bcb34a09eaa9553ecd16500f1b6f9ec9d4",
+          "prefixed_tokens": 378
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-008",
+          "char_start": 9799,
+          "char_end": 11254,
+          "text_sha256": "859b32a0de15c8a6c9ea4594583e83b56eb773836bce762c574772cea82d2833",
+          "prefixed_tokens": 363
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-009",
+          "char_start": 11254,
+          "char_end": 12860,
+          "text_sha256": "b7d26d5fb2a84156b6d36ba26b7aa98b524de1223dd4700c2af6887f806d2555",
+          "prefixed_tokens": 383
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-010",
+          "char_start": 12860,
+          "char_end": 14377,
+          "text_sha256": "eaa98866fb792fe2d84c8f251166a3e6c982ab42c04ac2c75dc6c71610c3fa82",
+          "prefixed_tokens": 376
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-011",
+          "char_start": 14377,
+          "char_end": 15824,
+          "text_sha256": "67c70b187d3c2f343829d3cb244f64a4655b00e21e69cc87d21e6052c791130e",
+          "prefixed_tokens": 367
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-012",
+          "char_start": 15824,
+          "char_end": 17023,
+          "text_sha256": "3b75c0c2af8cf4b2b25e1473307cfbee0308bc1dda430176b94226fe1a7303c3",
+          "prefixed_tokens": 377
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-013",
+          "char_start": 17023,
+          "char_end": 18326,
+          "text_sha256": "00878648726b7153794ea2319498648cbb5748a5473e5a5c13880ef190f3cd86",
+          "prefixed_tokens": 377
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-014",
+          "char_start": 18326,
+          "char_end": 19697,
+          "text_sha256": "07c091320027edce290398c3cabcd9d4d939f55ca4e1e146d794150adb5492fb",
+          "prefixed_tokens": 375
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N02#chunk-015",
+          "char_start": 19697,
+          "char_end": 20046,
+          "text_sha256": "31467fdf7c6a4b48a9a95d9e2fb26d31775f7991e7537b2f56e77bc7904bcaf5",
+          "prefixed_tokens": 85
+        }
+      ]
+    },
+    {
+      "source_id": "N03",
+      "kind": "markdown_notes",
+      "title": "2020-02-03-specialization-review",
+      "project": "rust_lang_team",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/design-meeting-minutes/2020-02-03-specialization-review.md",
+      "source_revision": "c45345e32e81e273aab6c805b0d3cd7b1a666045",
+      "raw_path": "raw/rust-lang-team/2020-02-03-specialization-review.md",
+      "raw_sha256": "080e0f19b83e45422650658169a33772c427e6254ed592827a3496925bb75df7",
+      "projection": "Complete original public Markdown meeting minutes, no rewriting",
+      "plaintext_path": "plaintext/N03.txt",
+      "plaintext_sha256": "080e0f19b83e45422650658169a33772c427e6254ed592827a3496925bb75df7",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://N03#chunk-000",
+          "char_start": 0,
+          "char_end": 1195,
+          "text_sha256": "f03a1847be527afb70f9a701c52a71e3cd90c23f180acca0459ff5932722024d",
+          "prefixed_tokens": 384
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N03#chunk-001",
+          "char_start": 1195,
+          "char_end": 2484,
+          "text_sha256": "6863248ec4299a35af5071bedc150d499b784358d69b9f23025ddd3c5cf102eb",
+          "prefixed_tokens": 379
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N03#chunk-002",
+          "char_start": 2484,
+          "char_end": 3693,
+          "text_sha256": "7c4c2ff7a012a945ca022722f653c9cba204939eed7eeba7953a0446c7f6d385",
+          "prefixed_tokens": 378
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N03#chunk-003",
+          "char_start": 3693,
+          "char_end": 4939,
+          "text_sha256": "25e3e6deca6e940e426b5bedb8a72f350901e9aa3ed8c448849fba8bda954fe2",
+          "prefixed_tokens": 379
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N03#chunk-004",
+          "char_start": 4939,
+          "char_end": 6310,
+          "text_sha256": "e7f672060d978c0c9ce564bf56f1506e43830f2d99ddd4653fd8e51d10bd004d",
+          "prefixed_tokens": 378
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N03#chunk-005",
+          "char_start": 6310,
+          "char_end": 7555,
+          "text_sha256": "f6cf6b38c89286c91c1c6f7f6e0f9c87a78503a4c8dfdd37f73b4ba3d0f7f12c",
+          "prefixed_tokens": 382
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N03#chunk-006",
+          "char_start": 7555,
+          "char_end": 8763,
+          "text_sha256": "185dcd707551ca30b741ad7d987809dafacf76c2fc58f1e30cb8581414dc0ab1",
+          "prefixed_tokens": 371
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N03#chunk-007",
+          "char_start": 8763,
+          "char_end": 9250,
+          "text_sha256": "66a3957100c079eb292fc542f9647e7532526e5409f413d0002703ee96d0ede4",
+          "prefixed_tokens": 114
+        }
+      ]
+    },
+    {
+      "source_id": "N04",
+      "kind": "markdown_notes",
+      "title": "2020-02-10-References-and-dereferenceable",
+      "project": "rust_lang_team",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/design-meeting-minutes/2020-02-10-References-and-dereferenceable.md",
+      "source_revision": "c45345e32e81e273aab6c805b0d3cd7b1a666045",
+      "raw_path": "raw/rust-lang-team/2020-02-10-References-and-dereferenceable.md",
+      "raw_sha256": "77d3f8265103486693c1fd6b4262a8929b12f0d9b52e7b99cfff36036b91f212",
+      "projection": "Complete original public Markdown meeting minutes, no rewriting",
+      "plaintext_path": "plaintext/N04.txt",
+      "plaintext_sha256": "77d3f8265103486693c1fd6b4262a8929b12f0d9b52e7b99cfff36036b91f212",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-000",
+          "char_start": 0,
+          "char_end": 1080,
+          "text_sha256": "7bc6bd7ab60379f65770bad4e8c978c8f57e931595e6be40b2cc1e5dd01b25e3",
+          "prefixed_tokens": 376
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-001",
+          "char_start": 1080,
+          "char_end": 2516,
+          "text_sha256": "43b3a6eaf704c29d5a42ba7df61d666292390d0e0c380e77d7e9b70bfe4dbca6",
+          "prefixed_tokens": 354
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-002",
+          "char_start": 2516,
+          "char_end": 3853,
+          "text_sha256": "9cc495b47baebf9708d8c27991aa8f48ce098e3405052bc747660d0011d9c4e6",
+          "prefixed_tokens": 382
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-003",
+          "char_start": 3853,
+          "char_end": 5127,
+          "text_sha256": "540e9c68560e32d6a742ec242529983aacf2f9a07beae85023e9ba4017751b2c",
+          "prefixed_tokens": 384
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-004",
+          "char_start": 5127,
+          "char_end": 6414,
+          "text_sha256": "09f79138e3bfbf9993c44838e17828b84ea3f44a4b2a85cfcd90d74e379818a5",
+          "prefixed_tokens": 372
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-005",
+          "char_start": 6414,
+          "char_end": 7702,
+          "text_sha256": "458e9fd771b9e99d9e0098fa4e2f640316f9009e30478fca1662ef0489b4b9e8",
+          "prefixed_tokens": 378
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-006",
+          "char_start": 7702,
+          "char_end": 9124,
+          "text_sha256": "08b180275c835bb7b2fe1828315c53b4c95158a56b97346e5ece135a8f25869e",
+          "prefixed_tokens": 383
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-007",
+          "char_start": 9124,
+          "char_end": 10512,
+          "text_sha256": "5706e89c673c418889fb4c5758d5c367afebcc579d4836e685135ba72a05a4fc",
+          "prefixed_tokens": 358
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-008",
+          "char_start": 10512,
+          "char_end": 11919,
+          "text_sha256": "6cdf024b2436c28e5336917ac40b446f55ecaadff2370299ecb7bd2acb61aaf7",
+          "prefixed_tokens": 375
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N04#chunk-009",
+          "char_start": 11919,
+          "char_end": 13110,
+          "text_sha256": "a600657adca7104cdbf0780e37dc250f28dd46cfc944c6a805c5a9d4259437f0",
+          "prefixed_tokens": 280
+        }
+      ]
+    },
+    {
+      "source_id": "N05",
+      "kind": "markdown_notes",
+      "title": "2020-03-16-ffi-unwind",
+      "project": "rust_lang_team",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/design-meeting-minutes/2020-03-16-ffi-unwind.md",
+      "source_revision": "c45345e32e81e273aab6c805b0d3cd7b1a666045",
+      "raw_path": "raw/rust-lang-team/2020-03-16-ffi-unwind.md",
+      "raw_sha256": "c064dae397fe7a110ded783c372e39c59b19390e0aa8b13e652eb90204274a42",
+      "projection": "Complete original public Markdown meeting minutes, no rewriting",
+      "plaintext_path": "plaintext/N05.txt",
+      "plaintext_sha256": "c064dae397fe7a110ded783c372e39c59b19390e0aa8b13e652eb90204274a42",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://N05#chunk-000",
+          "char_start": 0,
+          "char_end": 1214,
+          "text_sha256": "af8e4eae64d1e55b02302c462cd2d112280e45b57025fa0b856c2eae234c939d",
+          "prefixed_tokens": 380
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N05#chunk-001",
+          "char_start": 1214,
+          "char_end": 2523,
+          "text_sha256": "a9a4acbfe3d1dad63a886341b864c08720362374774cc0bcb0daab28561e05c7",
+          "prefixed_tokens": 372
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N05#chunk-002",
+          "char_start": 2523,
+          "char_end": 3864,
+          "text_sha256": "d298cf7438ad21c6eeb6e90530d3a03c39569a425c8bec1cd1b453f6e1b0951d",
+          "prefixed_tokens": 377
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N05#chunk-003",
+          "char_start": 3864,
+          "char_end": 5287,
+          "text_sha256": "db6c6567ba82ad270cdd770ba64a2f890ea3cce11e1ffce48d2a2716491870ca",
+          "prefixed_tokens": 370
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N05#chunk-004",
+          "char_start": 5287,
+          "char_end": 6782,
+          "text_sha256": "2da1eef34d63b47936909f0256f60173dc6b6fe0f2a25da24c8d5dfde54bcb7b",
+          "prefixed_tokens": 376
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N05#chunk-005",
+          "char_start": 6782,
+          "char_end": 7715,
+          "text_sha256": "6419764779f0a9ac56681d28ebc6a295513bc0a20d21b005dee191ea64420f59",
+          "prefixed_tokens": 245
+        }
+      ]
+    },
+    {
+      "source_id": "N06",
+      "kind": "markdown_notes",
+      "title": "2020-03-23-sealed-rust",
+      "project": "rust_lang_team",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/design-meeting-minutes/2020-03-23-sealed-rust.md",
+      "source_revision": "c45345e32e81e273aab6c805b0d3cd7b1a666045",
+      "raw_path": "raw/rust-lang-team/2020-03-23-sealed-rust.md",
+      "raw_sha256": "de9057c9fdbac9df86adb940d485a7f53e1c794356342c1c7af5a1b917b3f858",
+      "projection": "Complete original public Markdown meeting minutes, no rewriting",
+      "plaintext_path": "plaintext/N06.txt",
+      "plaintext_sha256": "de9057c9fdbac9df86adb940d485a7f53e1c794356342c1c7af5a1b917b3f858",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://N06#chunk-000",
+          "char_start": 0,
+          "char_end": 1508,
+          "text_sha256": "352958ebea1fe33121a5256acbef968975d2bd5de4068098f0d0ee611a4fed5a",
+          "prefixed_tokens": 371
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N06#chunk-001",
+          "char_start": 1508,
+          "char_end": 2882,
+          "text_sha256": "73e559adc97c2787cd132edc0b3b86dcc1e449bd1e12d0d85f78cccbfc3fd9a5",
+          "prefixed_tokens": 340
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N06#chunk-002",
+          "char_start": 2882,
+          "char_end": 4189,
+          "text_sha256": "45f68bce32a528b5317493aa98f7054edcbbe08d4970b46f674f485f6d550e69",
+          "prefixed_tokens": 317
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N06#chunk-003",
+          "char_start": 4189,
+          "char_end": 5562,
+          "text_sha256": "3a4206c36fa4d70cfc41da09b21b1368fdde346e411cfbabaf74a52fd3daf7ce",
+          "prefixed_tokens": 347
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N06#chunk-004",
+          "char_start": 5562,
+          "char_end": 7129,
+          "text_sha256": "1bed3682d0bc43f180186d2667e678d37143a5c6cf1cd7be87e4134ce9fb694f",
+          "prefixed_tokens": 382
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N06#chunk-005",
+          "char_start": 7129,
+          "char_end": 8650,
+          "text_sha256": "296ec8590778822514cfc565b379257b05b0c7a984dde779bb45f00c119ceaa7",
+          "prefixed_tokens": 365
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N06#chunk-006",
+          "char_start": 8650,
+          "char_end": 8758,
+          "text_sha256": "a987bfbb7f850e05d5e8dc110c84f5af8efa7ad8e5590fa1e55e0a5fbcc895f6",
+          "prefixed_tokens": 29
+        }
+      ]
+    },
+    {
+      "source_id": "N07",
+      "kind": "markdown_notes",
+      "title": "2020-04-20-2021-edition-design",
+      "project": "rust_lang_team",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/design-meeting-minutes/2020-04-20-2021-edition-design.md",
+      "source_revision": "c45345e32e81e273aab6c805b0d3cd7b1a666045",
+      "raw_path": "raw/rust-lang-team/2020-04-20-2021-edition-design.md",
+      "raw_sha256": "71b2224cf1e401c5a8ceb0ec045fc9f9167e50d95ebd6d31c992e4e24c8bb324",
+      "projection": "Complete original public Markdown meeting minutes, no rewriting",
+      "plaintext_path": "plaintext/N07.txt",
+      "plaintext_sha256": "71b2224cf1e401c5a8ceb0ec045fc9f9167e50d95ebd6d31c992e4e24c8bb324",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://N07#chunk-000",
+          "char_start": 0,
+          "char_end": 1525,
+          "text_sha256": "f8fb26a95b9e55ad6733fedf5e67b02ffd499b064c3b75303a0ec4de003a5345",
+          "prefixed_tokens": 382
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N07#chunk-001",
+          "char_start": 1525,
+          "char_end": 3048,
+          "text_sha256": "c872d75fc88023d37c5930eabbe978a02188270ea166cbae7b33542d5d5c6c1b",
+          "prefixed_tokens": 373
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N07#chunk-002",
+          "char_start": 3048,
+          "char_end": 3927,
+          "text_sha256": "1e0a9bbd19862d22cd4a2fe863159e3cd742d86282312cdfdfa289e9a895c62d",
+          "prefixed_tokens": 225
+        }
+      ]
+    },
+    {
+      "source_id": "N08",
+      "kind": "markdown_notes",
+      "title": "2020-06-24-const-eval-unsafe-and-skill-tree",
+      "project": "rust_lang_team",
+      "language": "en",
+      "license": "MIT OR Apache-2.0",
+      "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/design-meeting-minutes/2020-06-24-const-eval-unsafe-and-skill-tree.md",
+      "source_revision": "c45345e32e81e273aab6c805b0d3cd7b1a666045",
+      "raw_path": "raw/rust-lang-team/2020-06-24-const-eval-unsafe-and-skill-tree.md",
+      "raw_sha256": "b0560e6ba7941c1432363ad7d7eb94e0bccb284ff79e0f2f0f034a3e692bdcb6",
+      "projection": "Complete original public Markdown meeting minutes, no rewriting",
+      "plaintext_path": "plaintext/N08.txt",
+      "plaintext_sha256": "b0560e6ba7941c1432363ad7d7eb94e0bccb284ff79e0f2f0f034a3e692bdcb6",
+      "chunks": [
+        {
+          "chunk_external_id": "public-quality-v1://N08#chunk-000",
+          "char_start": 0,
+          "char_end": 1218,
+          "text_sha256": "c34c08c5cbe514a82e336ce15f598cf3c977231214aca9f8445a8787d138f611",
+          "prefixed_tokens": 335
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N08#chunk-001",
+          "char_start": 1218,
+          "char_end": 2741,
+          "text_sha256": "c3876b9497a3488df2a6497a345036dfeba73f74bb62cd18a8ba10e95edadd3b",
+          "prefixed_tokens": 381
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N08#chunk-002",
+          "char_start": 2741,
+          "char_end": 4105,
+          "text_sha256": "42cff12163e1764426bc1b641adbafc0f98f6d41b85a01bd8d198271db124477",
+          "prefixed_tokens": 364
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N08#chunk-003",
+          "char_start": 4105,
+          "char_end": 5513,
+          "text_sha256": "a7dadc0a0e2a7371d676e327c23abcaeb01adcb3f8fa524caaacdecdd78ca613",
+          "prefixed_tokens": 372
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N08#chunk-004",
+          "char_start": 5513,
+          "char_end": 6648,
+          "text_sha256": "9a067a2bae9fd4fc356a122e813eb13b516807f4b28e9d54c2bd5d9ea1bba16c",
+          "prefixed_tokens": 339
+        },
+        {
+          "chunk_external_id": "public-quality-v1://N08#chunk-005",
+          "char_start": 6648,
+          "char_end": 7374,
+          "text_sha256": "9d4a21b27bc2d95de06f968dcc16c79b75f027d5ba7adbf3aeacab382012c82c",
+          "prefixed_tokens": 206
+        }
+      ]
+    }
+  ],
+  "asset_sha256": {
+    "documents.jsonl": "49950cc17b0a1516c1c22219825431bdb8ab88a4b34e71c4e02a400e4f5a524d",
+    "chunks.jsonl": "41555fbe5b85d36b74de79f795b1716216c09f69a2c1e073d20c5063d8f2857d"
+  },
+  "upstream_notes_license_declaration": {
+    "url": "https://github.com/rust-lang/lang-team/blob/c45345e32e81e273aab6c805b0d3cd7b1a666045/README.md",
+    "captured_sha256": "ca7308976eb0703aa7f7bfb24d587cf418b55ac3ee5afad8b5efbde3ae72ea33",
+    "license": "MIT OR Apache-2.0; complete license texts supplied under licenses/"
+  },
+  "limitations": [
+    "All content is historical upstream material; not current Rust or SQLite guidance.",
+    "Upstream meeting participants and historical plans are retained as original source content.",
+    "HTML is a text-only projection. Non-text formula images are not available to retrieval; tasks must not depend on their missing contents.",
+    "No rankings, relevance judgments, quality or latency claims have been produced."
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "status": "candidate_pending_protocol_freeze",
+  "tasks": [
+    {
+      "query_id": "C01-E",
+      "material": "rust_code",
+      "query_type": "exact_term",
+      "source_id": "C01",
+      "text": "How does `std::fs::read` handle `io::ErrorKind::Interrupted`?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C01-S",
+      "material": "rust_code",
+      "query_type": "semantic",
+      "source_id": "C01",
+      "text": "Which whole-file reader reserves capacity from an optional size hint before accumulating bytes?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C02-F",
+      "material": "rust_code",
+      "query_type": "metadata_filter",
+      "source_id": "C02",
+      "text": "Which helper creates or replaces a file by calling `File::create(...).write_all(...)`?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "rust_code"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "C02-M",
+      "material": "rust_code",
+      "query_type": "mixed",
+      "source_id": "C02",
+      "text": "Does `fs::write` append to existing contents, and why might a missing parent directory make it fail?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C03-E",
+      "material": "rust_code",
+      "query_type": "exact_term",
+      "source_id": "C03",
+      "text": "Which operating-system functions and Windows flag does `std::fs::rename` use in this source?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C03-M",
+      "material": "rust_code",
+      "query_type": "mixed",
+      "source_id": "C03",
+      "text": "Why could `fs::rename` fail if the destination is on a different mounted filesystem?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C04-F",
+      "material": "rust_code",
+      "query_type": "metadata_filter",
+      "source_id": "C04",
+      "text": "For the Windows file-copy implementation, are alternate NTFS streams copied and included in the reported byte total?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "rust_code"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "C04-S",
+      "material": "rust_code",
+      "query_type": "semantic",
+      "source_id": "C04",
+      "text": "What is the risk of duplicating a file onto another path that resolves to the very same file?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C05-E",
+      "material": "rust_code",
+      "query_type": "exact_term",
+      "source_id": "C05",
+      "text": "What does `std::fs::hard_link` do when `original` names a symbolic link?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C05-F",
+      "material": "rust_code",
+      "query_type": "metadata_filter",
+      "source_id": "C05",
+      "text": "Which file-link operation usually requires the original path and the new path to be on the same filesystem?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "rust_code"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "C06-M",
+      "material": "rust_code",
+      "query_type": "mixed",
+      "source_id": "C06",
+      "text": "Why can concurrent `create_dir_all` calls succeed when another thread creates the same directories first?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C06-S",
+      "material": "rust_code",
+      "query_type": "semantic",
+      "source_id": "C06",
+      "text": "Can recursively creating missing parent directories leave some of them behind if the operation eventually fails?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C07-E",
+      "material": "rust_code",
+      "query_type": "exact_term",
+      "source_id": "C07",
+      "text": "On which platforms did the `remove_dir_all` documentation warn that TOCTOU protection was absent?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C07-S",
+      "material": "rust_code",
+      "query_type": "semantic",
+      "source_id": "C07",
+      "text": "Why is recursively deleting a directory not an operation that can simply be repeated without checking errors?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "C08-F",
+      "material": "rust_code",
+      "query_type": "metadata_filter",
+      "source_id": "C08",
+      "text": "How does the directory-listing example make the order of returned paths reproducible?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "rust_code"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "C08-M",
+      "material": "rust_code",
+      "query_type": "mixed",
+      "source_id": "C08",
+      "text": "Why does successfully constructing a `read_dir` iterator not guarantee that collecting all entries will succeed?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N01-E",
+      "material": "markdown_notes",
+      "query_type": "exact_term",
+      "source_id": "N01",
+      "text": "Find the proposed `impl<T> !DerefMut for &T` restriction and the alternative `PinDerefMut` fix.",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N01-S",
+      "material": "markdown_notes",
+      "query_type": "semantic",
+      "source_id": "N01",
+      "text": "Find the discussion of why an API cannot safely assume that an operation will never be implemented for every pointer type.",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N02-F",
+      "material": "markdown_notes",
+      "query_type": "metadata_filter",
+      "source_id": "N02",
+      "text": "Why does `Any::type_id` need virtual dispatch rather than identify `dyn Any` itself?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "markdown_notes"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "N02-M",
+      "material": "markdown_notes",
+      "query_type": "mixed",
+      "source_id": "N02",
+      "text": "Why could inferred dyn safety create a hidden semver promise, and how would an explicit `dyn trait` declaration address it?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N03-E",
+      "material": "markdown_notes",
+      "query_type": "exact_term",
+      "source_id": "N03",
+      "text": "Locate the proposed `specialize(T: Trait)` mode and its relationship to `Implements(T: Trait)`.",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N03-M",
+      "material": "markdown_notes",
+      "query_type": "mixed",
+      "source_id": "N03",
+      "text": "How could lifetime-dependent specialization make an associated type ambiguous between `u8` and `u16`?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N04-F",
+      "material": "markdown_notes",
+      "query_type": "metadata_filter",
+      "source_id": "N04",
+      "text": "Why did the notes say ordinary references were unsuitable for MMIO register blocks, and what address-based alternatives were discussed?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "markdown_notes"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "N04-S",
+      "material": "markdown_notes",
+      "query_type": "semantic",
+      "source_id": "N04",
+      "text": "What trade-off was discussed between weakening reference-validity guarantees only for interior-mutable data and weakening them uniformly on function entry?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N05-E",
+      "material": "markdown_notes",
+      "query_type": "exact_term",
+      "source_id": "N05",
+      "text": "In the ffi-unwind proposals, when is `nounwind` used and when do shims turn foreign exceptions or Rust panics into aborts?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N05-F",
+      "material": "markdown_notes",
+      "query_type": "metadata_filter",
+      "source_id": "N05",
+      "text": "How did the proposals handle a Rust panic propagating through an intervening C call and back into Rust?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "markdown_notes"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "N06-M",
+      "material": "markdown_notes",
+      "query_type": "mixed",
+      "source_id": "N06",
+      "text": "Why was Sealed Rust described as a very slow channel, and what specification and validation would admitting a feature require?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N06-S",
+      "material": "markdown_notes",
+      "query_type": "semantic",
+      "source_id": "N06",
+      "text": "Find the argument for specifying accepted programs without tying the specification to a particular borrow-checking algorithm.",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N07-E",
+      "material": "markdown_notes",
+      "query_type": "exact_term",
+      "source_id": "N07",
+      "text": "In the edition-planning notes, what restrictions were described for the proposed `min_specialization` subset?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N07-S",
+      "material": "markdown_notes",
+      "query_type": "semantic",
+      "source_id": "N07",
+      "text": "Why did the discussion favor warnings for undeclared source modules over discovering every module automatically?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "N08-F",
+      "material": "markdown_notes",
+      "query_type": "metadata_filter",
+      "source_id": "N08",
+      "text": "What alternatives did the notes list for handling undefined behavior during compile-time evaluation, and what costs accompanied reliable detection?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "markdown_notes"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "N08-M",
+      "material": "markdown_notes",
+      "query_type": "mixed",
+      "source_id": "N08",
+      "text": "Why could pointer subtraction pass one const evaluation but be hard to validate for every `const fn` input?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T01-E",
+      "material": "english_technical",
+      "query_type": "exact_term",
+      "source_id": "T01",
+      "text": "How is `*` placed to mark the final token in an FTS5 expression as a prefix?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T01-S",
+      "material": "english_technical",
+      "query_type": "semantic",
+      "source_id": "T01",
+      "text": "Why can a wildcard at the end of a quoted search phrase be treated as ordinary tokenizer input instead of a prefix operator?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T02-F",
+      "material": "english_technical",
+      "query_type": "metadata_filter",
+      "source_id": "T02",
+      "text": "For `A B C D x x x E F x`, why does `NEAR(e d, 3)` match while `NEAR(e d, 2)` does not?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "english_technical"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "T02-M",
+      "material": "english_technical",
+      "query_type": "mixed",
+      "source_id": "T02",
+      "text": "How does FTS5 count the distance in a `NEAR` group, and what value is used when N is omitted?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T03-E",
+      "material": "english_technical",
+      "query_type": "exact_term",
+      "source_id": "T03",
+      "text": "What is the precedence of explicit `NOT`, `AND`, and `OR` in FTS5?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T03-M",
+      "material": "english_technical",
+      "query_type": "mixed",
+      "source_id": "T03",
+      "text": "How are `one NOT two three` and `(one OR two) three` treated by FTS5 implicit-AND rules?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T04-F",
+      "material": "english_technical",
+      "query_type": "metadata_filter",
+      "source_id": "T04",
+      "text": "Why do triggers added after populating an external-content table fail to index its existing rows, and what repair does the text describe?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "english_technical"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "T04-S",
+      "material": "english_technical",
+      "query_type": "semantic",
+      "source_id": "T04",
+      "text": "Why can a plain scan return rows while a text search returns none, even though both name the same search table?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T05-E",
+      "material": "english_technical",
+      "query_type": "exact_term",
+      "source_id": "T05",
+      "text": "Why does FTS5 `bm25()` return smaller numeric scores for better matches?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T05-F",
+      "material": "english_technical",
+      "query_type": "metadata_filter",
+      "source_id": "T05",
+      "text": "How are column weights assigned in `bm25(email, 10.0, 5.0)`, and what happens when weight arguments are missing or extra?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "english_technical"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "T06-M",
+      "material": "english_technical",
+      "query_type": "mixed",
+      "source_id": "T06",
+      "text": "Why can a long-running reader stall WAL checkpointing, and when can the writer rewind the WAL?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T06-S",
+      "material": "english_technical",
+      "query_type": "semantic",
+      "source_id": "T06",
+      "text": "How can a reader keep seeing a stable database snapshot while other transactions keep appending committed changes?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T07-E",
+      "material": "english_technical",
+      "query_type": "exact_term",
+      "source_id": "T07",
+      "text": "Which exclusive-locking situations can produce `SQLITE_BUSY` for queries in WAL mode?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T07-S",
+      "material": "english_technical",
+      "query_type": "semantic",
+      "source_id": "T07",
+      "text": "Why might a query briefly fail while the last database connection is closing and cleaning up its side files?",
+      "filter": {},
+      "top_k": 10
+    },
+    {
+      "query_id": "T08-F",
+      "material": "english_technical",
+      "query_type": "metadata_filter",
+      "source_id": "T08",
+      "text": "After a crash, what condition involving the super-journal filename makes a rollback journal hot?",
+      "filter": {
+        "doc.kind": {
+          "$eq": "english_technical"
+        }
+      },
+      "top_k": 10
+    },
+    {
+      "query_id": "T08-M",
+      "material": "english_technical",
+      "query_type": "mixed",
+      "source_id": "T08",
+      "text": "Why does deleting the super-journal mark a multi-file commit even when individual rollback journals remain?",
+      "filter": {},
+      "top_k": 10
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "status": "HISTORICAL_OBSERVATIONS_WITH_SOURCE_REPLAY",
+  "source_protocol_sha256": "24198becb8381445e069ea3957421348ca7447feca80b68f24ac63a0bf3df562",
+  "source_report_sha256": "8be92ba55755133b1427d0d6478185277009b70e12fc65cefb82e9180135261b",
+  "scope": "Descriptive comparison of two complete historical implementations; not isolated scoring causality or final current-product performance.",
+  "source_versions": {
+    "window_scores": {
+      "commit": "48063f48f29ea6a5799975e5ff6e2ac2c4f1b4cf",
+      "tree": "58da20090bab93136320700b25014df740d8f9fd",
+      "original_export_file_count": 113,
+      "provided_source_file_count": 87
+    },
+    "complete_U": {
+      "commit": "38d88f41ed353e76a31a359d1896a8b765bd97b1",
+      "tree": "ea2aa73afbab209875601020dc8286fa7bbb375a",
+      "original_export_file_count": 140,
+      "provided_source_file_count": 111
+    }
+  },
+  "platform": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "kernel": "27.0.0",
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14)\nbinary: rustc\ncommit-hash: 8bab26f4f68e0e26f0bb7960be334d5b520ea452\ncommit-date: 2026-07-14\nhost: aarch64-apple-darwin\nrelease: 1.97.1\nLLVM version: 22.1.6\n",
+    "cargo": "cargo 1.97.1 (c980f4866 2026-06-30)\n",
+    "clang": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+    "cpu": "Apple M1 Pro",
+    "memory_bytes": 34359738368
+  },
+  "quality_independent_tasks": 48,
+  "quality_judgments": 3960,
+  "quality_positive_judgments": 91,
+  "quality_dimensions": 384,
+  "quality_modes": [
+    "text",
+    "vector",
+    "hybrid"
+  ],
+  "scale_documents": 1000,
+  "scale_chunks": 100000,
+  "scale_vectors": 100000,
+  "scale_dimensions": 768,
+  "scale_modes": [
+    "text",
+    "vector",
+    "hybrid",
+    "hybrid-filtered"
+  ],
+  "main_rounds": 2,
+  "diagnostic_rounds": 1,
+  "imports": 22,
+  "trials": 36,
+  "sample_records": 7488,
+  "default_weights_unchanged": true,
+  "quality_numerical_gate": null,
+  "mandatory_winner_gate": false,
+  "latency_method": "Nearest-rank P50/P95 on unrounded pooled main samples. Quality: 96 observations per implementation/mode/cache/profile; scale: 40 measured observations per implementation/mode/API-scope/profile. First/warmup/diagnostic observations retained separately.",
+  "cache": "fresh_handle is not OS-cold. warm_same_handle uses the same open handle. Shared OS cache and preceding work may affect measurements.",
+  "reads": "Diagnostic current-query-thread userspace read/pread/readv work, not physical storage IO; main timing contains no read probes.",
+  "source_capsule_and_replay_status": "Historical source capsules, fixed input specifications, helpers, preparation/build/replay tools and pure metric recomputation are supplied. Replays create a new identity; no new full performance execution is claimed."
+}

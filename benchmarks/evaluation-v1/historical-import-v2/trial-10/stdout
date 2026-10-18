@@ -1,0 +1,7 @@
+{"event":"import_started","part":0}
+{"event":"import_returned","part":0,"committed_batches":102,"checkpoint_cycles":102,"checkpoint_ready_cycles":102,"max_batch_chunks":1000,"commit_ms":1873.677874,"checkpoint_ms":35261.500294}
+{"event":"query_started","part":0,"filtered":false}
+{"event":"query_verified","part":0,"filtered":false,"elapsed_ms":0.29550000000000004,"ids":["chunk-0","chunk-1","chunk-2","chunk-3","chunk-4","chunk-5","chunk-6","chunk-7","chunk-8","chunk-9"],"final_scores":[1,1,1,1,1,1,1,1,1,1],"index_source":"persistent_checkpoint","verified":true}
+{"event":"query_started","part":0,"filtered":true}
+{"event":"query_verified","part":0,"filtered":true,"elapsed_ms":0.20341700000000001,"ids":["chunk-0","chunk-1","chunk-2","chunk-3","chunk-4","chunk-5","chunk-6","chunk-7","chunk-8","chunk-9"],"final_scores":[1,1,1,1,1,1,1,1,1,1],"index_source":"persistent_checkpoint","verified":true}
+{"event":"complete","chunks":100000,"parts":1,"queries_verified":2,"commit_ms":1873.677874,"checkpoint_ms":35261.500294,"committed_batches":102,"checkpoint_cycles":102,"import_context":{"import_time_ms":38508.960166000004},"metrics":{"import_time_ms":38508.960166000004},"chunk_per_second":2596.7982404336935,"file_bytes":22911673,"index_bytes":5600632,"verified":true}

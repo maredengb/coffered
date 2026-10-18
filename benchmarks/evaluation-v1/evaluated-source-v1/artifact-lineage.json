@@ -1,0 +1,1023 @@
+{
+  "scope": "Exact evaluated168product file payloads, not a published source commit or official release package. No root management files or Git history are included.",
+  "original_archive_sha256": "c6ac69c150a56ef315b6cddc63976f4cc47f7b676b9f335ede17e6ba47573840",
+  "public_archive_sha256": "229e2e8cca20856161f0192fffcda6a7ff7d90750cc825f7f538992c13e1f861",
+  "identity_original_and_public_sha256": "f655ff863e10dc53a896503999160d6edee410321e8a40d642af6c8dfc6448c7",
+  "transformation": "All168file payloads preserved byte-identically; tar ownership/timestamps/PAX metadata and gzip filename/time normalized. New archive hash is distinct from the measured private archive identity.",
+  "source_fingerprint": "9244290fcb9d5205a004a19d4aabef1ddf0c9836c67514fad2f1ecdd8a3e53f6",
+  "members": [
+    {
+      "path": "cofferdb/.github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "96005194da62fce977b701d175909a09e9fa30e1252968b8ace39ba57bc8ee54",
+      "bytes": 888,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/CONTRIBUTING.md",
+      "sha256": "7d897818c93e5da895af72a0d8be5df5eec3f4ea4cdce7223182b923b1f21512",
+      "bytes": 2556,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/Cargo.lock",
+      "sha256": "4b96517a899af46e06c0ee32337d5f896c545b4b267177525504a313a7b400c8",
+      "bytes": 152,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/Cargo.toml",
+      "sha256": "11d906d8a18de5fc22ef14e2912fe5c7e6aa2e3d77c035218fb4f0a6872fa042",
+      "bytes": 462,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/DEPENDENCIES.md",
+      "sha256": "5d08c4cf9ea36acce31ae588c76bb778f977758d6cbc2196e8aa09307755ded1",
+      "bytes": 1516,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/GOVERNANCE.md",
+      "sha256": "76db738a7b86351c747ae25e798076dd696fd5563c77f7e6b0344ba4d9097532",
+      "bytes": 1680,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "bytes": 11357,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/README.md",
+      "sha256": "db2f8389b47ba3747f09d3380522b74e5420436ca16c3dbc4d94d91b67a6ed2e",
+      "bytes": 10680,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/SECURITY.md",
+      "sha256": "19c92c05a33cceb8d2a3109844258063a068fa71308a7695b795244f815bbbfd",
+      "bytes": 1990,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/benchmarks/README.md",
+      "sha256": "44db7346ec5764c4d6fcb51a61cc19571b8846265f087c2ef84f9e78fc38d4ff",
+      "bytes": 6120,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/benchmarks/sqlite-baseline.md",
+      "sha256": "253af09e3b1d073f6034a29ddfdf18b4ce85d627a7a7fa28214db0f10533ff4b",
+      "bytes": 1840,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/docs/architecture.md",
+      "sha256": "22c92a18e8367f1dcc34aca87ab54bc56eba19be95222691c73a6ad75a7360ec",
+      "bytes": 5596,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/docs/backup.md",
+      "sha256": "e03e44c83a184063ad258b457857dc7895131edd744be0b89f34035020019ef1",
+      "bytes": 5779,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/docs/explain.md",
+      "sha256": "56cb1bd7e15045403ac18e62530cb2dd8a63393ba8d403fec67e093f4671db88",
+      "bytes": 7048,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/docs/file-format.md",
+      "sha256": "8e4a69dcb15212cc6a3ab74d448de72cf117a95e353a9c14f2a27f12ca71fb25",
+      "bytes": 5886,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/code/chunks.jsonl",
+      "sha256": "bb6cadf918ccc1bb19a7c5ee87d8d477514768d7628ee694c93fd4799cc458fc",
+      "bytes": 713,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/code/documents.jsonl",
+      "sha256": "f00a3f69ec82ab72758398afb4ab49d66c970c849f7b01813201a300b7f92e8e",
+      "bytes": 289,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/code/embeddings.jsonl",
+      "sha256": "39a4ee6ae1d8eee4aa53a068901b2597d1b61bb8aa00c30b52b3e73a2c4e0393",
+      "bytes": 293,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/code/import_manifest.json",
+      "sha256": "2469214f4865c32bc0046c9911dd170afc11e87dcfc48b3c007278338846d78e",
+      "bytes": 242,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/markdown/chunks.jsonl",
+      "sha256": "d9a9654f003546cd76c050578190e69dfa7b190fe191c434ac4a76bce0ab153d",
+      "bytes": 528,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/markdown/documents.jsonl",
+      "sha256": "1fa0f2800abdd585cc0f7352b0e5478ad0a151bfe6582e4418d30539871bf704",
+      "bytes": 115,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/markdown/embeddings.jsonl",
+      "sha256": "50e728839f1372208e789aa3e5097191bd65a2717611243398ae130ebbf5137a",
+      "bytes": 192,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/markdown/import_manifest.json",
+      "sha256": "524c8d2e6d06ad81956abd6ff2accba0b8c4ddef79faf9ae5e6c14bcce1fad12",
+      "bytes": 247,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/memory/metadata-template.json",
+      "sha256": "e5981df81649638054991d0a20d47f4cad86a1bacc2f84011421d696a25609b6",
+      "bytes": 283,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/code-query.json",
+      "sha256": "ef851c728759f588a9e65e018f6ffd44238b668fd17bebf25dfc1bed71ad40ae",
+      "bytes": 29115,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/code/chunks.jsonl",
+      "sha256": "0ec3258ea72b5612481213eb3baae36149574aea2127385ed4b4f6f1e6724f31",
+      "bytes": 7967,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/code/documents.jsonl",
+      "sha256": "317d800e65fca4b20c726060adab6646c76fb058fd381b48fe2ed3b1da6cd89b",
+      "bytes": 984,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/code/embeddings.jsonl",
+      "sha256": "dbe173c535ac9ed4b8067096343e830b8f61b8bf0b6f8e1b893d28ea95bf5070",
+      "bytes": 109471,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/code/import_manifest.json",
+      "sha256": "67b63f6950b4ee4a5ce1bc358a998e8a1c7973cdbc56b388d87d4c0405011520",
+      "bytes": 294,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/markdown-query.json",
+      "sha256": "ce83b318d02787326fc96c4363561473d9c097765bb42ae9a1d79f5ce44e6d08",
+      "bytes": 29101,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/markdown/chunks.jsonl",
+      "sha256": "c16d728b7e834649304938e2b4843a0edc94d6307cee60b1c3cda7d051ba23ba",
+      "bytes": 9421,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/markdown/documents.jsonl",
+      "sha256": "8e03c3d44d0fcfd09504321f72f27e63e98e13ea80dcf3d9a6caadde326460bb",
+      "bytes": 1000,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/markdown/embeddings.jsonl",
+      "sha256": "522f93ac6617157a0a4fee89ca7c3ffe164928c66a70329f491e18bf1e8d6f81",
+      "bytes": 43767,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/markdown/import_manifest.json",
+      "sha256": "4c7bc992ff95af04f99a50ab610b1e2ee4b75f3e5aeecfc3ce23cd70bc8aa1ad",
+      "bytes": 299,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/provenance.json",
+      "sha256": "c8100b36276b4fff07cee483f4e1331e2c8498eda2e4b6624cbe4e837ef6a5e2",
+      "bytes": 6634,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/source_snapshot/rust-by-example/LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+      "bytes": 10847,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/source_snapshot/rust-by-example/LICENSE-MIT",
+      "sha256": "4594f18866be94a3ce309ed8f94d92699f5b87739b76e1216addca75f5253fa7",
+      "bytes": 1058,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/source_snapshot/rust-by-example/src/std/str.md",
+      "sha256": "7a9dc1928b8887005a934c803175711f6c3fb23ef7ae7682fe65f7a42439cd8b",
+      "bytes": 5888,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/data/real_corpus/source_snapshot/rust-by-example/src/std/vec.md",
+      "sha256": "378392c8f0a1b7dc817e82da779860bdb0afd52d481a21deced9e982db1c5a4c",
+      "bytes": 2264,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/embedded.rs",
+      "sha256": "9afc7c65a0fa2d3dd4b53e7aadcfc8bc4bf44cd8e0038d635cd3c80b52f6cd0a",
+      "bytes": 1871,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/explain_troubleshooting.rs",
+      "sha256": "a882f2eb1c70851e4181d39f3890341134f38ee3be2cacb7815f2859ab18595d",
+      "bytes": 9272,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/real_corpus_demo.rs",
+      "sha256": "750f49fc1a7c9819fc461adbed8d7dad77e67e28914de774b9a6e00f43ffab3b",
+      "bytes": 12791,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/examples/search_trial.rs",
+      "sha256": "a2b068ce8b5f0e5f13af35ad4e6bdd94aea059fa1bfb1683f081c98e22570a47",
+      "bytes": 21491,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark.rs",
+      "sha256": "666ac8dd5018cd1600f5501e401d60bb52f6ffb67ba455930aa6537bf29a529e",
+      "bytes": 202121,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/query_mode.rs",
+      "sha256": "fc9fc311108d24396b1851dc55d213c98821dec7a949ea3eede83e090a9b7958",
+      "bytes": 3289,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/result.rs",
+      "sha256": "dbe6485c94faa93bfa9bc75d2a479437a09a7cf81bea8ab53b1b20f24bc169ca",
+      "bytes": 91608,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/runner.rs",
+      "sha256": "0a17110af7797bea2cd600c973efc7cce8c789266bc21dc37fa7cc528dfa1cbd",
+      "bytes": 75681,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/runner/acceptance.rs",
+      "sha256": "76f2b91545cdfcd2fc36f0d1829ccd57c03205c2d8476dcc82be6faa8f5d4b29",
+      "bytes": 57780,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/runner/execution.rs",
+      "sha256": "d1bc24ceb2197ba972046b0bf9437dbec1b1f01c0226a2022382442e5f142805",
+      "bytes": 32732,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/runner/memory.rs",
+      "sha256": "c2aae4a94bb9531303c7cb8e52bf03c5610ac463ef22bb3a2ea4a5f3e5aba8da",
+      "bytes": 4799,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/runner/output.rs",
+      "sha256": "79752f2242334e3de36b9178361f767da6f7ee0e982248c7df4ba4b5aac6948f",
+      "bytes": 11506,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/runner/source_probe.rs",
+      "sha256": "e4b29b0011d20770000d74252df05da53afa339d08f1016910d3828b572b902b",
+      "bytes": 3435,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/runner/sqlite.rs",
+      "sha256": "75a9a6f5384c52fd7759d1234f6f5c59ac218f796e2d8b980b81241910cd7d85",
+      "bytes": 23282,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/benchmark/runner/tests.rs",
+      "sha256": "418c683a66e442fc001dbd288f83b170f26998879bb11684e04b83b24d6c7ecb",
+      "bytes": 267772,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/catalog.rs",
+      "sha256": "7f926ee38dfbd719a8f8387ad6616a00bb10323f47c8a1ebdb0310da8c249199",
+      "bytes": 63172,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/catalog/aliases.rs",
+      "sha256": "8ff995979b5979ce4c2135eae81ca16f3c9bfd07af60cafa8772d49d06ef102e",
+      "bytes": 3804,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/catalog/models.rs",
+      "sha256": "d4eaaf783951cbe9ede9ebfc8c07e485c108be123c8ac28864319babf344fa86",
+      "bytes": 15118,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/catalog/mutation.rs",
+      "sha256": "4c32a0245a5c16fdaceb299454ea789e359efe0c4d13fefe9564e1973dbdf5ac",
+      "bytes": 65578,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/cli.rs",
+      "sha256": "410b4a6d6a46a7c17c7b45e25386a0e1b55a7c04f8a1d276c0829cd0f13b0040",
+      "bytes": 142126,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/cli/tests/catalog_output.rs",
+      "sha256": "5ce3e27625252ba6edaf2547bc504d6b567f27aeb5a0a17a03bafe8cae355a9b",
+      "bytes": 12432,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/cli/tests/diagnostic_output.rs",
+      "sha256": "300c3f7665505e3b834b65cd31935dcaa0e6de53218f0abf93092524146352f7",
+      "bytes": 11764,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/cli/tests/embedding_import.rs",
+      "sha256": "9f0b7c2df9d8d21137a75c25895af8a510a4e731e0ab361e4cb27058f47f4832",
+      "bytes": 3470,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/cli/tests/import_output.rs",
+      "sha256": "91ce2644fc53f65ca2a884fdbf0333a3debb61dfc14a3754e0c1677c28c1027d",
+      "bytes": 7470,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/cli/tests/query_dto.rs",
+      "sha256": "6a0091f4e39f6b9e3674360fac698dd15fb8e5b8db40bcaa3dfcd2ae01c0a5d4",
+      "bytes": 14596,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/cli/tests/summary_output.rs",
+      "sha256": "a2ff0d18588634f7370d07665224fa66ecefa1587a264ad97ad6a9ac4e2234cc",
+      "bytes": 7713,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db.rs",
+      "sha256": "d375cfc3374481d2cc21d9b077d363b2e3db991272923d4df6e48668d7d060cf",
+      "bytes": 873190,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/coverage.rs",
+      "sha256": "b81e443e1b7ba84aae470c0353bea59943e82bcb0bc42eb89e65ef0b75a88ca2",
+      "bytes": 10268,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/embedding_import.rs",
+      "sha256": "4b02d6b57bdad88efd6c75372e5486adb707d716bd426d0bf268fe2cce051851",
+      "bytes": 8614,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/import.rs",
+      "sha256": "db2d2fdf804c1b2f368af384e7580ae190befafee7e64793af44a04635f8cf03",
+      "bytes": 79856,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/models.rs",
+      "sha256": "1d71f419b8db8b07b5b25e54d1a57e174bb16ed0643c9c06db2a1c655aab0cdd",
+      "bytes": 2242,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/read.rs",
+      "sha256": "8f69e7f4db5ad4cdfec792a7347aaf5365f9eee7879899ae1d0338e75b893aff",
+      "bytes": 36162,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/scoring.rs",
+      "sha256": "f4affb802ad023e67c708b09b80dde364ab8ae3880d250ec913052430ea66c1c",
+      "bytes": 16038,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/close.rs",
+      "sha256": "2ccf60033a58df5e39d39d67b0152846ce2c643b6b3cc999843cc20e8d79ad44",
+      "bytes": 9302,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/collection_stats.rs",
+      "sha256": "5631e849955444767d95409eede565d76277abd2d63cc797531e738b80524b5a",
+      "bytes": 7681,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/embedding_import.rs",
+      "sha256": "e62101b6db4e46ba22d76a0a21d889d2a6f85e531f0973bd927332d0fe7029e3",
+      "bytes": 15017,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/import_priority.rs",
+      "sha256": "2eceba671a0d81cd4418d2046f205e991497c55581ca7a81932095a978469198",
+      "bytes": 14847,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/import_warnings.rs",
+      "sha256": "298cb9a587d463d7753810ab893fe7ab36dde2677aba481c7c49698fc75f9d73",
+      "bytes": 8482,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/models.rs",
+      "sha256": "2de9fa6a1d363c39fad02938ff5ec196293a7af4ba57ea5fa0e70ce13ee18d2b",
+      "bytes": 28213,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/query_cost.rs",
+      "sha256": "c5da8bf4936d14e088b6e303a7fd9dde557231f01eba8960f4c25e6a46cc484f",
+      "bytes": 10167,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/query_output.rs",
+      "sha256": "0c9b9c7078d19502d41152d6d88fa8c94cfbba9e736cd2a37bf384f62cf03b4b",
+      "bytes": 26105,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/query_preparation.rs",
+      "sha256": "06de736577a68c168f02e6dcba541f52f5a5c3d3f6508ee57f6823666c7d3c31",
+      "bytes": 19809,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/query_rows.rs",
+      "sha256": "bb9a4b8b99f394dd21e2cd709b7e63bc43eb7c7db6b394fe8eb4309549cd481e",
+      "bytes": 23625,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/readonly_text_cache.rs",
+      "sha256": "65d592228f3245f66e8d64489b50ec6f512eb747357317db83f76feb65127eae",
+      "bytes": 7928,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/retained_file.rs",
+      "sha256": "55ef5b27253575265ffbbfe51a73430b61d108028ca468dfb544a380125c092c",
+      "bytes": 6254,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/token_counts.rs",
+      "sha256": "51a6a170e3ec5f0298081cf379e6237c2d072a98f60353ca61827a12ed72bc16",
+      "bytes": 16251,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/vector_reclaim.rs",
+      "sha256": "04c5c6c47b2803cbd21ab4c45d1138c9fea44c1dc403d8219a0b332aad67c438",
+      "bytes": 8951,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/why_not.rs",
+      "sha256": "f9d4b138c35c2eefcbe3a06a8a3f87cfb7ffd4cc733645061ffe968cb55c5b4f",
+      "bytes": 2970,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/db/tests/zero_text_writer.rs",
+      "sha256": "6d250460bcff089982267271edfd2e4d1be817946b809540b2ed47133892f170",
+      "bytes": 70629,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/error.rs",
+      "sha256": "42be0774b43078c8302794caa605cf9bd4fa8be03cb60c477d6a5f44c6b7b31c",
+      "bytes": 19712,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/hash.rs",
+      "sha256": "95af855543f6b6bc87c3f7f67fe5c0658cec7d0f9c617aafe8e995e434f44501",
+      "bytes": 28209,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/import.rs",
+      "sha256": "e186ced7c50cc8c816f69f9e48428931f2539a441e6bad08920de9d02ef9d1d5",
+      "bytes": 181730,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/import/export_writer.rs",
+      "sha256": "bab0c7c23c65e8c62f17b2d066cfa414f80c5125125db0c96a42ec98caf9e35e",
+      "bytes": 32759,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/import/tests/embedding_rows.rs",
+      "sha256": "5b12fd4d7a405e6feeafcf2fada792dcf977d1942b80b7ee9fe1f6eb11577e8e",
+      "bytes": 2720,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/import/tests/summary_output.rs",
+      "sha256": "644d928b93eb05946690d23433ab70783d0484a83d12fa2eab4cbbf8a7c9b6ff",
+      "bytes": 2823,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/import/warnings.rs",
+      "sha256": "3a16a3eb83866a85ed67b23d4078dd9c70eab4c5203530955b4ad11bd883a716",
+      "bytes": 6311,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/hybrid.rs",
+      "sha256": "de309e2371d114ee148d081ae6446056f4630521b56f4e984e910bb594bcd6a9",
+      "bytes": 22455,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/mod.rs",
+      "sha256": "a700560feca2072988dce494e94cf44da2ef0075b9428b3e270406148b5fdebf",
+      "bytes": 67,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text.rs",
+      "sha256": "1301d121061c0f2dac6b1f2e3051760f427cb8d818c167aad0f8f12a8bd6090c",
+      "bytes": 50368,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text/build.rs",
+      "sha256": "fe425a69b7133a6dc7334e1799404f996eb066b1fafd572017189400073f0ca0",
+      "bytes": 28806,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text/cache.rs",
+      "sha256": "715f5411ce337073e4f7c9829bf5b69433ff8cd557841a1bc355526ed7f61141",
+      "bytes": 15643,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text/cache/tests.rs",
+      "sha256": "0b934da6015bf8814c4b4626d0001e0833896c4905ec69b8d3b73261e576970d",
+      "bytes": 29806,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text/cache_build.rs",
+      "sha256": "fabf6aa0f27352b5e8452041e3b01cf129db936523edf9c4564ae08d6cb80236",
+      "bytes": 5238,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text/candidates.rs",
+      "sha256": "f9a8490b27fccdfbeb8ae9eb9d5b60acde705d9acfd684dad2fe66cc99735d13",
+      "bytes": 25467,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text/persistent.rs",
+      "sha256": "82e0ce0a3f1b6de621f9c31c58504b3a3523543479527d1aef6e94ea5b1e654e",
+      "bytes": 35891,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text/stats.rs",
+      "sha256": "f4ca0c65d71321589674fed5f02ce8761bc42f74d9dd2925ce624826ad890738",
+      "bytes": 16434,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/text/streamed.rs",
+      "sha256": "f34f7899ba56f9a4f0d6343eceb8aa9aafbc7bbc18d16c85190f80ca395a369e",
+      "bytes": 28693,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/index/vector.rs",
+      "sha256": "7df26ff240e49e9728bc1652ba64044c2ffef4a6533650adf0da10d16ca5f321",
+      "bytes": 46266,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/json.rs",
+      "sha256": "034f16ce5c0cb6c79726af520b90a7a89bd9f8430bce9880c12a6513a8f9e0da",
+      "bytes": 104804,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/json/build.rs",
+      "sha256": "7aab1ca3a1a98cea936f79d8048245beb1b1d44d988719b7440466c46af9ca7e",
+      "bytes": 20760,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/json/copy.rs",
+      "sha256": "9c4da573feaf8c602f46876979dba13a9d7c12f7108188a6f01b1331d40efd56",
+      "bytes": 12488,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/json/lines.rs",
+      "sha256": "103f056afbac50e9dd1b5366e04e5610b4b2ff2407fdcbaa43a6dfad04c31655",
+      "bytes": 14366,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/json/output.rs",
+      "sha256": "038f0014a88a6205e342e269eb6bdf0cd20a0dc035302740ab3efbd34e0510f3",
+      "bytes": 41184,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/json/policy.rs",
+      "sha256": "0598672d537b2616d0db96f1b7a3a534af4be41ab0b47bc6a7f929773bfdf6dd",
+      "bytes": 12933,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/json/work.rs",
+      "sha256": "db610426c146cb23466cb4c707e056bcd017eb886d1c4901b310bb76af90c2b2",
+      "bytes": 125425,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/lib.rs",
+      "sha256": "c98ace8fdc392f76d7e85ce9c3fe40892ae8680fad17cb2643be5dd095176b6b",
+      "bytes": 1181,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/lock.rs",
+      "sha256": "3940d6b84fb5938ba3b94bd643024f748f6a1a01cdbf6f5f72e90ed5837058b7",
+      "bytes": 3978,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/main.rs",
+      "sha256": "e754f88be705a288d44cc3fe8a11de8ef5bc9f8dbda5c19bb517734344bf7e2f",
+      "bytes": 2162,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/metadata.rs",
+      "sha256": "5391fb3a3c60c447a2f9c12864a098750190145eaa0ddb49c99cba4a07656092",
+      "bytes": 61446,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/metadata/trace.rs",
+      "sha256": "b3195c98e525b06abb1ec82dee8a365c2893e1070f2f518e30921fb5ac4377de",
+      "bytes": 9488,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/model.rs",
+      "sha256": "014b5eeec305cfbabaa45fb362333643934afe996e85264ede25099826e8077f",
+      "bytes": 86929,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/physical_file.rs",
+      "sha256": "bc029eed8b55e11d58c1f58ea5f45dc4ba9a5802e6d5b30092b053db880aabdb",
+      "bytes": 18596,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/profile.rs",
+      "sha256": "dc8fb901df489b9732f74a400b47240b1447deed01b86bb48f667bde712ed04b",
+      "bytes": 6904,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/query.rs",
+      "sha256": "54846b23bd7fa73cad7e01ca7248a1f38a366d03adfcee73eca2ebf58a218bd4",
+      "bytes": 78640,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/search_cost.rs",
+      "sha256": "3240ac4d6a9307f0a0d73d651450863ab12633a9f1583e25a33389c6d8dd9bac",
+      "bytes": 15994,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage.rs",
+      "sha256": "e64f37d3294510cf3d8cc0067833b7b53e8fcfb1bc8a918fc4dcdbac00635be9",
+      "bytes": 575752,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/checkpoint_writer.rs",
+      "sha256": "1b33ddccc5c24933c4ac5470df8c1c68b369b3727283b3ddbda5ba81046bc669",
+      "bytes": 60929,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/checkpoint_writer/golden.rs",
+      "sha256": "aeb93735167d19fe8650fa5bcf0963526a64d5900b0d8ee264a47472e9a0ccd9",
+      "bytes": 21943,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/checkpoint_writer/text_spool.rs",
+      "sha256": "1ec01888de2caace0bc62c9ed79aa5912bd13191201fa4cf943f3aac283465e4",
+      "bytes": 33236,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/checkpoint_writer/text_spool/tests.rs",
+      "sha256": "6bf96f85f61d6e28de79dc5db96ea1da845d0bd6f004a6bc54f4df4801a6f4b8",
+      "bytes": 55572,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/codec.rs",
+      "sha256": "714969afd5c025b9f5c0cf3dea5047bb6229a400deaf733df41b795116f0bd9a",
+      "bytes": 86473,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/index_source.rs",
+      "sha256": "fe9bd46e0ea6e9d9e01187b682f027bc6aaf9db09b38c1dde779aecb8c281348",
+      "bytes": 100852,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/owned.rs",
+      "sha256": "8c63e1145c84a77093775dd1b18fa2775a3ddc9a125ae8acbe7c14ee637dc881",
+      "bytes": 38622,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/payload.rs",
+      "sha256": "8e3c505a1f68cad3887d864f6d943b25b693e354b86b9ac0f870febea781f566",
+      "bytes": 98432,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/prepared.rs",
+      "sha256": "d295601ddb71f3304125f86371fc2af45e34e805622193761d686f08ebd531c9",
+      "bytes": 98112,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/prepared/locations.rs",
+      "sha256": "3e5b27023f78cf894451fb1ba438fbdfaf828fdffaa398530550009c95d3b047",
+      "bytes": 11078,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/recovery.rs",
+      "sha256": "28cc38289deaa13cb2befa94a1040df5ab6a9718d0a6bd2b167c706e7514a241",
+      "bytes": 7848,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/storage/vector_cache.rs",
+      "sha256": "530e5451630e1fe4deda56e923ca4ae1ebe3e7ba580c6236ebb03c90640ead6f",
+      "bytes": 16659,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/temporary.rs",
+      "sha256": "5a8a31d263b1ea79dee80e4a8ebd2963c0e51e257ad49b7032dcbf50fdf50999",
+      "bytes": 52966,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/temporary/budget.rs",
+      "sha256": "dfc547707ed1f3e897510cbfdcff4d15fcd29cad6f331706e3497b19abf06638",
+      "bytes": 13431,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/temporary/path.rs",
+      "sha256": "b9efea47730d313ced62342b0181310f0561557796789a48c8a4761298a151d2",
+      "bytes": 9658,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/temporary/sort.rs",
+      "sha256": "325a5947529732f9411d3c7604993e08905b03fae507d7e488f0e19d7c7fd6d6",
+      "bytes": 64320,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/temporary/sort/frequencies.rs",
+      "sha256": "e7a64803c406bdcb138a963c6d01fda4b05d1f4b82dffd613c2a0ac5441b1efe",
+      "bytes": 44743,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/temporary/sort/lookup.rs",
+      "sha256": "a381208005f7c1e4dfdbd637ce460dc6e5a1165c2eb5273d21c8f34961f324a4",
+      "bytes": 22959,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/test_alloc.rs",
+      "sha256": "9a6c0e35d36c66da5cb6737134e2d752bdb740abcda9528245ec000044ca2eb3",
+      "bytes": 9166,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/time.rs",
+      "sha256": "318d9dcd5eb25fdd40f9985500d7316f5b191e6dadc2b2372ecca35968471293",
+      "bytes": 9504,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/tokenizer.rs",
+      "sha256": "b97387b1e56ea5ba5e33761e52f9c607bd6c2666e24c0bcbc7864f71f99260e5",
+      "bytes": 18350,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/tokenizer/normalized.rs",
+      "sha256": "4bd73f9b431c6e88ccaa187b16be06c17b8cb84556a2459cbd18215cc26d3382",
+      "bytes": 2568,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/tokenizer/query_terms.rs",
+      "sha256": "138ba187033dbb71479d5952f93d8b43a0ae711961f7627c45c85db9197bd11b",
+      "bytes": 24019,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/src/tokenizer/visit.rs",
+      "sha256": "f4db35416544dbc0003d48e681742323195e989d30df1a5f726d611751bbc49c",
+      "bytes": 27722,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/benchmark_cli.rs",
+      "sha256": "229e8022f749e8696224408b90b8bca88150d1557e2426e9b3e6df3e0413bc6b",
+      "bytes": 28227,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/cli_error_contract.rs",
+      "sha256": "89194e54029b7186b99ecfcaa69631809d9b0c504447d4503ed558376f7659c9",
+      "bytes": 18613,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/contracts.rs",
+      "sha256": "dcb3e0e232a0c0b6ce283c08b7e341cf818c3ad275e0590118c6ff1332644573",
+      "bytes": 76143,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/end_to_end.rs",
+      "sha256": "6496ef873b0e826862ca4cb523d56c266a4ce78d28e6083824ac71aa21bfd6eb",
+      "bytes": 33191,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/fixtures/README.md",
+      "sha256": "a3df9033676e943cc00d6230652239e2768fb1d65f3c86a4a126e4b59a8170a3",
+      "bytes": 727,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/fixtures/legacy-2d9eb64.hex",
+      "sha256": "e462f0a9f8394bbb705db16d5152680b98077313f93f45f0afc0176389f275e6",
+      "bytes": 4434,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/fixtures/mixed-model-f4c6730.hex",
+      "sha256": "131e9aa1136abd0a53c5d3bfb8d592917f2b23cef26e90ca3ecce9f9c805773d",
+      "bytes": 4119,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/fuzz_smoke.rs",
+      "sha256": "c0a688db5bdef114ac3511c6dde2aaf61ec7f603c473f6993d5b6e74e604c1ae",
+      "bytes": 28623,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/json_depth.rs",
+      "sha256": "ea01c2100d5d5a9c002739772bb59d2897979bf965e2b87e69c6da76402ef6b0",
+      "bytes": 11586,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/json_drop.rs",
+      "sha256": "fc62f302c51e4db2988f970b60a91c3091399f0ce505ab7797590370fe51733b",
+      "bytes": 4018,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/memory_contract.rs",
+      "sha256": "9591fbff9066edb67d630edf3320ae3877f450ca2d98e5b2cc52ca0c4da6152c",
+      "bytes": 14979,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/query_scoring.rs",
+      "sha256": "c519a5f5e2625759a3796601d361932b6ae9719df6a30237c9c8795c8f061165",
+      "bytes": 85249,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/release_assets.rs",
+      "sha256": "08b7d1391f587ccfcfad3b223d15866b134beab24b7177aa52ee1ef96043740d",
+      "bytes": 3900,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/resource_profile_compile.rs",
+      "sha256": "496ee4ec43ed2d0f40c3298bc3fb947121e913354512b7439439c5a0bf415418",
+      "bytes": 5798,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/source_span_contract.rs",
+      "sha256": "3222d0795ebb1489274c844cfe7f14223024c0a80f3d3b00e76ba139c4b9f6d6",
+      "bytes": 9618,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/support/error_contract.rs",
+      "sha256": "bc583390b8509a9d41066d79a8b0e312be560401384f2bb437ddb471257d4d13",
+      "bytes": 13438,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/top_k_contract.rs",
+      "sha256": "0772400433776a278a84ffbea1219c66b4ed5c39692acb8ab3efb9e6c819df86",
+      "bytes": 15581,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tests/vector_manifest_contract.rs",
+      "sha256": "ec5bddc26eefab61f34cb0782159162e183d9bc9c439af45e9663bc512554b0e",
+      "bytes": 30097,
+      "mode": 420
+    },
+    {
+      "path": "cofferdb/tools/prepare-benchmark.mjs",
+      "sha256": "6833e3c6ce4b176fdc2307fedac9ff847b5f1ff6bb4e067f02267cf63957bfaa",
+      "bytes": 2406,
+      "mode": 420
+    }
+  ],
+  "limits": [
+    "The source snapshot has a reviewed17file uncommitted test/document overlay over basece1393e. It is not a standalone public repository or a claim that basecommit alone identifies the build.",
+    "Rebuilds must record their own compiler, platform and binary hashes. Source equality does not reproduce historical timing, OS cache state or binary bytes.",
+    "Compile with COFFERDB_GIT_COMMIT=unknown to avoid assigning a historical commit to a newly built binary."
+  ]
+}

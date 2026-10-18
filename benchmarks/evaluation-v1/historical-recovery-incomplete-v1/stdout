@@ -1,0 +1,3 @@
+{"stage":"verified_query","mode":"text","index_source":"persistent_checkpoint","vector_scan_count":0,"distance_ops":0}
+{"stage":"verified_query","mode":"vector","index_source":"persistent_checkpoint","vector_scan_count":100000,"distance_ops":76800000}
+{"stage":"verified_query","mode":"hybrid","index_source":"persistent_checkpoint","vector_scan_count":100000,"distance_ops":76800000}

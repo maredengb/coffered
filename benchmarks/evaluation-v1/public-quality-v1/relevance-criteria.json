@@ -1,0 +1,21 @@
+{
+  "version": "public-quality-relevance-v1",
+  "judgment_unit": "One query against one filter-eligible chunk, using its exact text plus supplied document title/source metadata; no unseen neighboring text or omitted images.",
+  "positive": "The chunk supplies direct substantive evidence for at least one specifically requested fact or part of the information need, even if several passages are needed for a full answer. Mere keyword/topic overlap is insufficient.",
+  "negative": "The inspected chunk does not supply substantive evidence for any specifically requested fact. Related subject matter, identifier mentions or a shared API family alone are not relevant.",
+  "uncertain": "Ambiguous support or scope must be marked unresolved during annotation and adjudicated before qrels freeze; it must not silently become negative.",
+  "filters": "Metadata-filter tasks admit only their specified doc.kind. Ineligible pairs are outside the judgment universe, not labeled negative.",
+  "independence": "Prepare judgments from source evidence before any new product/baseline rankings, tuning or quality metrics. Task-author anchors are provisional; unlisted chunks are not assumed negative.",
+  "counts": {
+    "tasks": 48,
+    "documents": 24,
+    "chunks": 99,
+    "material_chunks": {
+      "rust_code": 18,
+      "english_technical": 17,
+      "markdown_notes": 64
+    },
+    "eligible_pairs_expected": 3960
+  },
+  "quality_thresholds": "No numeric relevance gate or superiority requirement is introduced."
+}

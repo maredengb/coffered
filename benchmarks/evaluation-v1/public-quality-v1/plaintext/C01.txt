@@ -1,0 +1,38 @@
+/// Read the entire contents of a file into a bytes vector.
+///
+/// This is a convenience function for using [`File::open`] and [`read_to_end`]
+/// with fewer imports and without an intermediate variable.
+///
+/// [`read_to_end`]: Read::read_to_end
+///
+/// # Errors
+///
+/// This function will return an error if `path` does not already exist.
+/// Other errors may also be returned according to [`OpenOptions::open`].
+///
+/// While reading from the file, this function handles [`io::ErrorKind::Interrupted`]
+/// with automatic retries. See [io::Read] documentation for details.
+///
+/// # Examples
+///
+/// ```no_run
+/// use std::fs;
+///
+/// fn main() -> Result<(), Box<dyn std::error::Error + 'static>> {
+///     let data: Vec<u8> = fs::read("image.jpg")?;
+///     assert_eq!(data[0..3], [0xFF, 0xD8, 0xFF]);
+///     Ok(())
+/// }
+/// ```
+#[stable(feature = "fs_read_write_bytes", since = "1.26.0")]
+pub fn read<P: AsRef<Path>>(path: P) -> io::Result<Vec<u8>> {
+    fn inner(path: &Path) -> io::Result<Vec<u8>> {
+        let mut file = File::open(path)?;
+        let size = file.metadata().map(|m| m.len() as usize).ok();
+        let mut bytes = Vec::new();
+        bytes.try_reserve_exact(size.unwrap_or(0))?;
+        io::default_read_to_end(&mut file, &mut bytes, size)?;
+        Ok(bytes)
+    }
+    inner(path.as_ref())
+}

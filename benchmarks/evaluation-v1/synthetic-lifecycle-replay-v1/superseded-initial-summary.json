@@ -1,0 +1,15 @@
+{
+  "scope": "Current-source logical lifecycle replay of portable input/guide only; not original Linux cost rerun, formal performance protocol, new quality matrix or2GiB recovery",
+  "recorded_utc": "2026-10-15T03:18:05.165570+00:00",
+  "status": "passed",
+  "completed_stages": 19,
+  "verified_queries": 32,
+  "source_fingerprint": "9244290fcb9d5205a004a19d4aabef1ddf0c9836c67514fad2f1ecdd8a3e53f6",
+  "source_binary_sha256": "061f25acf65fc8fc181dce8fff0f9843f16728e7b6b37ffa1f0adf089eb08905",
+  "helper_source_sha256": "01fdedebac02f5c7e38f5a1a410110fcb70695d4c108a28f4e56ff63af5927c0",
+  "helper_binary_sha256": "8f6a533f04843817e74c7ac5a6988d12734e224874ae032403153c2ef95ecef7",
+  "main_bytes": 616960403,
+  "copy_sha256_before_reopen": "3c60a4f7cd3f54766963eea76c64ce24bf74bdfd3097727cb6dedf2ea62e33f4",
+  "copy_sha256_after_reopen": "3c60a4f7cd3f54766963eea76c64ce24bf74bdfd3097727cb6dedf2ea62e33f4",
+  "new_import_warning_count": 0
+}

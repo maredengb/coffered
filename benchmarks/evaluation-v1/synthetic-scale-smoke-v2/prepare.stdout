@@ -1,0 +1,23 @@
+{
+  "status": "exact_historical_jsonl_bytes_reconstructed",
+  "recipe_version": 1,
+  "method": "Later closed-form reconstruction checked against every original row; original generator and seed provenance are not established.",
+  "counts": {
+    "documents.jsonl": 1000,
+    "chunks.jsonl": 100000,
+    "embeddings.jsonl": 100000
+  },
+  "sha256": {
+    "documents.jsonl": "bd71819fbe4789e2645136fa40a10ec11981b99a26b38eb499038020e700ef36",
+    "chunks.jsonl": "6b09b63481b568572ecf543498bbdc5f1b946a41ef10e0fb8f09c6e19def61d1",
+    "embeddings.jsonl": "bcab207bb7d976e95f99d95970d2a180c1fdf8b0a6489d348d7ac1fc38d20329"
+  },
+  "model": "Synthetic one-hot 768D; no model inference or semantic relevance claim.",
+  "order": "Document89..999 then0..88; each document100chunks; revision5 for0..88 and4 otherwise; vector basis(document+revision)%768.",
+  "encoding": "UTF-8, sorted JSON keys, compact separators, LF per row; vector entries are integers0 or1.",
+  "import_manifest": "New convenience manifest for current import; not an original export manifest or a reconstructed database history.",
+  "limitations": [
+    "Reproduces three exported input assets, not the old2GiB file, transaction history, internal IDs, binary file bytes or original timings.",
+    "One-hot vectors and repetitive text are a scale/mechanism workload, not semantic-quality evidence."
+  ]
+}

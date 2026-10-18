@@ -1,0 +1,6 @@
+{"stage":"verified_query","mode":"text","index_source":"transient_rebuild","vector_scan_count":0,"distance_ops":0}
+{"stage":"verified_query","mode":"vector","index_source":"transient_rebuild","vector_scan_count":100000,"distance_ops":76800000}
+{"stage":"verified_query","mode":"hybrid","index_source":"transient_rebuild","vector_scan_count":100000,"distance_ops":76800000}
+{"stage":"check_report","result":{"critical_end_offset":349411562,"format_version":1,"index_check":"skipped","index_check_reason":"persistent_index_checkpoint_missing","index_suffix":null,"index_suffix_status":"missing","issues":[],"last_valid_commit":1639,"path":"external-reference/c8417d8eff706935/data.coffer","repair_available":false,"result":{"live_chunks":100000,"live_documents":1000,"tombstones":0},"schema_version":"0.1","status":"ok"}}
+{"stage":"verified","worker_pid":2528,"stats":{"active_profile":"balanced","background_compaction_enabled":false,"cache_budget_mb":1024,"chunk_count":100000,"collection_count":1,"data_size_bytes":339217890,"dead_bytes_estimate":0,"deleted_count":0,"document_count":1000,"embedding_count":100000,"file_size":349411562,"file_size_bytes":349411562,"format_version":1,"index_size_bytes":0,"last_commit_id":1639,"live_bytes":339217890,"pending_compaction_bytes":0,"tombstone_count":0}}
+{"stage":"supervisor_exit","child_pid":2528,"exit_code":0,"signal":null}

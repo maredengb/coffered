@@ -1,0 +1,45 @@
+{
+  "command": "import",
+  "duration_ms": 5868,
+  "ok": true,
+  "result": {
+    "chunks_imported": 10000,
+    "chunks_inserted": 10000,
+    "chunks_replaced": 0,
+    "chunks_seen": 10000,
+    "chunks_skipped": 0,
+    "dataset_id": null,
+    "documents_imported": 100,
+    "documents_inserted": 100,
+    "documents_replaced": 0,
+    "documents_seen": 100,
+    "documents_skipped": 0,
+    "durability": "commit",
+    "embeddings_imported": 10000,
+    "embeddings_inserted": 10000,
+    "embeddings_replaced": 0,
+    "embeddings_seen": 10000,
+    "embeddings_skipped": 0,
+    "errors": 0,
+    "manifest": "${PREPARATION_ROOT}/scale-batches/input-6/manifest.json",
+    "missing_chunks": 0,
+    "model_mismatches": 0,
+    "replaced": 0,
+    "skipped": 0,
+    "skipped_files": [],
+    "tokenizer": {
+      "config": {
+        "case_fold": "lower",
+        "split": "unicode_punctuation",
+        "stop_words": "default_en"
+      },
+      "language_hint": "en",
+      "name": "default_en",
+      "profile": "latin_code_default",
+      "version": "0.1"
+    },
+    "warnings": []
+  },
+  "schema_version": "0.1",
+  "warnings": []
+}

@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "owned_process_group": 57148,
+  "group_check_observations": [],
+  "cleanup_signals": [],
+  "supervisor_error": null,
+  "timeout_reason": null,
+  "timeout_sample": null,
+  "elapsed_seconds": 3.081757500069216,
+  "owned_process_group_absent": true,
+  "active_samples_at_exit": [],
+  "raw_logs_sha256": {
+    "stdout": "5bbe69c8a517269188a40763ca305a54ba4a1c32b00253d69039dd8a8daf4a42",
+    "stderr": "7fdcb740ca38e032720496a5828e9fc662f8b1400bcf8dad2eb3f7efe18d426a"
+  },
+  "supervision_limitations": "Deadlines are external observed journal durations plus reported search latency;20ms polling and host scheduling may delay observation/termination. Not a strict internal engine deadline."
+}
