@@ -86,7 +86,12 @@ def load_config(path, root=ROOT):
             raise Hold("missing_document") from None
         require(digest(data) == item["sha256"], "document_hash_mismatch")
         if config["enabled"]:
-            require(b"PREPARED_NOT_ACTIVE" not in data and b"DRAFT FOR REVIEW" not in data,
+            inactive_notices = (
+                b"PREPARED_NOT_ACTIVE", b"DRAFT FOR REVIEW",
+                b"This CLA is not yet in effect.",
+                b"Online CLA confirmations are not enabled.",
+            )
+            require(not any(notice in data for notice in inactive_notices),
                     "document_not_active")
             expected = rf"https://github\.com/maredengb/coffered/blob/[0-9a-f]{{40}}/{re.escape(filename)}"
             require(isinstance(item.get("url"), str) and re.fullmatch(expected, item["url"]),

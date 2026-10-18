@@ -51,23 +51,24 @@ need reproducible inputs, settings, raw results, baselines and limitations.
 See [governance and naming](GOVERNANCE.md) and the [license](LICENSE) for the
 project's public contribution and naming principles.
 
-## Contribution license and prepared online CLA
+## Contribution license and online CLA
 
 The current public distribution remains [Apache-2.0](LICENSE). Contributors retain
-their copyright. The prepared [Contributor License Agreement](CLA.md), once activated, would also
-grant the Recipient commercial and other-license sublicensing rights, including
+their copyright. The [Contributor License Agreement](CLA.md), once activated,
+would also grant the Recipient commercial and other-license sublicensing rights, including
 closed-source distribution. These additional rights come from the agreement, not
 from ownership of the repository or the act of merging a pull request. Existing
 Apache-2.0 permissions and third-party license obligations remain in force.
 
-**The CLA is PREPARED_NOT_ACTIVE and the signing process is not enabled. Do not
-post a confirmation yet.** Activation requires a published final version, an immutable
-text link and SHA256, the fixed Recipient reference and a designated confirmation
-thread. Until activation, intentionally submitted contributions remain subject to
-section 5 of Apache-2.0 and any expressly agreed terms; the prepared text does not grant
-additional rights in existing contributions.
+**The CLA is not yet in effect, and online confirmations are not enabled. Do not
+post a confirmation yet.** The activation announcement will identify the exact
+agreement and data notice, their immutable links and SHA256 hashes, the fixed
+Recipient reference and a designated confirmation thread. Until activation,
+intentionally submitted contributions remain subject to section 5 of Apache-2.0
+and any expressly agreed terms; the inactive agreement does not grant additional
+rights in existing contributions.
 
-The prepared process is:
+After activation, the process will be:
 
 1. Read the exact activated agreement and [confirmation-data notice](CLA-PRIVACY.md).
    Review the highlighted commercial licensing, patent, future-contribution and
@@ -90,7 +91,7 @@ The confirmation comment and GitHub attribution would be public. Do not include
 identity documents, private contact details or handwritten signatures. If a
 public confirmation is unsuitable, request a confidential contact route without
 posting private material; the affected submission waits for an agreed process.
-The prepared process adds no DCO sign-off requirement.
+The confirmation process adds no DCO sign-off requirement.
 
 The owner makes the final acceptance decision and manually merges accepted
 changes. Automated tools only prepare and check them; a CLA check neither merges

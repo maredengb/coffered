@@ -682,6 +682,27 @@ class ConfigurationAndEntrypointTests(OfflineTestCase):
             with self.assertRaisesRegex(check.Hold, "document_not_active"):
                 check.load_config(path, root)
 
+    def test_enabled_config_rejects_public_inactive_notices(self):
+        documents = (
+            ("agreement", "CLA.md",
+             b"# Contributor License Agreement\n\n**This CLA is not yet in effect. "
+             b"Do not submit a confirmation until activation.**\n"),
+            ("notice", "CLA-PRIVACY.md",
+             b"# CLA confirmation data\n\n**Online CLA confirmations are not enabled. "
+             b"Do not post a confirmation until activation.**\n"),
+        )
+        for key, name, data in documents:
+            with self.subTest(document=name), tempfile.TemporaryDirectory() as directory:
+                root, path, c = self.config_files(directory)
+                (root / name).write_bytes(data)
+                c[key]["sha256"] = check.digest(data)
+                path.write_text(json.dumps(c))
+                with self.assertRaisesRegex(check.Hold, "document_not_active"):
+                    check.load_config(path, root)
+                c["enabled"] = False
+                path.write_text(json.dumps(c))
+                self.assertEqual(c, check.load_config(path, root))
+
     def test_activation_requires_privacy_and_private_records_ready(self):
         with tempfile.TemporaryDirectory() as directory:
             root, path, c = self.config_files(directory)

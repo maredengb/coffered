@@ -1,17 +1,22 @@
-# CLA confirmation data — prepared notice
+# CLA confirmation data
 
-PREPARED_NOT_ACTIVE. The online confirmation process is not enabled.
-This notice must be frozen together with the agreement before activation.
+**Online CLA confirmations are not enabled. Do not post a confirmation until the
+project announces activation.**
+
+This notice describes how confirmation data will be handled after activation.
+The activation announcement will identify the applicable version of this notice
+and the agreement.
 
 ## Who handles the records
 
 The Recipient defined in [CLA.md](CLA.md), publicly identified by GitHub account
 [maredengb](https://github.com/maredengb), handles the Project's confirmation
 records. GitHub operates its own account, comment and automation services under
-its own terms and privacy statement. The prepared process does not use an additional
-hosted CLA service, identity-verification provider or external signing database.
+its own terms and privacy statement. The confirmation process does not use an
+additional hosted CLA service, identity-verification provider or external signing
+database.
 
-## What the prepared process records
+## What the confirmation process records
 
 - Public GitHub login and numeric user ID, and the relevant actor type.
 - Exact affirmative comment, comment/thread IDs, URLs, platform creation/update
@@ -49,7 +54,7 @@ hosts and processes the public confirmation and workflow data; the Project does
 not promise mainland-China-only storage. The owner keeps access-restricted
 backup copies outside the public source tree and public build artifacts. Private
 records and backups remain under the owner's control; they are not supplied to a
-new signing service by this preparation. Where applicable law requires further
+new signing service by this process. Where applicable law requires further
 notice, consent or other cross-border/data-processing steps, those must be
 completed before the affected processing is enabled.
 
@@ -71,5 +76,5 @@ routine prerequisite for every contribution. It must not require public disclosu
 
 A successor must meet the agreement's conditions; contractual succession alone
 does not authorize transfer of personal information. Applicable disclosures,
-consents and safeguards must be handled separately. This notice describes the
-prepared process and does not certify compliance or signature validity.
+consents and safeguards must be handled separately. This notice does not certify
+compliance or signature validity.

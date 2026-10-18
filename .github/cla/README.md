@@ -1,6 +1,6 @@
 # GitHub-native CLA confirmation checker
 
-The checker is **prepared but disabled** (`config.json`: `enabled: false`). No
+The checker is **disabled** (`config.json`: `enabled: false`). No
 signing thread, required check, or merge restriction is activated by these files.
 The public license remains Apache-2.0. Read [CLA.md](../../CLA.md), the
 [data notice](../../CLA-PRIVACY.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
@@ -17,7 +17,7 @@ CLA service is used. You can generate the text without posting anything:
 python3 -B .github/cla/check.py --confirmation PR_NUMBER FULL_HEAD_SHA
 ```
 
-The prepared, disabled configuration does not generate text for signing. After
+The disabled configuration does not generate text for signing. After
 activation, the same account's unchanged confirmation is reused for subsequent
 contributions under that version. A renamed account is matched by numeric ID.
 Confirm the first PR at its final head. If that head changes, post a new
@@ -111,12 +111,12 @@ inventoried before restrictions are represented as effective.
    records, credentials or exceptional authorization documents.
 2. The owner manually merges the trusted implementation, still disabled. Do not
    configure a required check before a real producer is available.
-3. Publish the final, no-longer-prepared documents at immutable commit URLs. Bind
+3. Publish the activation documents at immutable commit URLs. Bind
    their exact SHA256 values, versions, fixed Recipient reference time, repository
    ID, issue ID/number and effective time in `config.json`. The activation notice
    must reproduce this identity and prominently explain the important terms.
-4. After explicit activation approval, the owner manually merges the enabled
-   configuration. Conduct authorized real-fork checks with a consenting human,
+4. Once the activation prerequisites are satisfied, the owner manually merges the
+   enabled configuration. Conduct real-fork checks with a consenting human,
    who personally posts any actual confirmation. Do not substitute fake records
    or a bot's signature for this verification.
 5. Confirm the status appears on the exact PR head, including failure cases, and

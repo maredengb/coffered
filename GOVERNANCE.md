@@ -38,10 +38,10 @@ Automated tools prepare and check changes; they do not perform merges.
 
 Merge authority does not confer ownership of contributors' copyrights or rights
 beyond applicable licenses. The public distribution remains [Apache-2.0](LICENSE).
-The prepared [CLA](CLA.md), once activated, would grant additional commercial and other-license
-sublicensing rights while contributors retain copyright. It is PREPARED_NOT_ACTIVE, and no
-online confirmation process is represented as enabled. See the
-[contribution guide](CONTRIBUTING.md) for the prepared process and its activation boundary.
+The [CLA](CLA.md), once activated, would grant additional commercial and
+other-license sublicensing rights while contributors retain copyright. The CLA
+is not yet in effect, and online confirmations are not enabled. See the
+[contribution guide](CONTRIBUTING.md) for the process that will apply after activation.
 
 Existing Apache-2.0 grants cannot be withdrawn merely by changing a future
 release's license. A different future distribution also requires appropriate

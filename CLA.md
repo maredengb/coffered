@@ -1,10 +1,13 @@
 # CofferDB Contributor License Agreement
 
-Prepared agreement version: 1.0. PREPARED_NOT_ACTIVE; NOT OPEN FOR ACCEPTANCE.
-The agreement terms have been approved for preparation. Activation still requires
-an announcement identifying the final text, its SHA256, the fixed Recipient
-reference time and the confirmation thread. The checker implementation remains
-subject to verification; no online confirmation process is active.
+Agreement version: 1.0.
+
+**This CLA is not yet in effect. Do not submit a confirmation until the project
+announces its activation.**
+
+The activation announcement will identify the agreement and data notice, their
+permanent links and SHA256 hashes, the fixed Recipient reference time, and the
+confirmation thread.
 
 Project: CofferDB, https://github.com/maredengb/coffered
 Recipient public account: [maredengb](https://github.com/maredengb)
