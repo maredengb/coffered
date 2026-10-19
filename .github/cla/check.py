@@ -134,15 +134,15 @@ def config_digest(config):
 
 def activation_notice(config, number, merge_sha):
     a, n = config["agreement"], config["notice"]
-    return (f'CofferDB CLA confirmations are open under configuration SHA256 {config_digest(config)}.\n'
-            f'The enabling pull request is https://github.com/{config["repository"]}/pull/{number}, merged as {merge_sha}.\n'
+    return (f'CofferDB Contributor License Agreement invitation. Configuration SHA256 {config_digest(config)}.\n'
+            f'Source: https://github.com/{config["repository"]}/pull/{number} @ {merge_sha}.\n'
             f'Repository: {config["repository"]} (ID {config["repository_id"]}). Recipient account ID: {config["recipient_id"]}; fixed reference time: {config["recipient_reference_time"]}.\n'
             f'Agreement version {a["version"]}, SHA256 {a["sha256"]}: {a["url"]}\n'
             f'Data notice version {n["version"]}, SHA256 {n["sha256"]}: {n["url"]}\n'
             'Please read both documents and ask any questions before agreeing. You retain copyright and grant the stated commercial, closed-source and other-license rights. Review the patent, future-contribution, lawful-succession and governing-law terms. Existing Apache-2.0 permissions remain in force.\n'
             'Confirmations and GitHub attribution are public. Do not post identity documents or private contact details. No separate identity form or external CLA service is required.\n'
-            'For your first contribution, generate the exact text with python3 -B .github/cla/check.py --confirmation PR_NUMBER FULL_HEAD_SHA from the current main checkout, then personally post it in this issue. Replace both command arguments with your actual PR number and full head commit. Later contributions reuse a valid confirmation as described in the agreement.\n'
-            'Only confirmations posted strictly after this announcement count. Earlier comments must be confirmed again. Automation checks records; it never signs for you. The owner reviews rights and manually merges accepted changes.')
+            'For your first contribution, generate the exact text with python3 -B .github/cla/check.py --confirmation PR_NUMBER FULL_HEAD_SHA and personally post it in this issue. Replace both command arguments with your actual PR number and full head commit. Later contributions reuse a valid confirmation as described in the agreement.\n'
+            'Automation checks records; it never signs for you.')
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -300,7 +300,7 @@ class Checker:
             try:
                 self.valid_record(comment, after_activation=False)
                 body = normalized(comment["body"])
-                match = re.search(r'The enabling pull request is https://github.com/maredengb/coffered/pull/([1-9][0-9]{0,18}), merged as ([0-9a-f]{40})\.', body)
+                match = re.search(r'Source: https://github.com/maredengb/coffered/pull/([1-9][0-9]{0,18}) @ ([0-9a-f]{40})\.', body)
                 if not match or body != activation_notice(self.c, int(match[1]), match[2]):
                     continue
                 number, merge_sha = int(match[1]), match[2]
@@ -613,7 +613,7 @@ def main(argv=None):
     texts.add_argument("--owner-confirmation", nargs=2, metavar=("PR", "HEAD"),
                        help="Print a scoped owner rights statement, never post it")
     texts.add_argument("--activation-notice", nargs=2, metavar=("PR", "MERGE_SHA"),
-                       help="Print the owner's post-merge opening announcement, never post it")
+                       help="Print the confirmation invitation; never post it")
     args = parser.parse_args(argv)
     try:
         c = load_config(args.config)

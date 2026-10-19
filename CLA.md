@@ -1,22 +1,11 @@
 # CofferDB Contributor License Agreement
 
-Agreement version: 1.0.
-
-**This version takes effect only after its enabled configuration is merged into
-`main` and [maredengb](https://github.com/maredengb) personally posts the matching
-activation announcement in [the confirmation thread](https://github.com/maredengb/coffered/issues/2).
-Do not confirm before that announcement. Confirmations must be posted strictly
-after it; comments from before it or the same timestamp second do not count.**
-
-The announcement identifies this agreement and the data notice by permanent links
-and SHA256 hashes, and identifies the enabling pull request and merge commit.
-The fixed Recipient reference time for this version is **2026-10-19T01:55:54Z**.
-This reference identifies the Recipient; it is not an assertion that confirmations
-opened at that time.
+Agreement version: 1.1.
 
 Project: CofferDB, https://github.com/maredengb/coffered
 Recipient public account: [maredengb](https://github.com/maredengb)
 Recipient GitHub numeric user ID: 167590852
+Recipient reference time: 2026-10-19T01:55:54Z
 
 **Please read before agreeing:** You keep Your copyright. You authorize the
 Recipient to distribute Your Contributions under other open-source or commercial,
@@ -31,10 +20,9 @@ scope, lawful succession, liability limits and governing law below, and the
 “You” means the natural person who actively confirms this agreement using their
 GitHub account. This standard account-confirmation process does not purport to
 sign on behalf of an employer or other entity. “Recipient” means the natural
-person controlling account 167590852 at the single reference time fixed in the
-activation notice for this version. The account is that person's public
-identifier, not a separate legal person. The Recipient keeps their own identity
-and account-control record privately; this does not require an identity file
+person controlling account 167590852 at 2026-10-19T01:55:54Z. The account is that
+person's public identifier, not a separate legal person. The Recipient keeps their
+own identity and account-control record privately; this does not require an identity file
 from each contributor or represent independent identity certification.
 
 A username change does not change either party. A later account sale, compromise,
@@ -113,30 +101,28 @@ contributor must be covered; one pull-request author cannot sign for everyone.
 Notify Recipient if Your authority or account control changes. Ceasing future
 submissions does not by itself revoke licenses already granted.
 
-## 5. Confirmation and later automatic checks
+## 5. Acceptance and later Contributions
 
-After activation, the published invitation offers this exact agreement. You
-accept it by personally posting the specified affirmative confirmation while
-logged into Your GitHub account in the designated confirmation thread. The
-confirmation identifies this version, the full SHA256 of its final text and
-Your first covered pull request and commit. Recipient must provide the full text,
+You accept the Recipient's offer of this agreement by personally posting the
+specified affirmative confirmation while logged into Your GitHub account in the
+designated confirmation thread. The confirmation identifies this version, the
+full SHA256 of its final text and Your first covered pull request and commit.
+Recipient must provide the full text,
 prominent notice of the highlighted terms and an opportunity to ask questions
 before confirmation. Mere silence, opening a pull request, a bot action or an
 unrelated comment does not signify acceptance.
 
 A conforming confirmation constitutes acceptance when received in the designated
-thread. An automated receipt records it; the receipt is not a separate grant of
-rights. The parties agree that retrievable electronic records may evidence this
-agreement. Account authentication and a green status do not independently prove
+thread. The parties agree that retrievable electronic records may evidence this
+agreement. Account authentication alone does not independently prove
 legal identity, ownership, corporate authority or a statutorily reliable
 electronic signature.
 
-For later Contributions, software checks the existing confirmation and coverage;
-it does not sign again on Your behalf. Changes to the agreement require new
-express acceptance. Prior versions and evidence remain available. Account or
-rights-holder uncertainty requires review rather than an automatic exemption.
-Deleting a comment does not by itself revoke an existing license, but missing or
-unverifiable records prevent automatic clearance of later submissions.
+This acceptance covers later Contributions within the scope of section 1.
+Changes to the agreement require new express acceptance. Prior versions and
+evidence remain available. Account or rights-holder uncertainty does not establish
+authority to grant rights. Deleting a comment does not by itself revoke an existing
+license.
 
 ## 6. Contribution treatment and liability
 
@@ -154,9 +140,10 @@ replace them with a blanket waiver.
 ## 7. Confirmation data and lawful succession
 
 The [data notice](CLA-PRIVACY.md) explains the limited GitHub records used for
-confirmation and checks. There is no routine request for identity documents,
-legal-name forms, private addresses, phone numbers, private email addresses or
-handwritten signatures. The public confirmation necessarily shows Your GitHub
+this agreement and its contribution scope. There is no routine request for
+identity documents, legal-name forms, private addresses, phone numbers, private
+email addresses or handwritten signatures. The public confirmation necessarily
+shows Your GitHub
 identifier, acceptance text and platform metadata. Read that notice before
 choosing to confirm. Do not include private identity material in the thread.
 

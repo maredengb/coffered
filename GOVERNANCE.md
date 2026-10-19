@@ -40,9 +40,6 @@ Merge authority does not confer ownership of contributors' copyrights or rights
 beyond applicable licenses. The public distribution remains [Apache-2.0](LICENSE).
 The [CLA](CLA.md), when applicable, grants additional commercial and
 other-license sublicensing rights while contributors retain copyright.
-Confirmations open only after the enabled configuration is merged into `main`
-and maredengb personally posts the matching activation announcement in
-[the confirmation thread](https://github.com/maredengb/coffered/issues/2).
 See the [contribution guide](CONTRIBUTING.md) before confirming.
 
 Existing Apache-2.0 grants cannot be withdrawn merely by changing a future
@@ -50,8 +47,3 @@ release's license. A different future distribution also requires appropriate
 rights in all included material, including earlier and third-party contributions.
 An automated CLA result is evidence of an account confirmation; it is not a
 legal finding of authorship, authority or complete rights clearance.
-
-Only the owner manually merges into official branches. Repository protections
-must be verified separately before being described as enforced. A written policy
-alone, a code-owner file, or a passing check does not restrict platform permissions.
-Automation does not receive authority to merge or bypass branch protections.

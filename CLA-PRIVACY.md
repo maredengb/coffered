@@ -1,13 +1,8 @@
 # CLA confirmation data
 
-Notice version: 1.0.
+Notice version: 1.1.
 
 This notice applies to the online confirmation process described in [CLA.md](CLA.md).
-Confirmations open only after the enabled configuration is merged into `main` and
-[maredengb](https://github.com/maredengb) personally posts the matching activation
-announcement in [the confirmation thread](https://github.com/maredengb/coffered/issues/2).
-Do not post a confirmation before that announcement. It identifies the exact
-agreement and notice versions, permanent links and SHA256 hashes.
 
 ## Who handles the records
 
@@ -29,9 +24,9 @@ database.
 These records can be personal information. No separate legal name, private email,
 telephone number, address, identity-document copy or handwritten signature is
 requested for the standard process. GitHub account profiles and Git commits may
-already contain other information; the checker should not copy unnecessary profile
-fields or commit-author email addresses into the confirmation record. Technical
-service logs may contain additional data under GitHub's own policies.
+already contain other information; the confirmation record excludes unnecessary
+profile fields and commit-author email addresses. Technical service logs may
+contain additional data under GitHub's own policies.
 
 ## Visibility and choice
 
@@ -43,10 +38,9 @@ minimal CLA check outcome needed for the PR. It does not publish the owner's
 private identity record or any exceptional private authorization evidence.
 
 If You do not want a public confirmation, do not post one. Ask for a confidential
-alternative without including private material in a public issue. No alternative
-is represented as already operating; the affected Contribution waits while an
-appropriate process is agreed. A general contact request need not state that You
-have or have not signed. No one is required to contribute.
+alternative without including private material in a public issue. An appropriate
+confidential process must be agreed for the affected Contribution. A general
+contact request need not state that You have or have not signed. No one is required to contribute.
 
 ## Purpose, location and retention
 
@@ -58,7 +52,7 @@ backup copies outside the public source tree and public build artifacts. Private
 records and backups remain under the owner's control; they are not supplied to a
 new signing service by this process. Where applicable law requires further
 notice, consent or other cross-border/data-processing steps, those must be
-completed before the affected processing is enabled.
+completed before the affected data is processed.
 
 Necessary license evidence is kept while the Project relies on the grants and for
 any additional period reasonably required by applicable law or an actual dispute.
@@ -78,5 +72,4 @@ routine prerequisite for every contribution. It must not require public disclosu
 
 A successor must meet the agreement's conditions; contractual succession alone
 does not authorize transfer of personal information. Applicable disclosures,
-consents and safeguards must be handled separately. This notice does not certify
-compliance or signature validity.
+consents and safeguards must be handled separately.

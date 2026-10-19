@@ -54,26 +54,15 @@ project's public contribution and naming principles.
 ## Contribution license and online CLA
 
 The current public distribution remains [Apache-2.0](LICENSE). Contributors retain
-their copyright. The [Contributor License Agreement](CLA.md), once activated,
-would also grant the Recipient commercial and other-license sublicensing rights, including
-closed-source distribution. These additional rights come from the agreement, not
+their copyright. By accepting the [Contributor License Agreement](CLA.md), a
+contributor also grants the Recipient commercial and other-license sublicensing
+rights, including closed-source distribution. These additional rights come from the agreement, not
 from ownership of the repository or the act of merging a pull request. Existing
 Apache-2.0 permissions and third-party license obligations remain in force.
 
-**Confirmations open only after the enabled configuration is merged into `main`
-and [maredengb](https://github.com/maredengb) personally posts the matching
-activation announcement in [the confirmation thread](https://github.com/maredengb/coffered/issues/2).
-Do not confirm before that announcement.** It identifies the exact agreement and
-data notice, their immutable links and SHA256 hashes, the fixed Recipient
-reference and enabling merge. Confirmations must be strictly later than the
-announcement; earlier or same-second comments do not count. Until activation,
-intentionally submitted contributions remain subject to section 5 of Apache-2.0
-and any expressly agreed terms. The CLA does not grant additional rights in older
-unrelated contributions.
+The CLA does not grant additional rights in older unrelated contributions.
 
-Once the announcement is present:
-
-1. Read the exact activated agreement and [confirmation-data notice](CLA-PRIVACY.md).
+1. Read the agreement and [confirmation-data notice](CLA-PRIVACY.md).
    Review the highlighted commercial licensing, patent, future-contribution and
    succession terms, and ask any questions before agreeing.
 2. For your first covered submission, personally post the published confirmation
@@ -82,7 +71,7 @@ Once the announcement is present:
    separate legal-name, contact-information or identity-document form is required.
 3. For subsequent contributions, the checker reuses your existing confirmation
    for that agreement version. It does not sign for you. A new agreement needs
-   new consent. Missing, edited or unverifiable records cannot clear the check.
+   new consent.
 
 Each relevant contributor must be covered. Identify third-party sources, preserve
 license and attribution notices, and submit only material you have authority to
@@ -100,5 +89,5 @@ The owner makes the final acceptance decision and manually merges accepted
 changes. Automated tools only prepare and check them; a CLA check neither merges
 code nor guarantees acceptance or copyright ownership.
 
-See the [checker and activation guide](.github/cla/README.md) for technical controls,
-conservative scope checks and the steps required to open online confirmations.
+See the [confirmation checker](.github/cla/README.md) for text-generation commands
+and technical details.
