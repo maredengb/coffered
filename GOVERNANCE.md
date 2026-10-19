@@ -38,10 +38,12 @@ Automated tools prepare and check changes; they do not perform merges.
 
 Merge authority does not confer ownership of contributors' copyrights or rights
 beyond applicable licenses. The public distribution remains [Apache-2.0](LICENSE).
-The [CLA](CLA.md), once activated, would grant additional commercial and
-other-license sublicensing rights while contributors retain copyright. The CLA
-is not yet in effect, and online confirmations are not enabled. See the
-[contribution guide](CONTRIBUTING.md) for the process that will apply after activation.
+The [CLA](CLA.md), when applicable, grants additional commercial and
+other-license sublicensing rights while contributors retain copyright.
+Confirmations open only after the enabled configuration is merged into `main`
+and maredengb personally posts the matching activation announcement in
+[the confirmation thread](https://github.com/maredengb/coffered/issues/2).
+See the [contribution guide](CONTRIBUTING.md) before confirming.
 
 Existing Apache-2.0 grants cannot be withdrawn merely by changing a future
 release's license. A different future distribution also requires appropriate

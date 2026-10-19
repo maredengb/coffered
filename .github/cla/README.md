@@ -1,7 +1,9 @@
 # GitHub-native CLA confirmation checker
 
-The checker is **disabled** (`config.json`: `enabled: false`). No
-signing thread, required check, or merge restriction is activated by these files.
+The checker accepts confirmations only when `config.json` is enabled on `main`
+and the owner has personally posted a matching activation announcement in
+[the confirmation thread](https://github.com/maredengb/coffered/issues/2).
+A preparation branch or a successful test run does not open confirmations.
 The public license remains Apache-2.0. Read [CLA.md](../../CLA.md), the
 [data notice](../../CLA-PRIVACY.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md).
 
@@ -50,6 +52,12 @@ any additional rights-holder authority. Only the owner manually merges.
 
 - Frozen repository and numeric Recipient IDs, activation time, agreement and
   notice hashes, immutable published document contents, and the designated issue.
+- An unchanged opening announcement by the numeric Recipient account, binding
+  the complete configuration hash, agreement/notice identities and an enabling PR.
+  GitHub must report that PR merged by the Recipient into `main`, strictly before
+  the announcement, with the announced merge commit still on `main` and the same
+  configuration at that commit. `effective_at` is an earliest allowed time;
+  confirmations must also be strictly later than the actual opening announcement.
 - Exact affirmative text from the actual human GitHub comment author. Quotes,
   code blocks, partial text, placeholders, edited comments and bot comments do
   not count. Only line endings and outer whitespace are normalized.
@@ -62,7 +70,7 @@ any additional rights-holder authority. Only the owner manually merges.
   the confirmation issue. Exceeding a bound requires review; it is not a pass.
   No account is guessed from an email address.
 - Current PR head and base before and after reading records, and fresh copies of
-  the confirmations immediately before success. In Actions, the workflow
+  the announcement and confirmations immediately before success. In Actions, the workflow
   revision must still be the current default-branch revision.
 
 `cofferdb/cla` is explicitly written to the PR **head SHA**. A successful workflow
@@ -116,7 +124,21 @@ inventoried before restrictions are represented as effective.
    ID, issue ID/number and effective time in `config.json`. The activation notice
    must reproduce this identity and prominently explain the important terms.
 4. Once the activation prerequisites are satisfied, the owner manually merges the
-   enabled configuration. Conduct real-fork checks with a consenting human,
+   enabled configuration. The checker holds PRs until the owner personally posts
+   the exact opening announcement, generated from the adopted `main` checkout:
+
+   ```sh
+   python3 -B .github/cla/check.py --activation-notice PR_NUMBER FULL_MERGE_SHA
+   ```
+
+   Use the enabling PR number and its actual GitHub merge commit, including when
+   squash merging. This command only prints; it never publishes an announcement.
+   Wait until after the merge timestamp second. The announcement opens this
+   configuration; it is not a contribution signature or a rights-review statement.
+   Changed configuration requires a newly matched announcement. Edited, deleted
+   or unverifiable announcements cannot clear checks. Do not edit an old record
+   to correct it; publish a fresh announcement, and reconfirm affected submissions.
+   Conduct real-fork checks with a consenting human,
    who personally posts any actual confirmation. Do not substitute fake records
    or a bot's signature for this verification.
 5. Confirm the status appears on the exact PR head, including failure cases, and
@@ -144,7 +166,7 @@ python3 -B .github/cla/check.py --dry-run --export-dir /PRIVATE/NEW_DIRECTORY
 
 Use a new directory outside every Git checkout and outside Actions. The exporter
 creates a mode-0700 directory and mode-0600 files with minimal confirmation
-records, exact document/config copies, current PR results and hashes. It refuses
+records, the verified opening announcement, exact document/config copies, current PR results and hashes. It refuses
 existing destinations and does not upload artifacts. It omits commit-author
 emails and unrelated account-profile fields. The owner handles access-controlled
 backups, retention review and lawful rights requests. Platform timestamps and

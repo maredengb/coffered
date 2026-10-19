@@ -60,15 +60,18 @@ closed-source distribution. These additional rights come from the agreement, not
 from ownership of the repository or the act of merging a pull request. Existing
 Apache-2.0 permissions and third-party license obligations remain in force.
 
-**The CLA is not yet in effect, and online confirmations are not enabled. Do not
-post a confirmation yet.** The activation announcement will identify the exact
-agreement and data notice, their immutable links and SHA256 hashes, the fixed
-Recipient reference and a designated confirmation thread. Until activation,
+**Confirmations open only after the enabled configuration is merged into `main`
+and [maredengb](https://github.com/maredengb) personally posts the matching
+activation announcement in [the confirmation thread](https://github.com/maredengb/coffered/issues/2).
+Do not confirm before that announcement.** It identifies the exact agreement and
+data notice, their immutable links and SHA256 hashes, the fixed Recipient
+reference and enabling merge. Confirmations must be strictly later than the
+announcement; earlier or same-second comments do not count. Until activation,
 intentionally submitted contributions remain subject to section 5 of Apache-2.0
-and any expressly agreed terms; the inactive agreement does not grant additional
-rights in existing contributions.
+and any expressly agreed terms. The CLA does not grant additional rights in older
+unrelated contributions.
 
-After activation, the process will be:
+Once the announcement is present:
 
 1. Read the exact activated agreement and [confirmation-data notice](CLA-PRIVACY.md).
    Review the highlighted commercial licensing, patent, future-contribution and
@@ -87,7 +90,7 @@ license. An employer-owned contribution needs appropriate rights-holder
 permission; a GitHub confirmation alone cannot supply it. Unknown authorship or
 rights questions require review even if an automated check succeeds.
 
-The confirmation comment and GitHub attribution would be public. Do not include
+The confirmation comment and GitHub attribution are public. Do not include
 identity documents, private contact details or handwritten signatures. If a
 public confirmation is unsuitable, request a confidential contact route without
 posting private material; the affected submission waits for an agreed process.
@@ -98,4 +101,4 @@ changes. Automated tools only prepare and check them; a CLA check neither merges
 code nor guarantees acceptance or copyright ownership.
 
 See the [checker and activation guide](.github/cla/README.md) for technical controls,
-conservative scope checks and the steps required before online signing is enabled.
+conservative scope checks and the steps required to open online confirmations.

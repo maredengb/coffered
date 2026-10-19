@@ -13,12 +13,12 @@
   "owner_records_ready": false,
   "agreement": {
     "version": "1.0",
-    "sha256": "707bc981890a0840e5794508f3d6b94464fa85cdee19d81d3c673dda171d163f",
+    "sha256": "10c29ac5348d44e860ddd61f511d64c190912483c66e99770449c48b8798e974",
     "url": null
   },
   "notice": {
     "version": "1.0",
-    "sha256": "b77468f67c818317cd32a4d9cb8b18040c10cbc77721559ac94ed1ff78ee5fdd",
+    "sha256": "7774a43fa8b9b1bf9518cf3da31f0b878d2df7abd8074522566ffd9bed642ef0",
     "url": null
   }
 }

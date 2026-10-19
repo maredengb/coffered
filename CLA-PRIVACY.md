@@ -1,11 +1,13 @@
 # CLA confirmation data
 
-**Online CLA confirmations are not enabled. Do not post a confirmation until the
-project announces activation.**
+Notice version: 1.0.
 
-This notice describes how confirmation data will be handled after activation.
-The activation announcement will identify the applicable version of this notice
-and the agreement.
+This notice applies to the online confirmation process described in [CLA.md](CLA.md).
+Confirmations open only after the enabled configuration is merged into `main` and
+[maredengb](https://github.com/maredengb) personally posts the matching activation
+announcement in [the confirmation thread](https://github.com/maredengb/coffered/issues/2).
+Do not post a confirmation before that announcement. It identifies the exact
+agreement and notice versions, permanent links and SHA256 hashes.
 
 ## Who handles the records
 
