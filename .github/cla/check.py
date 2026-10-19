@@ -86,7 +86,12 @@ def load_config(path, root=ROOT):
             raise Hold("missing_document") from None
         require(digest(data) == item["sha256"], "document_hash_mismatch")
         if config["enabled"]:
-            require(b"PREPARED_NOT_ACTIVE" not in data and b"DRAFT FOR REVIEW" not in data,
+            inactive_notices = (
+                b"PREPARED_NOT_ACTIVE", b"DRAFT FOR REVIEW",
+                b"This CLA is not yet in effect.",
+                b"Online CLA confirmations are not enabled.",
+            )
+            require(not any(notice in data for notice in inactive_notices),
                     "document_not_active")
             expected = rf"https://github\.com/maredengb/coffered/blob/[0-9a-f]{{40}}/{re.escape(filename)}"
             require(isinstance(item.get("url"), str) and re.fullmatch(expected, item["url"]),
@@ -121,6 +126,23 @@ def owner_confirmation(config, number, head):
             'This statement covers only my material at this commit, not another contributor\'s work. '
             f'I have read the confirmation-data notice SHA256 {config["notice"]["sha256"]}. '
             'Separately, I choose to publish this rights-review statement and its GitHub account attribution in this public thread.')
+
+
+def config_digest(config):
+    return digest(json.dumps(config, sort_keys=True, separators=(",", ":")).encode())
+
+
+def activation_notice(config, number, merge_sha):
+    a, n = config["agreement"], config["notice"]
+    return (f'CofferDB CLA confirmations are open under configuration SHA256 {config_digest(config)}.\n'
+            f'The enabling pull request is https://github.com/{config["repository"]}/pull/{number}, merged as {merge_sha}.\n'
+            f'Repository: {config["repository"]} (ID {config["repository_id"]}). Recipient account ID: {config["recipient_id"]}; fixed reference time: {config["recipient_reference_time"]}.\n'
+            f'Agreement version {a["version"]}, SHA256 {a["sha256"]}: {a["url"]}\n'
+            f'Data notice version {n["version"]}, SHA256 {n["sha256"]}: {n["url"]}\n'
+            'Please read both documents and ask any questions before agreeing. You retain copyright and grant the stated commercial, closed-source and other-license rights. Review the patent, future-contribution, lawful-succession and governing-law terms. Existing Apache-2.0 permissions remain in force.\n'
+            'Confirmations and GitHub attribution are public. Do not post identity documents or private contact details. No separate identity form or external CLA service is required.\n'
+            'For your first contribution, generate the exact text with python3 -B .github/cla/check.py --confirmation PR_NUMBER FULL_HEAD_SHA from the current main checkout, then personally post it in this issue. Replace both command arguments with your actual PR number and full head commit. Later contributions reuse a valid confirmation as described in the agreement.\n'
+            'Only confirmations posted strictly after this announcement count. Earlier comments must be confirmed again. Automation checks records; it never signs for you. The owner reviews rights and manually merges accepted changes.')
 
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
@@ -199,6 +221,7 @@ class Checker:
         self.records = []
         self.results = []
         self.write_failures = False
+        self.activation_record = None
         self.workflow_sha = os.environ.get("GITHUB_WORKFLOW_SHA") if os.environ.get("GITHUB_ACTIONS") == "true" else None
 
     def verify_revision(self):
@@ -268,6 +291,47 @@ class Checker:
                 issue.get("state") == "open" and not issue.get("locked"), "confirmation_issue_unavailable")
         require(timestamp(self.c["effective_at"]) <= dt.datetime.now(dt.timezone.utc),
                 "activation_not_effective")
+
+    def verify_activation(self, comments):
+        self.activation_record = None
+        for comment in comments:
+            if comment.get("user", {}).get("id") != self.c["recipient_id"]:
+                continue
+            try:
+                self.valid_record(comment, after_activation=False)
+                body = normalized(comment["body"])
+                match = re.search(r'The enabling pull request is https://github.com/maredengb/coffered/pull/([1-9][0-9]{0,18}), merged as ([0-9a-f]{40})\.', body)
+                if not match or body != activation_notice(self.c, int(match[1]), match[2]):
+                    continue
+                number, merge_sha = int(match[1]), match[2]
+                p = self.api.get(f"{self.prefix}/pulls/{number}")
+                require(p.get("number") == number and p.get("merged") is True and
+                        p.get("merge_commit_sha") == merge_sha and
+                        p.get("merged_by", {}).get("id") == self.c["recipient_id"] and
+                        p.get("base", {}).get("repo", {}).get("id") == self.c["repository_id"] and
+                        p.get("base", {}).get("ref") == "main", "invalid_activation_merge")
+                require(timestamp(p.get("merged_at")) < timestamp(comment["created_at"]),
+                        "activation_predates_merge")
+                ancestry = self.api.get(f"{self.prefix}/compare/{merge_sha}...main")
+                require(ancestry.get("status") in {"ahead", "identical"} and
+                        ancestry.get("merge_base_commit", {}).get("sha") == merge_sha,
+                        "activation_not_on_main")
+                value = self.api.get(f"{self.prefix}/contents/.github/cla/config.json?ref={merge_sha}")
+                require(value.get("type") == "file" and value.get("path") == ".github/cla/config.json" and
+                        value.get("encoding") == "base64" and isinstance(value.get("content"), str),
+                        "invalid_activation_configuration")
+                try:
+                    frozen = json.loads(base64.b64decode(value["content"].replace("\n", ""), validate=True))
+                except (KeyError, TypeError, ValueError):
+                    raise Hold("invalid_activation_configuration") from None
+                require(config_digest(frozen) == config_digest(self.c), "activation_configuration_changed")
+                self.activation_record = self.record(comment, "activation")
+                self.activation_record.update(pr=number, merge_sha=merge_sha)
+                return
+            except Hold as error:
+                if str(error).startswith("api_"):
+                    raise
+        raise Hold("owner_activation_announcement_required")
 
     def pr(self, number, fresh=False):
         require(positive(number), "invalid_pr_number")
@@ -359,7 +423,7 @@ class Checker:
                 latest["base"]["sha"] == p["base"]["sha"], "pr_changed_during_check")
         return actors
 
-    def valid_record(self, comment):
+    def valid_record(self, comment, after_activation=True):
         require(isinstance(comment, dict) and positive(comment.get("id")) and
                 isinstance(comment.get("body"), str) and len(comment["body"]) <= 10000,
                 "invalid_confirmation_record")
@@ -367,6 +431,10 @@ class Checker:
         created = timestamp(comment.get("created_at"))
         require(timestamp(self.c["effective_at"]) <= created <= dt.datetime.now(dt.timezone.utc),
                 "confirmation_outside_activation")
+        if after_activation:
+            require(self.activation_record is not None and
+                    timestamp(self.activation_record["created_at"]) < created,
+                    "confirmation_before_opening")
         require(comment.get("html_url") == f'https://github.com/{self.c["repository"]}/issues/{self.c["issue_number"]}#issuecomment-{comment["id"]}',
                 "confirmation_wrong_thread")
         require(comment.get("issue_url") == f'https://api.github.com{self.prefix}/issues/{self.c["issue_number"]}',
@@ -436,10 +504,11 @@ class Checker:
         raise Hold("owner_rights_review_required")
 
     def fresh_records(self, records):
-        for record in records:
+        require(self.activation_record is not None, "owner_activation_announcement_required")
+        for record in [self.activation_record, *records]:
             comment = self.api.get(f'{self.prefix}/issues/comments/{record["id"]}')
             require(comment.get("id") == record["id"] and
-                    self.valid_record(comment) == record["account_id"] and
+                    self.valid_record(comment, after_activation=record["kind"] != "activation") == record["account_id"] and
                     comment["body"] == record["body"] and
                     comment["created_at"] == record["created_at"], "confirmation_changed_during_check")
 
@@ -489,6 +558,7 @@ class Checker:
         # Known heads are pending even if documents, issue availability, or policy fail.
         self.verify_repository()
         comments = self.pages(f'/issues/{self.c["issue_number"]}/comments', MAX_COMMENTS)
+        self.verify_activation(comments)
         head_counts = {}
         for p in pulls:
             head = p["head"]["sha"]
@@ -520,6 +590,7 @@ def write_export(directory, checker, config_path):
                    "mode": "local_read_only_recheck", "results": checker.results,
                    "checker_sha256": digest(Path(__file__).read_bytes()),
                    "workflow_sha256": digest((ROOT/".github/workflows/cla.yml").read_bytes()),
+                   "activation": checker.activation_record,
                    "records": list({r["id"]: r for r in checker.records}.values())}, indent=2).encode(),
                  "config.json": Path(config_path).read_bytes(),
                  "CLA.md": (ROOT/"CLA.md").read_bytes(), "CLA-PRIVACY.md": (ROOT/"CLA-PRIVACY.md").read_bytes()}
@@ -541,6 +612,8 @@ def main(argv=None):
     texts.add_argument("--confirmation", nargs=2, metavar=("PR", "HEAD"), help="Print text, never post it")
     texts.add_argument("--owner-confirmation", nargs=2, metavar=("PR", "HEAD"),
                        help="Print a scoped owner rights statement, never post it")
+    texts.add_argument("--activation-notice", nargs=2, metavar=("PR", "MERGE_SHA"),
+                       help="Print the owner's post-merge opening announcement, never post it")
     args = parser.parse_args(argv)
     try:
         c = load_config(args.config)
@@ -548,10 +621,10 @@ def main(argv=None):
             print("PREPARED_NOT_ACTIVE: no API calls, signatures, or status writes.")
             return 0
         require(not args.export_dir or args.dry_run, "export_requires_dry_run")
-        if args.confirmation or args.owner_confirmation:
-            number, head = args.confirmation or args.owner_confirmation
+        if args.confirmation or args.owner_confirmation or args.activation_notice:
+            number, head = args.confirmation or args.owner_confirmation or args.activation_notice
             require(number.isdigit() and int(number)>0 and SHA.fullmatch(head), "invalid_confirmation_target")
-            render = owner_confirmation if args.owner_confirmation else confirmation
+            render = activation_notice if args.activation_notice else owner_confirmation if args.owner_confirmation else confirmation
             print(render(c, int(number), head))
             return 0
         action = os.environ.get("GITHUB_ACTIONS") == "true"

@@ -1,10 +1,18 @@
 # CofferDB Contributor License Agreement
 
-Prepared agreement version: 1.0. PREPARED_NOT_ACTIVE; NOT OPEN FOR ACCEPTANCE.
-The agreement terms have been approved for preparation. Activation still requires
-an announcement identifying the final text, its SHA256, the fixed Recipient
-reference time and the confirmation thread. The checker implementation remains
-subject to verification; no online confirmation process is active.
+Agreement version: 1.0.
+
+**This version takes effect only after its enabled configuration is merged into
+`main` and [maredengb](https://github.com/maredengb) personally posts the matching
+activation announcement in [the confirmation thread](https://github.com/maredengb/coffered/issues/2).
+Do not confirm before that announcement. Confirmations must be posted strictly
+after it; comments from before it or the same timestamp second do not count.**
+
+The announcement identifies this agreement and the data notice by permanent links
+and SHA256 hashes, and identifies the enabling pull request and merge commit.
+The fixed Recipient reference time for this version is **2026-10-19T01:55:54Z**.
+This reference identifies the Recipient; it is not an assertion that confirmations
+opened at that time.
 
 Project: CofferDB, https://github.com/maredengb/coffered
 Recipient public account: [maredengb](https://github.com/maredengb)

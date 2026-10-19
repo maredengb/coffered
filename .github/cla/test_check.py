@@ -28,6 +28,8 @@ ALICE = {"id": 900101, "login": "synthetic-alice", "type": "User"}
 BOB = {"id": 900102, "login": "synthetic-bob", "type": "User"}
 SHA1, SHA2, SHA3, BASE = (character * 40 for character in "123b")
 BEFORE = "2023-12-31T00:00:00Z"
+OPENED = "2023-12-30T00:00:00Z"
+MERGED = "2023-12-29T00:00:00Z"
 WHEN = "2024-01-01T00:00:00Z"
 AFTER = "2024-01-02T00:00:00Z"
 DOCUMENTS = {"CLA.md": b"Synthetic agreement bytes\n", "CLA-PRIVACY.md": b"Synthetic notice bytes\n"}
@@ -85,6 +87,14 @@ class FakeApi:
         self.commit_lists = {1: [{"sha": SHA1}]}
         self.graphql = {SHA1: author_data(SHA1)}
         self.comments = [comment(c)]
+        self.activation = comment(c, actor=OWNER, identity=920000)
+        self.activation.update(body=check.activation_notice(c, 99, BASE),
+                               created_at=OPENED, updated_at=OPENED)
+        self.activation_pr = {"number": 99, "merged": True, "merged_at": MERGED,
+                              "merge_commit_sha": BASE, "merged_by": OWNER,
+                              "base": {"ref": "main", "repo": {"id": REPOSITORY_ID}}}
+        self.activation_config = copy.deepcopy(c)
+        self.activation_ancestry = {"status": "identical", "merge_base_commit": {"sha": BASE}}
         self.comparisons = {}
         self.main_sha = BASE
         self.documents = copy.deepcopy(DOCUMENTS)
@@ -118,6 +128,15 @@ class FakeApi:
             return copy.deepcopy(self.issue)
         if endpoint == PREFIX + "/commits/main":
             return {"sha": self.main_sha}
+        if endpoint == PREFIX + "/pulls/99":
+            return copy.deepcopy(self.activation_pr)
+        if endpoint == PREFIX + "/compare/" + BASE + "...main":
+            return copy.deepcopy(self.activation_ancestry)
+        if endpoint == PREFIX + "/contents/.github/cla/config.json":
+            if params.get("ref") != [BASE]:
+                raise AssertionError("Activation config must come from the exact merge commit")
+            return {"type": "file", "path": ".github/cla/config.json", "encoding": "base64",
+                    "content": base64.b64encode(json.dumps(self.activation_config).encode()).decode()}
         if endpoint.startswith(PREFIX + "/contents/"):
             filename = endpoint.removeprefix(PREFIX + "/contents/")
             if filename not in self.documents or params.get("ref") != [BASE]:
@@ -141,14 +160,14 @@ class FakeApi:
                 if value is None:
                     raise check.Hold("api_request_failed")
                 return copy.deepcopy(value)
-            for item in self.comments:
+            for item in self.comments + ([self.activation] if self.activation else []):
                 if item["id"] == identity:
                     return copy.deepcopy(item)
             raise check.Hold("api_request_failed")
         if endpoint == PREFIX + "/pulls":
             rows = list(self.pulls.values()) if self.open_pulls is None else self.open_pulls
         elif endpoint == PREFIX + "/issues/17/comments":
-            rows = self.comments
+            rows = self.comments + ([self.activation] if self.activation else [])
         elif endpoint.startswith(PREFIX + "/pulls/"):
             parts = endpoint.removeprefix(PREFIX + "/pulls/").split("/")
             number = int(parts[0])
@@ -192,6 +211,7 @@ class CheckerTests(OfflineTestCase):
         self.api = FakeApi(self.c)
         self.checker = check.Checker(self.c, self.api,
                                      f"https://github.com/{REPO}/actions/runs/123")
+        self.checker.verify_activation([self.api.activation])
 
     def result(self, number=1):
         return self.checker.check_pr(number, self.api.comments)
@@ -481,6 +501,7 @@ class CheckerTests(OfflineTestCase):
         self.assert_failed("incomplete_pr_commits")
 
     def test_rest_pagination_handles_exact_page_and_limit(self):
+        self.api.activation = None  # This test isolates a 100-comment pagination boundary.
         rows = [{"id": n + 1} for n in range(100)]
         self.api.comments = rows
         self.assertEqual(rows, self.checker.pages("/issues/17/comments", 100))
@@ -652,6 +673,114 @@ class CheckerTests(OfflineTestCase):
             self.assertFalse(marker.exists())
 
 
+class ActivationTests(OfflineTestCase):
+    def setUp(self):
+        super().setUp()
+        self.c = config()
+        self.api = FakeApi(self.c)
+        self.checker = check.Checker(self.c, self.api, "https://github.com/maredengb/coffered/actions/runs/123")
+
+    def held(self):
+        with self.assertRaises(check.Hold):
+            self.checker.run()
+        self.assertNotIn("success", [body["state"] for _, body in self.api.statuses])
+
+    def test_post_merge_announcement_opens_confirmations(self):
+        self.assertEqual("success", self.checker.run()[0]["result"])
+        self.assertEqual(920000, self.checker.activation_record["id"])
+        self.assertEqual(BASE, self.checker.activation_record["merge_sha"])
+
+    def test_missing_announcement_holds_known_heads_pending(self):
+        self.api.activation = None
+        self.held()
+        self.assertEqual("pending", self.api.statuses[-1][1]["state"])
+
+    def test_nonowner_and_bot_announcements_do_not_open(self):
+        for actor in (ALICE, {**OWNER, "type": "Bot"}):
+            with self.subTest(actor=actor):
+                self.api.activation["user"] = actor
+                self.held()
+
+    def test_edited_or_altered_announcement_does_not_open(self):
+        original = copy.deepcopy(self.api.activation)
+        for field, value in (("updated_at", WHEN), ("body", original["body"] + " extra")):
+            with self.subTest(field=field):
+                self.api.activation = {**original, field: value}
+                self.held()
+
+    def test_unmerged_wrong_owner_wrong_target_or_wrong_sha_is_rejected(self):
+        original = copy.deepcopy(self.api.activation_pr)
+        for field, value in (("merged", False), ("merged_by", ALICE),
+                             ("merge_commit_sha", SHA2), ("number", 98),
+                             ("base", {"ref": "other", "repo": {"id": REPOSITORY_ID}}),
+                             ("base", {"ref": "main", "repo": {"id": 1}})):
+            with self.subTest(field=field, value=value):
+                self.api.activation_pr = {**original, field: value}
+                self.held()
+
+    def test_announcement_before_or_same_second_as_merge_is_rejected(self):
+        for merged_at in (OPENED, WHEN):
+            with self.subTest(merged_at=merged_at):
+                self.api.activation_pr["merged_at"] = merged_at
+                self.held()
+
+    def test_merge_must_belong_to_main(self):
+        for ancestry in ({"status": "diverged", "merge_base_commit": {"sha": BASE}},
+                         {"status": "ahead", "merge_base_commit": {"sha": SHA2}}):
+            with self.subTest(ancestry=ancestry):
+                self.api.activation_ancestry = ancestry
+                self.held()
+
+    def test_configuration_at_merge_must_match(self):
+        self.api.activation_config["enabled"] = False
+        self.held()
+
+    def test_activation_config_types_and_encoding_must_match(self):
+        self.api.activation_config["schema_version"] = True
+        self.held()
+        self.api.responses[("GET", PREFIX + "/contents/.github/cla/config.json?ref=" + BASE)] = [
+            {"type": "file", "path": ".github/cla/config.json", "encoding": "base64", "content": "%%%"}]
+        self.held()
+
+    def test_preopening_and_same_second_confirmations_do_not_pass(self):
+        self.api.pulls[1]["created_at"] = "2023-12-28T00:00:00Z"
+        for created in ("2023-12-29T12:00:00Z", OPENED):
+            with self.subTest(created=created):
+                self.api.comments[0].update(created_at=created, updated_at=created)
+                self.assertEqual("failure", self.checker.run()[0]["result"])
+                self.assertNotIn("success", [body["state"] for _, body in self.api.statuses])
+
+    def test_postopening_confirmation_is_required_for_owner_too(self):
+        self.api.pulls[1]["created_at"] = "2023-12-28T00:00:00Z"
+        self.api.graphql[SHA1] = author_data(SHA1, actors=(OWNER,))
+        self.api.comments = [comment(self.c, actor=OWNER, owner=True)]
+        self.api.comments[0].update(created_at=OPENED, updated_at=OPENED)
+        self.assertEqual("failure", self.checker.run()[0]["result"])
+
+    def test_announcement_removed_or_edited_before_success_fails(self):
+        for fresh in (None, {**self.api.activation, "updated_at": WHEN}):
+            with self.subTest(fresh=fresh):
+                self.api.fresh_comments[920000] = fresh
+                self.assertEqual("failure", self.checker.run()[0]["result"])
+                self.assertNotIn("success", [body["state"] for _, body in self.api.statuses])
+
+    def test_activation_api_failure_never_falls_through(self):
+        self.api.failures[("GET", PREFIX + "/pulls/99")] = "api_request_failed"
+        self.held()
+
+    def test_old_announcement_cannot_activate_changed_configuration(self):
+        self.c["recipient_reference_time"] = "2020-01-01T01:00:00Z"
+        self.held()
+
+    def test_printing_announcement_never_posts(self):
+        with mock.patch.object(check, "load_config", return_value=self.c), \
+                mock.patch.object(check, "Api") as api, \
+                contextlib.redirect_stdout(io.StringIO()) as output:
+            self.assertEqual(0, check.main(["--activation-notice", "99", BASE]))
+        api.assert_not_called()
+        self.assertEqual(check.activation_notice(self.c, 99, BASE), output.getvalue().strip())
+
+
 class ConfigurationAndEntrypointTests(OfflineTestCase):
     def config_files(self, directory):
         root = Path(directory)
@@ -681,6 +810,27 @@ class ConfigurationAndEntrypointTests(OfflineTestCase):
             path.write_text(json.dumps(c))
             with self.assertRaisesRegex(check.Hold, "document_not_active"):
                 check.load_config(path, root)
+
+    def test_enabled_config_rejects_public_inactive_notices(self):
+        documents = (
+            ("agreement", "CLA.md",
+             b"# Contributor License Agreement\n\n**This CLA is not yet in effect. "
+             b"Do not submit a confirmation until activation.**\n"),
+            ("notice", "CLA-PRIVACY.md",
+             b"# CLA confirmation data\n\n**Online CLA confirmations are not enabled. "
+             b"Do not post a confirmation until activation.**\n"),
+        )
+        for key, name, data in documents:
+            with self.subTest(document=name), tempfile.TemporaryDirectory() as directory:
+                root, path, c = self.config_files(directory)
+                (root / name).write_bytes(data)
+                c[key]["sha256"] = check.digest(data)
+                path.write_text(json.dumps(c))
+                with self.assertRaisesRegex(check.Hold, "document_not_active"):
+                    check.load_config(path, root)
+                c["enabled"] = False
+                path.write_text(json.dumps(c))
+                self.assertEqual(c, check.load_config(path, root))
 
     def test_activation_requires_privacy_and_private_records_ready(self):
         with tempfile.TemporaryDirectory() as directory:
