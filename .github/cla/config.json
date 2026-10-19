@@ -12,13 +12,13 @@
   "privacy_ready": true,
   "owner_records_ready": true,
   "agreement": {
-    "version": "1.0",
-    "sha256": "10c29ac5348d44e860ddd61f511d64c190912483c66e99770449c48b8798e974",
-    "url": "https://github.com/maredengb/coffered/blob/2cd86f588b772f061f78719f99f92f861c60a942/CLA.md"
+    "version": "1.1",
+    "sha256": "cf463c8d5d968a918c1d0bc923ea573aa13b8472ef07c88d82b962773df36186",
+    "url": "https://github.com/maredengb/coffered/blob/fd9017397ee0186be65b40e462917ef16e1ee673/CLA.md"
   },
   "notice": {
-    "version": "1.0",
-    "sha256": "7774a43fa8b9b1bf9518cf3da31f0b878d2df7abd8074522566ffd9bed642ef0",
-    "url": "https://github.com/maredengb/coffered/blob/2cd86f588b772f061f78719f99f92f861c60a942/CLA-PRIVACY.md"
+    "version": "1.1",
+    "sha256": "c3b944cd4d767522c38e91e2ae6cc7eee1422df449ff9e41d6c67a4cb79389c7",
+    "url": "https://github.com/maredengb/coffered/blob/fd9017397ee0186be65b40e462917ef16e1ee673/CLA-PRIVACY.md"
   }
 }
