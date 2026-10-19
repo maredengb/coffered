@@ -1,0 +1,11 @@
+{
+  "schema_version": "0.1",
+  "dataset_id": "rust-by-example-demo-code",
+  "collection": "real_code",
+  "embedding_dim": 1024,
+  "embedding_model": "BAAI/bge-m3",
+  "distance_metric": "cosine",
+  "documents": "documents.jsonl",
+  "chunks": "chunks.jsonl",
+  "embeddings": "embeddings.jsonl"
+}

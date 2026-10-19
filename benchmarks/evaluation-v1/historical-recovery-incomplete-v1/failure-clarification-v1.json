@@ -1,0 +1,24 @@
+{
+  "status": "failed_preserved",
+  "original_producer_report_sha256": "4b5676d1fff953ecd3377ef97e13845cf5bd1ab516180a64534129b68e54c9bb",
+  "producer_terminal_exit_code": 1,
+  "primary_error": "FileNotFoundError while enumerated temporary was removed before stat",
+  "secondary_error": "PermissionError from killpg probe in final reaper masked first error and prevented final producer report save",
+  "original_producer_report_status": "running_preserved",
+  "report_stale_not_authoritative_for_liveness": true,
+  "partial_verified_query_rows": 3,
+  "child_exit_code": null,
+  "child_reaped": null,
+  "owned_group_now_absent": true,
+  "observed_process_group": 37692,
+  "fresh_ps_probe_exit_code": 0,
+  "raw_stdout_sha256": "b84dd00b96bd68fb77ace2c6f58e943a416d16cad05eb93db81c0cc891fbf1d9",
+  "raw_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "disk_samples_preserved": false,
+  "rss_bytes": null,
+  "not_run": [
+    "post_verification"
+  ],
+  "scope": "No valid resource/whole workload pass. Only the current process-group absence and partial emitted assertions observed; original report/source/copy preserved.",
+  "next_version": "Preserve samples/outcome in all terminal paths; tolerate removed temporary names; use conservative group visibility without masking first error; new directory/no overwritten attempt."
+}

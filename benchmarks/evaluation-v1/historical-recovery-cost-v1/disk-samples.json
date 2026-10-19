@@ -1,0 +1,6447 @@
+[
+  {
+    "elapsed_from_phase_start_seconds": 0.00022004102356731892,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.002979791024699807,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.11330720805563033,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.22351804096251726,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.3316163750132546,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.44186412496492267,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.5454608330037445,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.6556832910282537,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.7632337909890339,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.8734437910607085,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 0.9767617080360651,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.0833882499719039,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.1936296250205487,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.3005308749852702,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.4107397500192747,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.5179274580441415,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.6250397500116378,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.7326373750111088,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.8428932500537485,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 1.9512020830297843,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.061399208032526,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.1666927910409868,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.275305457995273,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.3836219999939203,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.490953166037798,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.6011110830586404,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.7082729580579326,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.816085833008401,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 2.9263221659930423,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.0336235830327496,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.143894665990956,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.247769625042565,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.358014874975197,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.462361540994607,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.5725860410602763,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.6827914159512147,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.7930328330257908,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 3.9003755409503356,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.0099231250351295,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.120151916053146,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.230356374988332,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.333337666001171,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.443555250065401,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.553759541013278,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.6563920410117134,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.763643875019625,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.871305458014831,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 4.981519415974617,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.087853541015647,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.194462375016883,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.304731082986109,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.411145040998235,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.521357333054766,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.625324749969877,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.733046832960099,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.839445500052534,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 5.949931666022167,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.060147332958877,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.164466832997277,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.27466216601897,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.384866415988654,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.495081458007917,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.601080458029173,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.711274874978699,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.821517999982461,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 6.928535750019364,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.038805500022136,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.149058416020125,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.259260833030567,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.364668249967508,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.474902707966976,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.579469125019386,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.689703125040978,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.79998087498825,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 7.903933416004293,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.00989537499845,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.120110625051893,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.227528040995821,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.334986582980491,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.445240249973722,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.555475958040915,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.665657000034116,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.775891041033901,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.886096375063062,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 8.996356875053607,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.10655562498141,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.215492833056487,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.325664040981792,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.430664374958724,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.540903207962401,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.646859916043468,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.752570374985225,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.862741958000697,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 9.966357041033916,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.07663262495771,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.180170041043311,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.287694290978834,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.388517291052267,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.492664415971376,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.59987704094965,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.710138750029728,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.82035758299753,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 10.925383916008286,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.035654125036672,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.140093708061613,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.250326375011355,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.360523832961917,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.47073358297348,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.580978582962416,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.69013612496201,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.798886999953538,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 11.900371290976182,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.006002082955092,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.116075208061375,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.218578750034794,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.328816125052981,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.439029708039016,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.541074458044022,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.651364624965936,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.760567332967184,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.865798125043511,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 12.97608162497636,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.081546999979764,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.191795874969102,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.30206629098393,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.412279583048075,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.52257379097864,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.626196083030663,
+    "logical_bytes": 2148681328,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210521951000-31.tmp",
+        "logical_bytes": 582475,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210531796000-46.tmp",
+        "logical_bytes": 291807,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210534107000-49.tmp",
+        "logical_bytes": 72994,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210535674000-52.tmp",
+        "logical_bytes": 72993,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210536005000-53.tmp",
+        "logical_bytes": 57283,
+        "allocated_blocks_bytes": 57344
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.736156207975,
+    "logical_bytes": 2151762202,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210586385000-127.tmp",
+        "logical_bytes": 2333919,
+        "allocated_blocks_bytes": 2334720
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210628644000-190.tmp",
+        "logical_bytes": 1167660,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210638762000-205.tmp",
+        "logical_bytes": 291913,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210642697000-212.tmp",
+        "logical_bytes": 145947,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210644349000-215.tmp",
+        "logical_bytes": 72993,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210645160000-216.tmp",
+        "logical_bytes": 36477,
+        "allocated_blocks_bytes": 36864
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210645714000-217.tmp",
+        "logical_bytes": 36520,
+        "allocated_blocks_bytes": 36864
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210645826000-218.tmp",
+        "logical_bytes": 72997,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.846426083007827,
+    "logical_bytes": 2154593360,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210675786000-255.tmp",
+        "logical_bytes": 4669279,
+        "allocated_blocks_bytes": 4669440
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210724427000-318.tmp",
+        "logical_bytes": 1167660,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210743683000-349.tmp",
+        "logical_bytes": 583850,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210752171000-364.tmp",
+        "logical_bytes": 291913,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210754160000-367.tmp",
+        "logical_bytes": 72954,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210755635000-370.tmp",
+        "logical_bytes": 72993,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210756010000-371.tmp",
+        "logical_bytes": 130935,
+        "allocated_blocks_bytes": 131072
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 13.953387415967882,
+    "logical_bytes": 2160863358,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210675786000-255.tmp",
+        "logical_bytes": 4669279,
+        "allocated_blocks_bytes": 4669440
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210766251000-382.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210849277000-509.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210855175000-510.tmp",
+        "logical_bytes": 3919583,
+        "allocated_blocks_bytes": 3919872
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.056468541035429,
+    "logical_bytes": 2159361019,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210865834000-511.tmp",
+        "logical_bytes": 9339999,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210924614000-574.tmp",
+        "logical_bytes": 1167660,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210963483000-637.tmp",
+        "logical_bytes": 1167700,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210966098000-638.tmp",
+        "logical_bytes": 81884,
+        "allocated_blocks_bytes": 81920
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.166697500040755,
+    "logical_bytes": 2161963649,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210865834000-511.tmp",
+        "logical_bytes": 9339999,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211056812000-766.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211071689000-773.tmp",
+        "logical_bytes": 145935,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211075741000-780.tmp",
+        "logical_bytes": 145938,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211076463000-781.tmp",
+        "logical_bytes": 57281,
+        "allocated_blocks_bytes": 57344
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.276936208014376,
+    "logical_bytes": 2164971565,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210865834000-511.tmp",
+        "logical_bytes": 9339999,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211056812000-766.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211148262000-893.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211173583000-924.tmp",
+        "logical_bytes": 583810,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211181891000-939.tmp",
+        "logical_bytes": 291913,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211185886000-946.tmp",
+        "logical_bytes": 145987,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.395982541027479,
+    "logical_bytes": 2174673581,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739210865834000-511.tmp",
+        "logical_bytes": 9339999,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211249170000-1022.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 8388366,
+        "allocated_blocks_bytes": 8396800
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.506197875016369,
+    "logical_bytes": 2168956276,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 18681439,
+        "allocated_blocks_bytes": 18681856
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211371137000-1086.tmp",
+        "logical_bytes": 1167660,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211412661000-1149.tmp",
+        "logical_bytes": 1167700,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211415396000-1150.tmp",
+        "logical_bytes": 335701,
+        "allocated_blocks_bytes": 335872
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.616454374976456,
+    "logical_bytes": 2171493292,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 18681439,
+        "allocated_blocks_bytes": 18681856
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211507324000-1278.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211520992000-1285.tmp",
+        "logical_bytes": 145935,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211524872000-1292.tmp",
+        "logical_bytes": 145938,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211525676000-1293.tmp",
+        "logical_bytes": 245484,
+        "allocated_blocks_bytes": 245760
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.721468625008129,
+    "logical_bytes": 2174167018,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 18681439,
+        "allocated_blocks_bytes": 18681856
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211507324000-1278.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211597734000-1405.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211621591000-1436.tmp",
+        "logical_bytes": 583810,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211630435000-1451.tmp",
+        "logical_bytes": 291913,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.83172287500929,
+    "logical_bytes": 2176173985,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 18681439,
+        "allocated_blocks_bytes": 18681856
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211702380000-1534.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211734260000-1549.tmp",
+        "logical_bytes": 291873,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211738639000-1556.tmp",
+        "logical_bytes": 145987,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211740526000-1559.tmp",
+        "logical_bytes": 72993,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211741454000-1560.tmp",
+        "logical_bytes": 36477,
+        "allocated_blocks_bytes": 36864
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 14.941971666063182,
+    "logical_bytes": 2180119832,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 18681439,
+        "allocated_blocks_bytes": 18681856
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211702380000-1534.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211808205000-1661.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211830135000-1692.tmp",
+        "logical_bytes": 583810,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211847880000-1723.tmp",
+        "logical_bytes": 583850,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211849734000-1724.tmp",
+        "logical_bytes": 990157,
+        "allocated_blocks_bytes": 991232
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.047868166002445,
+    "logical_bytes": 2181793425,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 18681439,
+        "allocated_blocks_bytes": 18681856
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211702380000-1534.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211898571000-1789.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211946125000-1852.tmp",
+        "logical_bytes": 1167660,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211956179000-1867.tmp",
+        "logical_bytes": 291913,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211957682000-1868.tmp",
+        "logical_bytes": 36477,
+        "allocated_blocks_bytes": 36864
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.158248916035518,
+    "logical_bytes": 2184968095,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 18681439,
+        "allocated_blocks_bytes": 18681856
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211702380000-1534.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211898571000-1789.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211989042000-1916.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212029233000-1979.tmp",
+        "logical_bytes": 1167660,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212049356000-2010.tmp",
+        "logical_bytes": 583850,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212066706000-2041.tmp",
+        "logical_bytes": 583850,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [
+      "cofferdb-text-sort-38384-1791739212057925000-2025.tmp"
+    ],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.266936125000939,
+    "logical_bytes": 2196767542,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739211269799000-1023.tmp",
+        "logical_bytes": 18681439,
+        "allocated_blocks_bytes": 18681856
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212112533000-2046.tmp",
+        "logical_bytes": 18682880,
+        "allocated_blocks_bytes": 18685952
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 11799447,
+        "allocated_blocks_bytes": 11800576
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.377198833040893,
+    "logical_bytes": 2186646608,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212268961000-2110.tmp",
+        "logical_bytes": 1167660,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212280137000-2125.tmp",
+        "logical_bytes": 291913,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212284642000-2132.tmp",
+        "logical_bytes": 145947,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212286627000-2135.tmp",
+        "logical_bytes": 72993,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [
+      "cofferdb-text-sort-38384-1791739212285838000-2133.tmp"
+    ],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.484332249965519,
+    "logical_bytes": 2189712465,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212313433000-2174.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212355915000-2237.tmp",
+        "logical_bytes": 1167660,
+        "allocated_blocks_bytes": 1171456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212376911000-2268.tmp",
+        "logical_bytes": 583850,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212386364000-2283.tmp",
+        "logical_bytes": 291913,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212390294000-2290.tmp",
+        "logical_bytes": 145947,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212392002000-2293.tmp",
+        "logical_bytes": 72993,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212393622000-2296.tmp",
+        "logical_bytes": 72997,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212394005000-2297.tmp",
+        "logical_bytes": 73650,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.594576708041131,
+    "logical_bytes": 2191974175,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212406211000-2302.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212497737000-2429.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.697550458018668,
+    "logical_bytes": 2198303072,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212406211000-2302.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212589132000-2557.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212599314000-2558.tmp",
+        "logical_bytes": 3993537,
+        "allocated_blocks_bytes": 3993600
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.804559875046834,
+    "logical_bytes": 2196717843,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212599314000-2558.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212707800000-2685.tmp",
+        "logical_bytes": 2335360,
+        "allocated_blocks_bytes": 2338816
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212714128000-2688.tmp",
+        "logical_bytes": 72948,
+        "allocated_blocks_bytes": 73728
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [
+      "cofferdb-text-sort-38384-1791739212713343000-2686.tmp"
+    ],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 15.914775458048098,
+    "logical_bytes": 2199418115,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212599314000-2558.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212801023000-2813.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212819341000-2828.tmp",
+        "logical_bytes": 291873,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212823687000-2835.tmp",
+        "logical_bytes": 145987,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.021370791015215,
+    "logical_bytes": 2202521604,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212599314000-2558.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212801023000-2813.tmp",
+        "logical_bytes": 4670720,
+        "allocated_blocks_bytes": 4673536
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212891501000-2940.tmp",
+        "logical_bytes": 2327208,
+        "allocated_blocks_bytes": 2330624
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212913596000-2971.tmp",
+        "logical_bytes": 582475,
+        "allocated_blocks_bytes": 585728
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212922465000-2986.tmp",
+        "logical_bytes": 291282,
+        "allocated_blocks_bytes": 294912
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212926451000-2993.tmp",
+        "logical_bytes": 145640,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212930416000-3000.tmp",
+        "logical_bytes": 145629,
+        "allocated_blocks_bytes": 147456
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212931135000-3001.tmp",
+        "logical_bytes": 49115,
+        "allocated_blocks_bytes": 49152
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.126417582971044,
+    "logical_bytes": 2213711311,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212599314000-2558.tmp",
+        "logical_bytes": 9341440,
+        "allocated_blocks_bytes": 9342976
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212995141000-3069.tmp",
+        "logical_bytes": 9327953,
+        "allocated_blocks_bytes": 9330688
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739213015944000-3070.tmp",
+        "logical_bytes": 10073823,
+        "allocated_blocks_bytes": 10076160
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.23664529097732,
+    "logical_bytes": 2207961954,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 2400046,
+        "allocated_blocks_bytes": 3211264
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739212150093000-2047.tmp",
+        "logical_bytes": 37364319,
+        "allocated_blocks_bytes": 37367808
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739213104573000-3120.tmp",
+        "logical_bytes": 19578621,
+        "allocated_blocks_bytes": 19578880
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739213143875000-3121.tmp",
+        "logical_bytes": 1015192,
+        "allocated_blocks_bytes": 1015808
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.347368458053097,
+    "logical_bytes": 2206946762,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 2400046,
+        "allocated_blocks_bytes": 3211264
+      },
+      {
+        "name": "cofferdb-text-sort-38384-1791739213143875000-3121.tmp",
+        "logical_bytes": 56942940,
+        "allocated_blocks_bytes": 56946688
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.45761304104235,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.567863999982364,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.678047999972478,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.788279750035144,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 16.89158554095775,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.0018602500204,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.1078458330594,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.218054083059542,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.32435758295469,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.431568083004095,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.541825250023976,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2147606528
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.652053624973632,
+    "logical_bytes": 1866807629,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 1838803513,
+        "allocated_blocks_bytes": 1844355072
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.753270957968198,
+    "logical_bytes": 1866807629,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 1838803513,
+        "allocated_blocks_bytes": 1844355072
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.863567415974103,
+    "logical_bytes": 1866807629,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 1838803513,
+        "allocated_blocks_bytes": 1844355072
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 17.970782791031525,
+    "logical_bytes": 1866807629,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 1838803513,
+        "allocated_blocks_bytes": 1844355072
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.081049541011453,
+    "logical_bytes": 1930164252,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 1902160136,
+        "allocated_blocks_bytes": 1911463936
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.18664141604677,
+    "logical_bytes": 1993001964,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 1964997848,
+        "allocated_blocks_bytes": 1978572800
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.296850624959916,
+    "logical_bytes": 2058239052,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2030234936,
+        "allocated_blocks_bytes": 2045681664
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.40266733302269,
+    "logical_bytes": 2120947068,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2092942952,
+        "allocated_blocks_bytes": 2096013312
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.512909166049212,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.615963165997528,
+    "logical_bytes": 2175607892,
+    "files": [
+      {
+        "name": "cofferdb-text-checkpoint-38384-1791739210183354000-0.tmp",
+        "logical_bytes": 28004116,
+        "allocated_blocks_bytes": 28377088
+      },
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.726201666053385,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.83647400001064,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 18.946680624969304,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.047710375045426,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.1579441659851,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.262219125055708,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.37240979098715,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.48260579095222,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.58695400005672,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.69718862499576,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.807448499952443,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 19.91059787501581,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.02082687499933,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.124376000021584,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.234576625050977,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.344797750003636,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.451338874991052,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.55802491598297,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.666665875003673,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.776892791036516,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.881767082959414,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 20.989550750004128,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.09975137503352,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.209934624959715,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.314768707961775,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.42501899995841,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.53525204095058,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.640696250018664,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.750902166008018,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.861081833019853,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 21.971319291042164,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.07380283297971,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.184024875052273,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.294199708034284,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.40210833295714,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.506235791021027,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.614637374994345,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.723597208037972,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.833795208018273,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 22.94403825001791,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.04424758302048,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.150156249990687,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.260414249962196,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.36652108305134,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.47678004100453,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.583292082999833,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.690536207985133,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.80071791599039,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 23.906908500008285,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.017085833009332,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.124253625050187,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.23451316601131,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.344707416021265,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.454853583010845,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.56506754097063,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.675235540955327,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.785408499999903,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.895604333025403,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 24.999760790960863,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.109997665975243,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.21659600001294,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.326808957965113,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.437059791060165,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.54229179106187,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.647382833063602,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.75764079100918,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.858543124981225,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 25.96708095795475,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.07727683300618,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.184384208056144,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.294651541044004,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.404913499951363,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.51516695797909,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.62539691606071,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.73563483299222,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.841025082976557,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 26.949698540964164,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.059886000002734,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.170149708050303,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.280356290983036,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.390587707981467,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.500809999997728,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.607481040991843,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.717723665991798,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.81834845803678,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 27.92287304101046,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.03305458300747,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.13554104103241,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.245729041052982,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.35589358303696,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.466122708050534,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.576390375033952,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.680527750053443,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.79077220801264,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 28.901087666046806,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.01132766599767,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.117029582965188,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.225634832982905,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.33327475003898,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.4346651249798,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.544903000001796,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.651158540975302,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.76137095806189,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.871561332955025,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 29.98179091606289,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.083256416022778,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.1934998750221,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.296660916064866,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.402577040949836,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.51283487502951,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.619096374954097,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.729348583030514,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.839648041059263,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 30.94279929099139,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.053044041036628,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.15668283298146,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.266929249977693,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.373367457999848,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.480549957952462,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.588484499952756,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.698760875035077,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.800523875048384,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 31.91074766602833,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.02102870796807,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.131281416048296,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.24149862502236,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.35168991598766,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.46067758300342,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.570913332980126,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.68113179097418,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.7865751250647,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 32.8968254160136,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 33.00712766603101,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  },
+  {
+    "elapsed_from_phase_start_seconds": 33.10771204100456,
+    "logical_bytes": 2147603776,
+    "files": [
+      {
+        "name": "data.coffer",
+        "logical_bytes": 2147603776,
+        "allocated_blocks_bytes": 2163122176
+      },
+      {
+        "name": "data.coffer.lock",
+        "logical_bytes": 0,
+        "allocated_blocks_bytes": 0
+      }
+    ],
+    "temporary_names_removed_during_sample": [],
+    "non_atomic": true
+  }
+]

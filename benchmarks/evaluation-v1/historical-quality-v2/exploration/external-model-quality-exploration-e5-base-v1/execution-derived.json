@@ -1,0 +1,1 @@
+{"status":"passed","protocol_sha256":"67e084a7d79789be4648b2fdafb0e567f8e8cb90e82edef965d2f56b91d8e6f5","scope":"seen48 external model exploration only; no independent acceptance verdict or model/default promotion","planned_cofferdb_samples":288,"planned_sqlite_samples":288,"formal_acceptance_verdict":"not_evaluated","actual_cofferdb_samples":288,"not_run":[]}

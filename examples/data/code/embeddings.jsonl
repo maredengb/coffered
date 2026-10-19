@@ -1,0 +1,3 @@
+{"chunk_external_id":"storage#cache","model_name":"synthetic-demo-2d-v1","dim":2,"vector":[1,0]}
+{"chunk_external_id":"storage#recovery","model_name":"synthetic-demo-2d-v1","dim":2,"vector":[0,1]}
+{"chunk_external_id":"python#cache","model_name":"synthetic-demo-2d-v1","dim":2,"vector":[0,1]}

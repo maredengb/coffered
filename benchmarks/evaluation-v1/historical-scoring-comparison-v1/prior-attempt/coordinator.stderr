@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "${PREPARATION_ROOT}/supplement_runner.py", line 420, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--protocol',type=Path,required=True);p.add_argument('--approval',type=Path,required=True);p.add_argument('--new-output',type=Path,required=True);a=p.parse_args();execute(a.protocol,a.approval,a.new_output)
+                                                                                                                                                                                                                  ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${PREPARATION_ROOT}/supplement_runner.py", line 368, in execute
+    step.update(scope=scope,policy=role,batch=batch);report['preparation'].append(step);save(report_path,report);need(step['exit']==0 and step['stop_reason'] is None,'import failed')
+                                                                                                                 ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "${PREPARATION_ROOT}/supplement_runner.py", line 10, in need
+    if not v:raise ValueError(m)
+             ^^^^^^^^^^^^^^^^^^^
+ValueError: import failed

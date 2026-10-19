@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "enabled": true,
+  "repository": "maredengb/coffered",
+  "repository_id": 1422246026,
+  "recipient_id": 167590852,
+  "default_branch": "main",
+  "recipient_reference_time": "2026-10-19T01:55:54Z",
+  "effective_at": "2026-10-19T01:55:54Z",
+  "issue_number": 2,
+  "issue_id": 5916496208,
+  "privacy_ready": true,
+  "owner_records_ready": true,
+  "agreement": {
+    "version": "1.1",
+    "sha256": "cf463c8d5d968a918c1d0bc923ea573aa13b8472ef07c88d82b962773df36186",
+    "url": "https://github.com/maredengb/coffered/blob/fd9017397ee0186be65b40e462917ef16e1ee673/CLA.md"
+  },
+  "notice": {
+    "version": "1.1",
+    "sha256": "c3b944cd4d767522c38e91e2ae6cc7eee1422df449ff9e41d6c67a4cb79389c7",
+    "url": "https://github.com/maredengb/coffered/blob/fd9017397ee0186be65b40e462917ef16e1ee673/CLA-PRIVACY.md"
+  }
+}

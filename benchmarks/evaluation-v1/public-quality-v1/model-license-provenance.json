@@ -1,0 +1,9 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "revision": "ffdcc22a9a5c973ef0470385cef91e1ecb461d9f",
+  "model_card_url": "https://huggingface.co/intfloat/multilingual-e5-small/blob/ffdcc22a9a5c973ef0470385cef91e1ecb461d9f/README.md",
+  "captured_model_card_sha256": "ea680357ec21065558db494afe9092e129fe5605a9dca80b3d5b1c144c2d1552",
+  "declaration": "license: mit",
+  "one_based_declaration_line": 5948,
+  "scope": "Upstream model license declaration; model weights are not bundled with the dataset. The supplied vectors can be replayed without downloading a model."
+}

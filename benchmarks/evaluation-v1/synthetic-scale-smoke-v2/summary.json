@@ -1,0 +1,23 @@
+{
+  "scope": "From-empty exact-input synthetic scale workflow and bounded smoke; no new representative quality or full performance acceptance",
+  "status": "passed",
+  "completed_stages": 5,
+  "queries": 8,
+  "database_bytes": 686216086,
+  "database_sha256_before_smoke": "bbf156aabf9caf22b4e381eb124ef0134fe83a9b9a75f738d8d16646a0639f77",
+  "database_sha256_after_smoke": "bbf156aabf9caf22b4e381eb124ef0134fe83a9b9a75f738d8d16646a0639f77",
+  "database_unchanged_by_smoke": true,
+  "import_warning_count": 0,
+  "source_fingerprint": "9244290fcb9d5205a004a19d4aabef1ddf0c9836c67514fad2f1ecdd8a3e53f6",
+  "sha256": {
+    "coffer": "061f25acf65fc8fc181dce8fff0f9843f16728e7b6b37ffa1f0adf089eb08905",
+    "scale_helper_binary": "2cfbd6b89422cc798fb49bc276dcfe9cd1f333d926543c4df844e480ad30c2ce",
+    "scale_helper_source": "3c42218ce79dc433653da9f9f6d06cc91d31f396b8ae5b48a26a32c168f66ccf",
+    "prepare_scale_source": "7f96eaa3002861eee9191e96b8f376e66bb754b03b77c4c2ebcd5f7fb87b00b1",
+    "import_manifest": "1ac06da91223f24956dddbad25cbade472c0151d965ed4701dd846a6c7964c06",
+    "documents": "bd71819fbe4789e2645136fa40a10ec11981b99a26b38eb499038020e700ef36",
+    "chunks": "6b09b63481b568572ecf543498bbdc5f1b946a41ef10e0fb8f09c6e19def61d1",
+    "embeddings": "bcab207bb7d976e95f99d95970d2a180c1fdf8b0a6489d348d7ac1fc38d20329",
+    "smoke_stdout": "58af377fc1b876d3934f4bfd6eb44d226b151f67656dc13d4427128b18b4c1c4"
+  }
+}

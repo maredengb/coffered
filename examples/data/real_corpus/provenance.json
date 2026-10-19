@@ -1,0 +1,142 @@
+{
+  "schema_version": "cofferdb-public-demo-provenance-2",
+  "source_repository": "https://github.com/rust-lang/rust-by-example",
+  "source_commit": "dcc14f912bf8790792a2df082eddc82ab2539229",
+  "source_license": "MIT OR Apache-2.0",
+  "sources": [
+    {
+      "path": "src/std/str.md",
+      "sha256": "7a9dc1928b8887005a934c803175711f6c3fb23ef7ae7682fe65f7a42439cd8b",
+      "url": "https://github.com/rust-lang/rust-by-example/blob/dcc14f912bf8790792a2df082eddc82ab2539229/src/std/str.md"
+    },
+    {
+      "path": "src/std/vec.md",
+      "sha256": "378392c8f0a1b7dc817e82da779860bdb0afd52d481a21deced9e982db1c5a4c",
+      "url": "https://github.com/rust-lang/rust-by-example/blob/dcc14f912bf8790792a2df082eddc82ab2539229/src/std/vec.md"
+    }
+  ],
+  "counts": {
+    "markdown": {
+      "documents": 2,
+      "chunks": 2
+    },
+    "code": {
+      "documents": 2,
+      "chunks": 5
+    }
+  },
+  "chunking": "Full Markdown documents and unchanged fenced Rust snippets; byte and line spans refer to the bundled original Markdown snapshots.",
+  "code_execution": "Snippets are retrieval inputs, not compiled programs. Upstream examples intentionally include compile errors and panics.",
+  "embedding": {
+    "model": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dimension": 1024,
+    "packages": {
+      "onnxruntime": "1.20.1",
+      "tokenizers": "0.21.0",
+      "numpy": "2.2.6"
+    },
+    "model_files_sha256": {
+      "Constant_7_attr__value": "cdf16f72c5d07b36484056e601ed9687f78477e5d85cee85a34f2406b7fb5906",
+      "config.json": "f24afd5de914fba8c668426c43d208a1a54022500c63b2c160be20891686fce8",
+      "model.onnx": "f84251230831afb359ab26d9fd37d5936d4d9bb5d1d5410e66442f630f24435b",
+      "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+      "special_tokens_map.json": "8c785abebea9ae3257b61681b4e6fd8365ceafde980c21970d001e834cf10835",
+      "tokenizer.json": "6710678b12670bc442b99edc952c4d996ae309a7020c1fa0096dd245c2faf790",
+      "tokenizer_config.json": "7e4c1cc848840aeccdd763458c18dd525eb0f795c992e00ebe9c28554e7db2d4",
+      "model.onnx_data": "1eebfb28493f67bba03ce0ef64bfdc7fc5a3bd9d7493f818bb1d78cd798416b4"
+    },
+    "pooling": "CLS token, L2 normalization in f64, f32 output",
+    "provider": "CPUExecutionProvider",
+    "input_prefix": "",
+    "truncation": false,
+    "max_tokens": 8192,
+    "inference_calls": 9
+  },
+  "tokenization": [
+    {
+      "id": "rust-by-example://dcc14f912bf8790792a2df082eddc82ab2539229/src/std/str.md#markdown#chunk-0",
+      "text_sha256": "7a9dc1928b8887005a934c803175711f6c3fb23ef7ae7682fe65f7a42439cd8b",
+      "input_tokens": 1859,
+      "used_tokens": 1859,
+      "truncated": false
+    },
+    {
+      "id": "rust-by-example://dcc14f912bf8790792a2df082eddc82ab2539229/src/std/vec.md#markdown#chunk-0",
+      "text_sha256": "378392c8f0a1b7dc817e82da779860bdb0afd52d481a21deced9e982db1c5a4c",
+      "input_tokens": 713,
+      "used_tokens": 713,
+      "truncated": false
+    },
+    {
+      "id": "rust-by-example-demo-markdown",
+      "text_sha256": "5e3c8ee5d0d86bea35512362ceee3e722b2ed599e43c35f8a2f4e011a05f7bca",
+      "input_tokens": 22,
+      "used_tokens": 22,
+      "truncated": false
+    },
+    {
+      "id": "rust-by-example://dcc14f912bf8790792a2df082eddc82ab2539229/src/std/str.md#code#chunk-0",
+      "text_sha256": "5faf94e72ebd7df9a0b8457cbd1e542d1f2d3354d4126ecbfbb6105b27e5e452",
+      "input_tokens": 418,
+      "used_tokens": 418,
+      "truncated": false
+    },
+    {
+      "id": "rust-by-example://dcc14f912bf8790792a2df082eddc82ab2539229/src/std/str.md#code#chunk-1",
+      "text_sha256": "33d36d776f2c26991f5b4ebc3bfcb49ba9c0ab84fb6f9f3090738a9204ad8e1c",
+      "input_tokens": 207,
+      "used_tokens": 207,
+      "truncated": false
+    },
+    {
+      "id": "rust-by-example://dcc14f912bf8790792a2df082eddc82ab2539229/src/std/str.md#code#chunk-2",
+      "text_sha256": "a07d68b0fc8b728ba5ccf5b10653ea90b96925c89290386d947fb3f74ed3dc38",
+      "input_tokens": 172,
+      "used_tokens": 172,
+      "truncated": false
+    },
+    {
+      "id": "rust-by-example://dcc14f912bf8790792a2df082eddc82ab2539229/src/std/str.md#code#chunk-3",
+      "text_sha256": "b755b54eae497df5e0f3cf2ed177a8b106e487fac46a2ca7009a0f6d1a6c4ef8",
+      "input_tokens": 451,
+      "used_tokens": 451,
+      "truncated": false
+    },
+    {
+      "id": "rust-by-example://dcc14f912bf8790792a2df082eddc82ab2539229/src/std/vec.md#code#chunk-0",
+      "text_sha256": "7d0238228cf0380b20b59b7b727ab5d48fbbf2e59e83fbf37d7d641739b0d448",
+      "input_tokens": 542,
+      "used_tokens": 542,
+      "truncated": false
+    },
+    {
+      "id": "rust-by-example-demo-code",
+      "text_sha256": "440cc35e19175b1f0c58871c3a36b372f7bfe78a914e84f7b6ed87ce01f41a4f",
+      "input_tokens": 20,
+      "used_tokens": 20,
+      "truncated": false
+    }
+  ],
+  "limitations": [
+    "Small illustrative dataset, not a representative relevance benchmark.",
+    "Ranking depends on the external vectors and application-selected weights.",
+    "The example does not change database defaults or guarantee that a profile wins."
+  ],
+  "files_sha256": {
+    "code/chunks.jsonl": "0ec3258ea72b5612481213eb3baae36149574aea2127385ed4b4f6f1e6724f31",
+    "code/documents.jsonl": "317d800e65fca4b20c726060adab6646c76fb058fd381b48fe2ed3b1da6cd89b",
+    "code/embeddings.jsonl": "dbe173c535ac9ed4b8067096343e830b8f61b8bf0b6f8e1b893d28ea95bf5070",
+    "code/import_manifest.json": "67b63f6950b4ee4a5ce1bc358a998e8a1c7973cdbc56b388d87d4c0405011520",
+    "code-query.json": "ef851c728759f588a9e65e018f6ffd44238b668fd17bebf25dfc1bed71ad40ae",
+    "markdown/chunks.jsonl": "c16d728b7e834649304938e2b4843a0edc94d6307cee60b1c3cda7d051ba23ba",
+    "markdown/documents.jsonl": "8e03c3d44d0fcfd09504321f72f27e63e98e13ea80dcf3d9a6caadde326460bb",
+    "markdown/embeddings.jsonl": "522f93ac6617157a0a4fee89ca7c3ffe164928c66a70329f491e18bf1e8d6f81",
+    "markdown/import_manifest.json": "4c7bc992ff95af04f99a50ab610b1e2ee4b75f3e5aeecfc3ce23cd70bc8aa1ad",
+    "markdown-query.json": "ce83b318d02787326fc96c4363561473d9c097765bb42ae9a1d79f5ce44e6d08",
+    "source_snapshot/rust-by-example/LICENSE-APACHE": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2",
+    "source_snapshot/rust-by-example/LICENSE-MIT": "4594f18866be94a3ce309ed8f94d92699f5b87739b76e1216addca75f5253fa7",
+    "source_snapshot/rust-by-example/src/std/str.md": "7a9dc1928b8887005a934c803175711f6c3fb23ef7ae7682fe65f7a42439cd8b",
+    "source_snapshot/rust-by-example/src/std/vec.md": "378392c8f0a1b7dc817e82da779860bdb0afd52d481a21deced9e982db1c5a4c"
+  }
+}

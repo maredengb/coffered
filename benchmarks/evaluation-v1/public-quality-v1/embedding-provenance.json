@@ -1,0 +1,64 @@
+{
+  "status": "completed_offline_preparation_not_a_retrieval_evaluation",
+  "model": "intfloat/multilingual-e5-small",
+  "revision": "ffdcc22a9a5c973ef0470385cef91e1ecb461d9f",
+  "model_source": "https://huggingface.co/intfloat/multilingual-e5-small/tree/ffdcc22a9a5c973ef0470385cef91e1ecb461d9f",
+  "model_license": "MIT",
+  "model_files_sha256": {
+    "model.onnx": "ca456c06b3a9505ddfd9131408916dd79290368331e7d76bb621f1cba6bc8665",
+    "tokenizer.json": "0b44a9d7b51c3c62626640cda0e2c2f70fdacdc25bbbd68038369d14ebdf4c39",
+    "sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "config.json": "bbb7c1333fc4b3e27fbc9cd5d2070aabcc1d4dfb99917c3633e772f97545a6b6",
+    "special_tokens_map.json": "d05497f1da52c5e09554c0cd874037a083e1dc1b9cfd48034d1c717f1afc07a7",
+    "tokenizer_config.json": "a1d6bc8734a6f635dc158508bef000f8e2e5a759c7d92f984b2c86e5ff53425b"
+  },
+  "dimension": 384,
+  "dtype": "f32",
+  "provider": "CPUExecutionProvider",
+  "batch_size": 1,
+  "intra_op_threads": 2,
+  "inter_op_threads": 1,
+  "max_tokens": 512,
+  "truncation": "forbidden",
+  "prefixes": {
+    "query": "query: ",
+    "passage": "passage: "
+  },
+  "special_tokens_counted": true,
+  "pooling": "Attention-mask mean with FP64 accumulation over FP32 hidden states",
+  "normalization": "FP64 L2 normalization then f32",
+  "python": "3.12.15",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "packages": {
+    "onnxruntime": "1.20.1",
+    "tokenizers": "0.21.0",
+    "numpy": "2.2.6"
+  },
+  "encoder_sources_sha256": {
+    "embed_independent_quality_corpus.py": "ff1bbd39270fa59bfa65fc2e1aa575050a1181b0c027ebbd31f920cd4947b827",
+    "embed_quality_corpus.py": "6ebb8629b512c86e42472479b0cde6962f9266cbac231364e7135b5901176373"
+  },
+  "dataset_inputs_sha256": {
+    "documents.jsonl": "49950cc17b0a1516c1c22219825431bdb8ab88a4b34e71c4e02a400e4f5a524d",
+    "chunks.jsonl": "41555fbe5b85d36b74de79f795b1716216c09f69a2c1e073d20c5063d8f2857d",
+    "queries.jsonl": "e52992bc905a4f96c3e640be156c5824cdf9209a45ae9e8b8e592a4d3210b6eb",
+    "source-provenance.json": "80e63c8f533742a62003111116f3cb9a63ae384e6b09b8498df05e9e90215e45",
+    "relevance-criteria.json": "43edca32ae5a7fe82ef8c55b3cfd00bf4fb36987fa0c071c6404289e9f8e1255"
+  },
+  "output_sha256": {
+    "embeddings.jsonl": "740e8283b33ece4781c5499f2cf318a34bdc657d92463d252445ca6e954f3341",
+    "query_embeddings.jsonl": "e26f14af82f67734e1064994482cdb582582ad5423e5ea6cca2a3f40d111f82c",
+    "tokenization.jsonl": "f523c273ce971715d756315685174e20cf55d4030a15be7095e6732925bcb956"
+  },
+  "counts": {
+    "chunks": 99,
+    "queries": 48,
+    "inference_calls": 147,
+    "truncated": 0
+  },
+  "limitations": [
+    "Vectors are reused as supplied assets for database replay; regenerating a model is optional.",
+    "Not claimed bitwise equivalent to official Torch FP32 pooling or across different inference implementations.",
+    "Preparation time is outside database performance measurements."
+  ]
+}
