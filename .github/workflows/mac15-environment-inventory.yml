@@ -1,0 +1,68 @@
+name: macOS 15 environment inventory
+on:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  inventory:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: macos-15
+    timeout-minutes: 15
+    steps:
+      - name: Record environment without checking out sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -I -S -B - <<'PY'
+          import base64, json, os, platform, shutil, subprocess
+          from pathlib import Path
+          def command(argv):
+              try:
+                  p = subprocess.run(argv, capture_output=True, timeout=15)
+                  code, stdout, stderr, timed_out = p.returncode, p.stdout, p.stderr, False
+              except subprocess.TimeoutExpired as error:
+                  code, stdout, stderr, timed_out = None, error.stdout or b'', error.stderr or b'', True
+              except OSError as error:
+                  record = {'exit': None, 'timed_out': False,
+                            'error': {'type': type(error).__name__, 'message': str(error)}}
+                  print(json.dumps({'event': 'command_result', 'argv': argv, 'result': record}), flush=True)
+                  return record
+              record = {'exit': code, 'timed_out': timed_out,
+                        'stdout': stdout.decode('utf-8', errors='replace'),
+                        'stderr': stderr.decode('utf-8', errors='replace'),
+                        'stdout_base64': base64.b64encode(stdout).decode('ascii'),
+                        'stderr_base64': base64.b64encode(stderr).decode('ascii')}
+              print(json.dumps({'event': 'command_result', 'argv': argv, 'result': record}), flush=True)
+              return record
+          version = command(['/usr/bin/sw_vers', '-productVersion'])
+          print(json.dumps({'event': 'host_identity', 'architecture': platform.machine(),
+                            'macos_version': version}), flush=True)
+          assert version['exit'] == 0 and version['stdout'].strip().split('.')[0] == '15'
+          assert platform.machine() == 'arm64'
+          result = {'scope': 'environment inventory only',
+                    'macos_version': version,
+                    'macos_build': command(['/usr/bin/sw_vers', '-buildVersion']),
+                    'architecture': platform.machine(),
+                    'rosetta': command(['/usr/sbin/sysctl', '-in', 'sysctl.proc_translated']),
+                    'image_os': os.environ.get('ImageOS'),
+                    'image_version': os.environ.get('ImageVersion'),
+                    'logical_cpu': os.cpu_count(),
+                    'memory_bytes': command(['/usr/sbin/sysctl', '-n', 'hw.memsize']),
+                    'developer_directory': command(['/usr/bin/xcode-select', '-p']),
+                    'python': {}, 'compiler_paths': {}}
+          assert result['rosetta'].get('stdout', '').strip() != '1'
+          probe = ('import json,platform,struct,sys,sysconfig;'
+                   'print(json.dumps({"version":sys.version,"executable":sys.executable,'
+                   '"architecture":platform.machine(),"bits":struct.calcsize("P")*8,'
+                   '"implementation":sys.implementation.name,"soabi":sysconfig.get_config_var("SOABI"),'
+                   '"gil_disabled":bool(sysconfig.get_config_var("Py_GIL_DISABLED")),'
+                   '"gil_enabled":getattr(sys,"_is_gil_enabled",lambda:True)()}))')
+          for name in ['python3.12', 'python3.13', 'python3.14']:
+              path = shutil.which(name)
+              result['python'][name] = {'path': path,
+                  'resolved': str(Path(path).resolve()) if path else None,
+                  'probe': command([path, '-I', '-S', '-B', '-c', probe]) if path else None}
+          for name in ['rustc', 'cargo', 'cc', 'c++', 'gcc', 'g++', 'clang', 'clang++',
+                       'xcodebuild', 'xcrun']:
+              result['compiler_paths'][name] = shutil.which(name)
+          print(json.dumps(result, indent=2), flush=True)
+          PY
